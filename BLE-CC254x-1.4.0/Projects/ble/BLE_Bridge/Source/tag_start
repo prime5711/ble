@@ -1,0 +1,7 @@
+
+find .                      -name "*.[chsS]"   >  cscope.files
+find ../../Include/         -name "*.[chsS]"   >> cscope.files
+find ../../common           -name "*.[chsS]"   >> cscope.files
+find ../../../../Components -name "*.[chsS]"   >> cscope.files
+
+cscope

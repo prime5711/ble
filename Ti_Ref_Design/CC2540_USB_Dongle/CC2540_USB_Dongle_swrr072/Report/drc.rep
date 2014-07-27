@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------
+                            Design Rule Check Report
+
+                     CADSTAR Design Editor Version 11.0.0.1
+
+Design:     C:\DesignSync_WORKDIR\evm\em\CC2540_USB_Dongle\Cadstar\CC2540_USB_Dongle.pcb
+
+Design Title:
+CC2531 USB DONGLE 2.4
+
+Date:      Wednesday, May 05, 2010
+Time:      12:45 PM
+
+--------------------------------------------------------------------------------
+
+Summary of Errors By Layer
+
+  Layer 1 (physical layer 1) has 14 error(s).
+
+Detailed List of Errors By Layer
+
+
+Layer 1 (Physical Layer 1)
+
+  CP - Comp Copper to Pad at 1165.0394 2606.4685
+  CP - Comp Copper to Pad at 1165.0394 2606.4685
+  CP - Comp Copper to Pad at 1165.0394 2606.4685
+  CP - Comp Copper to Pad at 1165.0394 2606.4685
+  CP - Comp Copper to Pad at 1250.0394 2606.4685
+  CP - Comp Copper to Pad at 1250.0394 2606.4685
+  CR - Comp Copper to Route at 1165.0394 2594.2047
+  CR - Comp Copper to Route at 1165.0394 2608.9685
+  CR - Comp Copper to Route at 1165.0394 2608.9685
+  CR - Comp Copper to Route at 1250.0394 2588.9606
+  CR - Comp Copper to Route at 1250.0394 2594.2047
+  CR - Comp Copper to Route at 1255.0000 2584.0000
+  CR - Comp Copper to Route at 1262.0000 2584.0000
+  RO - Route Offset at 1027.7008 2094.6535
+--------------------------------------------------------------------------------
+                                 End of report
+--------------------------------------------------------------------------------

@@ -9,27 +9,11 @@
       <name>All</name>
       <member>
         <project>BLE_Bridge</project>
-        <configuration>CC2541</configuration>
+        <configuration>CC2541-SPI</configuration>
       </member>
       <member>
         <project>BLE_Bridge</project>
-        <configuration>CC2541DK-MINI Keyfob</configuration>
-      </member>
-      <member>
-        <project>BLE_Bridge</project>
-        <configuration>CC2541-OAD-ImgA</configuration>
-      </member>
-      <member>
-        <project>BLE_Bridge</project>
-        <configuration>CC2541-OAD-ImgB</configuration>
-      </member>
-      <member>
-        <project>BLE_Bridge</project>
-        <configuration>CC2541-OAD-Encrypted-ImgA</configuration>
-      </member>
-      <member>
-        <project>BLE_Bridge</project>
-        <configuration>CC2541-OAD-Encrypted-ImgB</configuration>
+        <configuration>CC2541-UART</configuration>
       </member>
     </batchDefinition>
   </batchBuild>

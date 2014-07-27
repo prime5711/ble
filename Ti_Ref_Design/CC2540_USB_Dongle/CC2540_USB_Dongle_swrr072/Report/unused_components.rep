@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+                            Unused Components Report
+
+                     CADSTAR Design Editor Version 11.0.0.1
+
+Design:     C:\DesignSync_WORKDIR\evm\em\CC2540_USB_Dongle\Cadstar\CC2540_USB_Dongle.pcb
+
+Design Title:
+CC2540 USB DONGLE 1.0
+
+Date:      Wednesday, May 05, 2010
+Time:      1:27 PM
+
+--------------------------------------------------------------------------------
+
+Unused Elements
+
+  FM1 is not used, this uses pins 1.
+  FM2 is not used, this uses pins 1.
+  FM3 is not used, this uses pins 1.
+
+Unconnected Components
+
+  FM1 is not connected
+  FM2 is not connected
+  FM3 is not connected
+
+Unallocated Parts
+
+  No unallocated parts to report.
+--------------------------------------------------------------------------------
+                                 End of report
+--------------------------------------------------------------------------------

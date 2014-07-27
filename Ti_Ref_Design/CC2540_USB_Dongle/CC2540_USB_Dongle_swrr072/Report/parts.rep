@@ -1,0 +1,35 @@
+Part Name/Number,Description,Qty,Comps
+ANTENNA_IIFA_1_LEFT,,1,A2
+BL31_008U,MPE_Garry_GmbH_Connector_8_pin_female_BL31_008U,1,IO
+CC2540,Single chip BLE,1,U1
+C_0402,"Capacitor 0402, general",1,C3
+C_0P5_0402_NP0_B_50,"Capacitor, 0.5p, 0402, NP0, +/-0.1pF 50V",1,C5
+C_100N_0402_X5R_K_10,Capacitor 0402,5,C101;C211;C241;C271;C311
+C_10P_0402_NP0_J_50,Capacitor 0402,1,C41
+C_12P_0402_NP0_J_50,Capacitor 0402,2,C221;C231
+C_1N_0402_NP0_J_50,Capacitor 0402,1,C201
+C_1U_0402_X5R_K_6P3,Capacitor 0402,2,C391;C401
+C_1U_0603_X5R_L_6P3,Capacitor 0603,1,C1
+C_220P_0402_NP0_J_50,Capacitor 0402,1,C272
+C_2U2_0402_X5R_M_4VDC,"Capasitor 0402, GRM155R60G225ME15J",1,C4
+C_47P_0402_NP0_J_50,"Capacitor, 0402",2,C21;C31
+C_4U7_0603_X5R_K_6,Capacitor 0603,1,C2
+FIDUCIAL_MARK_1MM,"Fiducial mark, 1mm metal diameter",3,FM1-3
+JTI_2450BM15A0002,"Johanson Technology balun especially designed for operation with CC2530, CC2531, CC2505 and CC2540",1,B1
+LED_EL19-21SURC,"LED, Orange-Red, SMD 0603",1,D1
+LED_EL19-21SYGC,"LED, Green, SMD 0603, 2.0V 16 mcd",1,D2
+L_6N8_0402_J,Inductor 0402,1,L301
+BLM15HG102SN1D,EMI filter bead,1,L1
+ALPS-SKRKAEE010,"Push button, SMD 3.9*2.9*2.0 mm",2,S1-2
+R_0402,"Resistor 0402, general",2,R2;R92
+R_0_0402,"Resistor, 0402",3,R3;R9;R91
+R_1K5_0402_G,Resistor 0402,1,R32
+R_270_0402_F,Resistor 0402,2,R11;R71
+R_2K2_0402_G,Resistor 0402,1,R201
+R_2_0402_F,Resistor 0402,1,R1
+R_33_0402_G,Resistor 0402,2,R21;R31
+R_56K_0402_F,Resistor 0402,1,R301
+STL21,"PIN HEADER SMD 1,27 mm Gerry",1,DEBUG
+TPS76933,Low dropout linear regulator,1,U2
+USB_A,USB plug type A connector,1,P1
+X_32.000/10/20/60/10,"Epson Toyocom FA128 32 MHz 2x1.6mm 10 pF, -40/85C, Q22FA1280009200",1,X1

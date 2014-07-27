@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
+                            Design Rule Check Report
+
+                     CADSTAR Design Editor Version 12.1.0.4
+
+Design:     C:\DesignSync_WORKDIR\evm\em\CC2541_Keyfob\Cadstar\CC2541Keyfob.pcb
+
+Design Title:
+CC2541 Keyfob 1.4.0
+
+Date:      Wednesday, August 29, 2012
+Time:      4:02 PM
+
+--------------------------------------------------------------------------------
+
+Summary of Errors By Layer
+
+  Layer 1 (physical layer 1) has 24 error(s).
+  Layer 4 (physical layer 4) has 4 error(s).
+
+Detailed List of Errors By Layer
+
+
+Layer 1 (Physical Layer 1)
+
+  CO - Comp Copper to Copper at 1838.7283 2529.6535
+  CO - Comp Copper to Copper at 1838.7283 2562.8465
+  CO - Comp Copper to Copper at 1838.7283 2562.8465
+  CO - Comp Copper to Copper at 1838.7283 2562.8465
+  CO - Comp Copper to Copper at 1838.7283 2562.8465
+  CO - Comp Copper to Copper at 1843.3307 2529.6535
+  CO - Comp Copper to Copper at 1843.3307 2562.8465
+  CP - Comp Copper to Pad at 1796.0866 2548.5512
+  CP - Comp Copper to Pad at 1796.0866 2548.5512
+  CP - Comp Copper to Pad at 1796.0866 2628.0787
+  CP - Comp Copper to Pad at 1796.0866 2628.0787
+  CP - Comp Copper to Pad at 1796.0866 2628.0787
+  CP - Comp Copper to Pad at 1835.4567 2548.5512
+  CP - Comp Copper to Pad at 1835.4567 2628.0787
+  CR - Comp Copper to Route at 1819.8661 2548.5512
+  CR - Comp Copper to Route at 1819.8661 2548.5512
+  CR - Comp Copper to Route at 1819.8661 2628.0787
+  CR - Comp Copper to Route at 1819.8661 2628.0787
+  CR - Comp Copper to Route at 1819.8661 2628.0787
+  CR - Comp Copper to Route at 1843.3307 2548.5512
+  CR - Comp Copper to Route at 1843.3307 2565.0866
+  CR - Comp Copper to Route at 1843.3307 2565.0866
+  CR - Comp Copper to Route at 1843.3307 2628.0787
+  CR - Comp Copper to Route at 1852.3118 2548.5512
+
+Layer 4 (Physical Layer 4)
+
+  PP - Pad to Pad at 1823.2283 2084.8425
+  PP - Pad to Pad at 1823.2283 2115.1575
+  PP - Pad to Pad at 1842.9134 2084.8425
+  PP - Pad to Pad at 1842.9134 2115.1575
+--------------------------------------------------------------------------------
+                                 End of report
+--------------------------------------------------------------------------------
