@@ -12,7 +12,7 @@
           
           
           
-        <Column0>294</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>259</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
     <Build><ColumnWidth0>15</ColumnWidth0><ColumnWidth1>919</ColumnWidth1><ColumnWidth2>245</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build></Static>
     <Windows>
@@ -25,7 +25,7 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>BLE_Bridge</ExpandedNode><ExpandedNode>BLE_Bridge/APP</ExpandedNode><ExpandedNode>BLE_Bridge/HAL</ExpandedNode><ExpandedNode>BLE_Bridge/INCLUDE</ExpandedNode><ExpandedNode>BLE_Bridge/LIB</ExpandedNode><ExpandedNode>BLE_Bridge/NPI</ExpandedNode><ExpandedNode>BLE_Bridge/OSAL</ExpandedNode><ExpandedNode>BLE_Bridge/Output</ExpandedNode><ExpandedNode>BLE_Bridge/PROFILES</ExpandedNode><ExpandedNode>BLE_Bridge/PROFILES/devinfoservice.c</ExpandedNode><ExpandedNode>BLE_Bridge/TOOLS</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>BLE_Bridge</ExpandedNode><ExpandedNode>BLE_Bridge/APP</ExpandedNode><ExpandedNode>BLE_Bridge/LIB</ExpandedNode><ExpandedNode>BLE_Bridge/Output</ExpandedNode><ExpandedNode>BLE_Bridge/TOOLS</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
@@ -42,7 +42,7 @@
       
       
       
-    <Top><Row0><Sizes><Toolbar-023957f8><key>iaridepm.enu1</key></Toolbar-023957f8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>517</Bottom><Right>385</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>273973</sizeHorzCY><sizeVertCX>302344</sizeVertCX><sizeVertCY>710959</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>168</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>170</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>232877</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>273973</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-00a357f8><key>iaridepm.enu1</key></Toolbar-00a357f8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>307</Bottom><Right>350</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>273973</sizeHorzCY><sizeVertCX>275000</sizeVertCX><sizeVertCY>423288</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>378</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>380</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>520548</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>273973</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

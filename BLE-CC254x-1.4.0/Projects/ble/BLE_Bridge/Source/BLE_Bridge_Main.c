@@ -76,7 +76,30 @@ void MSA_Main_KeyCallback(uint8 keys, uint8 state);
 int main(void)
 {
   /* Initialize hardware */
-   HAL_BOARD_INIT();
+  //SensorTag : 
+  //			P0.0 : Tact Switch : S1
+  //			P0.1 : Gyro Interrupt
+  //			P0.2 : Acce Interrupt
+  //			P0.3 : Infra /DRDY 
+  //			P0.4 : LED2
+  //			P0.5 : just output
+  //			P0.6 : Magneto Interrupt
+  //            P0.7 : DCDC TPS62730 : ON/BYPASS
+  //            P1.0 : LED1
+  //            P1.1 : Gyro VDD
+  //            P1.2 : UART CTS 
+  //            P1.3 : UART RTS 
+  //            P1.4 : UART RX 
+  //            P1.5 : UART TX 
+  //			P1.6 : Tact Switch : S2
+  //			P1.7 : Tact Switch : S3
+  //			P2.0 : just output
+  //			P2.1 : Debugger DD
+  //			P2.2 : Debugger DC
+  //			P2.3 : XOSC32K_Q2 
+  //			P2.4 : XOSC32K_Q1 
+  // #define 으로 되어 있네... :-)
+  HAL_BOARD_INIT();
 
   // Initialize board I/O
   InitBoard( OB_COLD );
