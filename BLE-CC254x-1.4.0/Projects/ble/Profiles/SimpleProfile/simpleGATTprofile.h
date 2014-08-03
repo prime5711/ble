@@ -75,6 +75,7 @@ extern "C"
 
 // Length of Characteristic 5 in bytes
 #define SIMPLEPROFILE_CHAR5_LEN           5  
+#define SIMPLEPROFILE_CHAR3_LEN           20
 
 /*********************************************************************
  * TYPEDEFS

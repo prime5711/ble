@@ -150,7 +150,7 @@ static uint8 simpleProfileChar2UserDesp[17] = "Characteristic 2\0";
 static uint8 simpleProfileChar3Props = GATT_PROP_WRITE;
 
 // Characteristic 3 Value
-static uint8 simpleProfileChar3[SIMPLEPROFILE_CHAR3_LEN] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+static uint8 simpleProfileChar3 = 0;
 
 // Simple Profile Characteristic 3 User Description
 static uint8 simpleProfileChar3UserDesp[17] = "Characteristic 3\0";
@@ -257,7 +257,7 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
         { ATT_BT_UUID_SIZE, simpleProfilechar3UUID },
         GATT_PERMIT_WRITE, 
         0, 
-        simpleProfileChar3 
+        &simpleProfileChar3 
       },
 
       // Characteristic 3 User Description
@@ -454,9 +454,9 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
       break;
 
     case SIMPLEPROFILE_CHAR3:
-      if ( len == SIMPLEPROFILE_CHAR3_LEN ) 
+      if ( len == sizeof ( uint8 ) ) 
       {
-        VOID osal_memcpy( simpleProfileChar3, value, SIMPLEPROFILE_CHAR3_LEN );
+        simpleProfileChar3 = *((uint8*)value);
       }
       else
       {
@@ -526,7 +526,7 @@ bStatus_t SimpleProfile_GetParameter( uint8 param, void *value )
       break;      
 
     case SIMPLEPROFILE_CHAR3:
-      VOID osal_memcpy( value, simpleProfileChar3, SIMPLEPROFILE_CHAR3_LEN );
+      *((uint8*)value) = simpleProfileChar3;
       break;  
 
     case SIMPLEPROFILE_CHAR4:
@@ -653,6 +653,8 @@ static bStatus_t simpleProfile_WriteAttrCB( uint16 connHandle, gattAttribute_t *
     switch ( uuid )
     {
       case SIMPLEPROFILE_CHAR1_UUID:
+      case SIMPLEPROFILE_CHAR3_UUID:
+
         //Validate the value
         // Make sure it's not a blob oper
         if ( offset == 0 )
@@ -672,37 +674,19 @@ static bStatus_t simpleProfile_WriteAttrCB( uint16 connHandle, gattAttribute_t *
         {
           uint8 *pCurValue = (uint8 *)pAttr->pValue;        
           *pCurValue = pValue[0];
-          
-          notifyApp = SIMPLEPROFILE_CHAR1;
+
+          if( pAttr->pValue == &simpleProfileChar1 )
+          {
+            notifyApp = SIMPLEPROFILE_CHAR1;        
+          }
+          else
+          {
+            notifyApp = SIMPLEPROFILE_CHAR3;           
+          }
         }
              
         break;
-      case SIMPLEPROFILE_CHAR3_UUID:
-        //Validate the value
-        // Make sure it's not a blob oper
-        if ( offset == 0 )
-        {
-          if ( (len < 2) || (len > 20) ) //min = 2 for [len][data], max = max payload packet
-          {
-            status = ATT_ERR_INVALID_VALUE_SIZE;
-          }
-        }
-        else
-        {
-          status = ATT_ERR_ATTR_NOT_LONG;
-        }
-        
-        //Write the value
-        if ( status == SUCCESS )
-        {
-          uint8 *pCurValue = (uint8 *)pAttr->pValue;        
-          *pCurValue = pValue[0];
-          osal_memcpy(pCurValue, pValue, len);
-          
-          notifyApp = SIMPLEPROFILE_CHAR3;
-        }
-        
-        break;
+
       case GATT_CLIENT_CHAR_CFG_UUID:
         status = GATTServApp_ProcessCCCWriteReq( connHandle, pAttr, pValue, len,
                                                  offset, GATT_CLIENT_CFG_NOTIFY );
