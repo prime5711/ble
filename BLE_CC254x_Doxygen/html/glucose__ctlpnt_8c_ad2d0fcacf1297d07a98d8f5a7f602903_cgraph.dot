@@ -1,0 +1,9 @@
+digraph "glucoseCtlPntWrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="glucoseCtlPntWrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GATT_WriteCharValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_t_t___c_l_i_e_n_t___s_u_b___p_r_o_c_e_d_u_r_e___a_p_i.html#ga6e54905495daa3e3dfa5d5b7b40d8afb",tooltip="This sub-procedure is used to write a characteristic value to a server when the client knows the char..."];
+}

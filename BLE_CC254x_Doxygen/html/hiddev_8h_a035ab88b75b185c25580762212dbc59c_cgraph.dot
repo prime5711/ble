@@ -1,0 +1,21 @@
+digraph "HidDev_SetParameter"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HidDev_SetParameter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="osal_isbufset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a193791e8a2214bb1ad30b9c36579124a"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osal_memset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a7a416b7daf0407f6a1b92b71fc12847e"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GATT_Notification",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_t_t___s_e_r_v_e_r___s_u_b___p_r_o_c_e_d_u_r_e___a_p_i.html#gac61599736be6b39a5b18d3ef6eb7a45a",tooltip="This sub-procedure is used when a server is configured to notify a characteristic value to a client w..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GAPRole_TerminateConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_p_r_o_l_e_s___p_e_r_i_p_h_e_r_a_l___a_p_i.html#ga1e1ad911e721a59bf4746dba194fbb7d",tooltip="Terminates the existing connection. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="GAPBondMgr_SetParameter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_p_r_o_l_e_s___b_o_n_d_m_g_r___a_p_i.html#ga8c64e3dc3c38caafb72a9bb37c4b7b53",tooltip="Set a GAP Bond Manager parameter. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="osal_memcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#ab944e6de468a807639e215e24ed0ddbc"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GAP_SetParamValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_p___a_p_i.html#ga45fab6682fc253681d7abe697a4fc0b5",tooltip="Set a GAP Parameter value. Use this function to change the default GAP parameter values. "];
+}

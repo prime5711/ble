@@ -1,0 +1,12 @@
+digraph "USB_DESCRIPTOR_MARKER"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="USB_DESCRIPTOR_MARKER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pUsbDescLut\npUsbDescLutEnd" ,fontname="Helvetica"];
+  Node2 [label="DESC_LUT_INFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_e_s_c___l_u_t___i_n_f_o.html",tooltip="Look-up table entry for non-standard descriptor types (used with usbsrGetDescriptor) ..."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pUsbDblbufLut\npUsbDblbufLutEnd" ,fontname="Helvetica"];
+  Node3 [label="DBLBUF_LUT_INFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_b_l_b_u_f___l_u_t___i_n_f_o.html",tooltip="Look-up table for double-buffer settings. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pInterface" ,fontname="Helvetica"];
+  Node4 [label="USB_INTERFACE_DESCRIPTOR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r.html",tooltip="USB interface descriptor. "];
+}

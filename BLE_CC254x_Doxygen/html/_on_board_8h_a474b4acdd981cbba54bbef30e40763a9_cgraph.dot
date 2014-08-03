@@ -1,0 +1,24 @@
+digraph "OnBoard_KeyCallback"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OnBoard_KeyCallback",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OnBoard_SendKeys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_on_board_8c.html#a250c2de8210ecea78146672019432be4"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osal_msg_allocate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a5a38fb108f71515dc1ca4f8201ffd162"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="osal_mem_alloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l___memory_8c.html#ae5cbc213a1cab3be5f0963a4b75408c4"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="osal_memset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a7a416b7daf0407f6a1b92b71fc12847e"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="osal_msg_send",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#aa217e2be513d8b7d65d9922ad03ac2f3"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HalKeyConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__key_8h.html#a5d9fe95f032d61d3a33a5811a68c1fc9"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OnBoard_KeyCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_on_board_8c.html#a474b4acdd981cbba54bbef30e40763a9"];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

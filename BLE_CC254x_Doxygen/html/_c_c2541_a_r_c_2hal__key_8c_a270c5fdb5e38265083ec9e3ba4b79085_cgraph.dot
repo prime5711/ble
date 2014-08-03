@@ -1,0 +1,17 @@
+digraph "HalKeyRead"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HalKeyRead",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="halPowerUpShiftRegister",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__key_8c.html#a4fce708dad64427a644bc2c3eefe065c"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="halSleepWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__sleep_8h.html#a669643bbc3f6836567b3d1e87bbea557"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="halSetShiftRegisterData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__key_8c.html#a97c35e5fe125b3ee101a7028d6613ea5"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="halClockShiftRegister",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__key_8c.html#a9b97634e6579f0fa04320c6f29435aa3"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="halPowerDownShiftRegister",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__key_8c.html#ae15e06c62b34ffa596ebbf5d8eb2198d"];
+}

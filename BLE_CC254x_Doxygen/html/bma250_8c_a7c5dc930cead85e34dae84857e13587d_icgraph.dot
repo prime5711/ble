@@ -1,0 +1,23 @@
+digraph "spiWriteByte"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="spiWriteByte",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="accWriteReg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8h.html#a1765a9c388a773a08727bd2618634521",tooltip="Write one byte to a sensor register. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="accInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8h.html#a15c95e99316828a110bc75337365e4d6",tooltip="Initialize SPI interface and BMA250 accelerometer. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="accStop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8c.html#a55f592dc4883621354e871baab8d888e",tooltip="Sets the CMA3000-D01 accelerometer in Power Down mode. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="accReadReg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8h.html#a3a67b718f1ec46baffdd17835b2451f4",tooltip="Read one byte from a sensor register. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="accInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8c.html#a15c95e99316828a110bc75337365e4d6",tooltip="Initialize SPI interface and CMA3000-D01 accelerometer. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="accReadAcc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8c.html#a97e030c6ae5e38fceb34c7be490b826c",tooltip="Read x, y and z acceleration data. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="accReadAcc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8h.html#a97e030c6ae5e38fceb34c7be490b826c",tooltip="Read x, y and z acceleration data. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="accReadAcc16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bma250_8h.html#a20207c53ef65b4bd2f8d179e44b80674"];
+}

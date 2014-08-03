@@ -1,0 +1,13 @@
+digraph "usbcrHookProcessOut"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="usbcrHookProcessOut",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="usbcrSetReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__class__requests_8c.html#a205eb81614d8a2e02ffd6834682eb449"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="usbcrSetProtocol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__class__requests_8c.html#abe4c122a138da37c01f822e15d9a3f80"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="usbcrSetIdle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__class__requests_8c.html#a314983f738431cd56bb0ac6460f45390"];
+}

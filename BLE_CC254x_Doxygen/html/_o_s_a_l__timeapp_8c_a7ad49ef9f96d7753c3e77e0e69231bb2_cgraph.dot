@@ -1,0 +1,37 @@
+digraph "osalInitTasks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="osalInitTasks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="osal_mem_alloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l___memory_8c.html#ae5cbc213a1cab3be5f0963a4b75408c4"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osal_memset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a7a416b7daf0407f6a1b92b71fc12847e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LL_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ll_8h.html#a11a0823bf0185b6b6ec735fd1b4931ef"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Hal_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$common_2hal__drivers_8c.html#ad92a6736973d6d3424450a8b51a98e07"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HCI_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hci__tl_8h.html#af1ad4d1a6185a69d0137298b5f177f73"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="osal_CbTimerInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osal__cbtimer_8c.html#a56e3b0a7d97d62d978d19ccab28e1cb0"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="L2CAP_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$l2cap_8h.html#a7349815058a63eaebf0189cb989cad7d"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="GAP_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gap_8h.html#a1ada34c4c42e58cf6519a1217853b95c"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="GATT_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gatt_8h.html#af5204bbdc809eca6c0e4730017b1a7aa"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SM_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sm_8h.html#a6ac56a994477267e2c05240b7502615f"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="GAPRole_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$broadcaster_8c.html#a130c5e67ee156f2248d8d71bd995050e"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="GAPBondMgr_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gapbondmgr_8h.html#a673d2c847a9a8d29d0c94c711c1a545f"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="GATTServApp_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gattservapp_8h.html#ac5fd979a3c4cf21212d751f9d6e9ddbb"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="TimeApp_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_blood_pressure_2_source_2timeapp_8h.html#ac830c8be9733f1848064b98be9bdc144"];
+}

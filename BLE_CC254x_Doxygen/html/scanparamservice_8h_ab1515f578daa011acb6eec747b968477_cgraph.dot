@@ -1,0 +1,11 @@
+digraph "ScanParam_AddService"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ScanParam_AddService",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GATTServApp_InitCharCfg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_t_t___s_e_r_v___a_p_p___a_p_i.html#gaa547859c48b173ca305804106db58a5c",tooltip="Initialize the client characteristic configuration table. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GATTServApp_RegisterService",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_t_t___s_e_r_v___a_p_p___a_p_i.html#gad7307aa233319061ec29184e4b3caf80",tooltip="Register a service&#39;s attribute list and callback functions with the GATT Server Application. "];
+}

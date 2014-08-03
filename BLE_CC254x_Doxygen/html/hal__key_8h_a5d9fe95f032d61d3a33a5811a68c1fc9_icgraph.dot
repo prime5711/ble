@@ -1,0 +1,23 @@
+digraph "HalKeyConfig"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HalKeyConfig",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="InitBoard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_on_board_8h.html#a254d58370d6c9488ac3e497115c1c7e3"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_b_l_e___bridge___main_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OnBoard_KeyCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_on_board_8h.html#a474b4acdd981cbba54bbef30e40763a9"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HidAdvRemote_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hid_adv_remote_8h.html#a9214b13e8b16b75583726016c869ff23"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="osalInitTasks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l__hid_adv_remote_8c.html#a7ad49ef9f96d7753c3e77e0e69231bb2"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HidAdvRemote_ProcessEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hid_adv_remote_8h.html#ab3e79eb7426732f35aaf528d8220ece4"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_host_test___main_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+}

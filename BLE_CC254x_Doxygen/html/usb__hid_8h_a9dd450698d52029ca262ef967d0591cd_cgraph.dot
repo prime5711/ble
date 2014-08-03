@@ -1,0 +1,17 @@
+digraph "usbHidInit"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="usbHidInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="usbirqInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__interrupt.html#ga5180d284bc4704d1eeca0d5d2ecf59d5",tooltip="Initializes the USB Interrupt (usbirq) module. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="usbfwInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__framework.html#gaef6fccb6904e0053371f88b9160f9118",tooltip="Initializes the USB framework. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="usbdpGetConfigurationDesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga8ebd0fb9a85c4c5061775389002b38b2",tooltip="Locates a configuration descriptor. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="usbdpInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga969fb908864bc605f3f2e63b07c4c49a",tooltip="Initializes a search. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="usbdpFindNext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga77b5056793751a52435cc5ef58faf7db",tooltip="Locates the descriptor of the wanted type. "];
+}

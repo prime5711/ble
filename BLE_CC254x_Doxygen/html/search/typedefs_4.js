@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['halaccelcback_5ft',['halAccelCBack_t',['../hal__accel_8h.html#af0513a9c365104d33b97cf1bde47ab09',1,'hal_accel.h']]],
+  ['halbuzzercback_5ft',['halBuzzerCBack_t',['../hal__buzzer_8h.html#a59ecd9b203b62000065efe3d365ba611',1,'hal_buzzer.h']]],
+  ['haldataalign_5ft',['halDataAlign_t',['../group___h_a_l___t_y_p_e_s.html#gab8c6de182e86f2692bfffb6df6f3003a',1,'halDataAlign_t():&#160;hal_types.h'],['../group___h_a_l___t_y_p_e_s.html#gab8c6de182e86f2692bfffb6df6f3003a',1,'halDataAlign_t():&#160;hal_types.h'],['../group___h_a_l___t_y_p_e_s.html#gab8c6de182e86f2692bfffb6df6f3003a',1,'halDataAlign_t():&#160;hal_types.h'],['../group___h_a_l___t_y_p_e_s.html#gab8c6de182e86f2692bfffb6df6f3003a',1,'halDataAlign_t():&#160;hal_types.h'],['../_projects_2ble_2util_2_u_b_l_2soc__8051_2usb__msd_2hal_2hal__types_8h.html#ab8c6de182e86f2692bfffb6df6f3003a',1,'halDataAlign_t():&#160;hal_types.h']]],
+  ['halgyroenablecback_5ft',['halGyroEnableCback_t',['../_c_c2541_a_r_c_2hal__gyro_8h.html#a5ae6e809d13ba6e31193d8aa236b2150',1,'hal_gyro.h']]],
+  ['halintstate_5ft',['halIntState_t',['../_components_2hal_2target_2_c_c2540_e_b_2hal__mcu_8h.html#aa5f86dcfd0556c9e2ab211ebd9ce29a0',1,'halIntState_t():&#160;hal_mcu.h'],['../_components_2hal_2target_2_c_c2540_u_s_b_2hal__mcu_8h.html#aa5f86dcfd0556c9e2ab211ebd9ce29a0',1,'halIntState_t():&#160;hal_mcu.h'],['../_components_2hal_2target_2_c_c2541_a_r_c_2hal__mcu_8h.html#aa5f86dcfd0556c9e2ab211ebd9ce29a0',1,'halIntState_t():&#160;hal_mcu.h'],['../_components_2hal_2target_2_c_c2541_s_t_2hal__mcu_8h.html#aa5f86dcfd0556c9e2ab211ebd9ce29a0',1,'halIntState_t():&#160;hal_mcu.h'],['../_projects_2ble_2util_2_u_b_l_2soc__8051_2usb__msd_2hal_2hal__mcu_8h.html#aa5f86dcfd0556c9e2ab211ebd9ce29a0',1,'halIntState_t():&#160;hal_mcu.h']]],
+  ['halkeycback_5ft',['halKeyCBack_t',['../hal__key_8h.html#a16d1f432793e2f7e60c773d5dc9c89cf',1,'halKeyCBack_t():&#160;hal_key.h'],['../hal__keys_8h.html#a16d1f432793e2f7e60c773d5dc9c89cf',1,'halKeyCBack_t():&#160;hal_keys.h']]],
+  ['halmotioncalcback_5ft',['halMotionCalCBack_t',['../hal__motion_8h.html#a03798879b5588919e299a98e47e21461',1,'hal_motion.h']]],
+  ['halmotioncback_5ft',['halMotionCBack_t',['../hal__motion_8h.html#a144b072e139caa796ad53a0787266aa2',1,'hal_motion.h']]],
+  ['halmotiondevice_5ft',['halMotionDevice_t',['../hal__motion_8h.html#a1614f243afff19be0b41b77cc9b6877d',1,'hal_motion.h']]],
+  ['halmotionmouseresolution_5ft',['halMotionMouseResolution_t',['../hal__motion_8h.html#a00f58e1f3c64304acedd392296279799',1,'hal_motion.h']]],
+  ['halmotionstate_5ft',['halMotionState_t',['../hal__motion_8c.html#a32caa117bf75341bce651a1ca8445cf3',1,'hal_motion.c']]],
+  ['haltimercback_5ft',['halTimerCBack_t',['../hal__timer_8h.html#a166565838bf194e4f47eaba1971458d1',1,'hal_timer.h']]],
+  ['haluartcback_5ft',['halUARTCBack_t',['../hal__uart_8h.html#a29902a30360c4785f4ca5b6f111776cc',1,'hal_uart.h']]],
+  ['haractionfn_5ft',['harActionFn_t',['../hid_adv_remote_8c.html#afa78ad686292e7d42df32c7beb16dd50',1,'hidAdvRemote.c']]],
+  ['hcistatus_5ft',['hciStatus_t',['../hci_8h.html#a160d48a9feb9427468f8b9162227da59',1,'hci.h']]],
+  ['heartrateservicecb_5ft',['heartRateServiceCB_t',['../heartrateservice_8h.html#a1e43a652b9c49c72695be0c403d35829',1,'heartrateservice.h']]],
+  ['hiddevevtcb_5ft',['hidDevEvtCB_t',['../hiddev_8h.html#a18a84f1c54c85ae8f7bef2254a9234b3',1,'hiddev.h']]],
+  ['hiddevpasscodecb_5ft',['hidDevPasscodeCB_t',['../hiddev_8h.html#a0617be380a72278c936c47f7c542fb34',1,'hiddev.h']]],
+  ['hiddevreportcb_5ft',['hidDevReportCB_t',['../hiddev_8h.html#a7a36a4690eb60959c1d409f718003741',1,'hiddev.h']]]
+];

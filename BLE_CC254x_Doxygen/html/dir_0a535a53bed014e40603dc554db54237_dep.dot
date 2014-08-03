@@ -1,0 +1,9 @@
+digraph "C:/Work.git/ble/BLE-CC254x-1.4.0/Projects/ble/util/BEM/app" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4afee227a0d3391f1baac6e5d3e864d7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BEM" fontname="Helvetica", fontsize="10", URL="dir_4afee227a0d3391f1baac6e5d3e864d7.html"]
+  dir_0a535a53bed014e40603dc554db54237 [shape=box, label="app", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0a535a53bed014e40603dc554db54237.html"];
+  }
+}

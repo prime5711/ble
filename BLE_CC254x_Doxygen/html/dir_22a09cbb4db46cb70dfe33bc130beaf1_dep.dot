@@ -1,0 +1,19 @@
+digraph "C:/Work.git/ble/BLE-CC254x-1.4.0/Components/osal/common" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_781362c2f1976cc08ba92fa142a04878 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="osal" fontname="Helvetica", fontsize="10", URL="dir_781362c2f1976cc08ba92fa142a04878.html"]
+  dir_22a09cbb4db46cb70dfe33bc130beaf1 [shape=box, label="common", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_22a09cbb4db46cb70dfe33bc130beaf1.html"];
+  }
+  dir_cee72f2caaa4e11cc73a20c481630d7d [shape=box label="hal" fillcolor="white" style="filled" color="red" URL="dir_cee72f2caaa4e11cc73a20c481630d7d.html"];
+  dir_81f75ff50ab9f0dc2b2eac8f3c524d33 [shape=box label="include" URL="dir_81f75ff50ab9f0dc2b2eac8f3c524d33.html"];
+  dir_a290a1bf70da03a008194e36703a796c [shape=box label="Projects" fillcolor="white" style="filled" color="red" URL="dir_a290a1bf70da03a008194e36703a796c.html"];
+  dir_cee72f2caaa4e11cc73a20c481630d7d->dir_81f75ff50ab9f0dc2b2eac8f3c524d33 [headlabel="47", labeldistance=1.5 headhref="dir_000008_000036.html"];
+  dir_cee72f2caaa4e11cc73a20c481630d7d->dir_a290a1bf70da03a008194e36703a796c [headlabel="2", labeldistance=1.5 headhref="dir_000008_000014.html"];
+  dir_22a09cbb4db46cb70dfe33bc130beaf1->dir_cee72f2caaa4e11cc73a20c481630d7d [headlabel="2", labeldistance=1.5 headhref="dir_000035_000008.html"];
+  dir_22a09cbb4db46cb70dfe33bc130beaf1->dir_81f75ff50ab9f0dc2b2eac8f3c524d33 [headlabel="25", labeldistance=1.5 headhref="dir_000035_000036.html"];
+  dir_22a09cbb4db46cb70dfe33bc130beaf1->dir_a290a1bf70da03a008194e36703a796c [headlabel="6", labeldistance=1.5 headhref="dir_000035_000014.html"];
+  dir_a290a1bf70da03a008194e36703a796c->dir_cee72f2caaa4e11cc73a20c481630d7d [headlabel="168", labeldistance=1.5 headhref="dir_000014_000008.html"];
+  dir_a290a1bf70da03a008194e36703a796c->dir_81f75ff50ab9f0dc2b2eac8f3c524d33 [headlabel="230", labeldistance=1.5 headhref="dir_000014_000036.html"];
+}

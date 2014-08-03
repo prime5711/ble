@@ -1,0 +1,18 @@
+digraph "usbsrSetConfiguration"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="usbsrSetConfiguration",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="usbsrHookProcessEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__standard__requests.html#ga0e14090806b511ff54b95ba67a11d261",tooltip="Hook which is called upon a standard request generated event (unsupported). "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="usbdpGetConfigurationDesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga8ebd0fb9a85c4c5061775389002b38b2",tooltip="Locates a configuration descriptor. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="usbdpInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga969fb908864bc605f3f2e63b07c4c49a",tooltip="Initializes a search. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="usbdpFindNext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__descriptor__parser.html#ga77b5056793751a52435cc5ef58faf7db",tooltip="Locates the descriptor of the wanted type. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="usbfwSetAllEpStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__framework.html#ga080d657f68dc3776d320050bd8bfe66a",tooltip="Changes the state of endpoint 1-5 IN/OUT. "];
+}

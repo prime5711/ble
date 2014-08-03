@@ -1,0 +1,37 @@
+digraph "halSleep"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="halSleep",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LL_TimeToNextRfEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ll__sleep_8h.html#a74ae94e23c13e390044c523d6eee02bf"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="halSleepReadTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2540_e_b_2hal__sleep_8c.html#a1bfeb38613f33fe08b07895720e92fd7"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LL_PowerOffReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ll__sleep_8h.html#af6c7718dd3a18e0c4d17ec2ececf0f90"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HalKeyEnterSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__key_8h.html#aecee6759ec59bfb069e5035c2ae52994"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HalLedEnterSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__led_8h.html#a99e17d57bb426875323edc26b5d5705b"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="halSleepSetTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2540_e_b_2hal__sleep_8c.html#a606fe092c51fe2124a5623fb330fcb8c"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LL_PowerOnReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ll__sleep_8h.html#ad60d8c1d5b50465046f2af62d82a2f55"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="HalLedExitSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__led_8h.html#a4eddae7ca4a2d658ac47b90b9f86681a"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HalLedUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$common_2hal__drivers_8c.html#a21cee406a3e6b1bbde15370de9dbaa40"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="HalKeyExitSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__key_8h.html#a1d9ddac80cf76284bed4f956bd769e79"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="halDriverBegPM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$target_2_c_c2541_a_r_c_2hal__drivers_8c.html#a6a4ebd9569565e5f93796e7cc77ba039"];
+  Node12 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="halDriverEndPM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$target_2_c_c2541_a_r_c_2hal__drivers_8c.html#aa488902220c5ce8cdad086857e75bb26"];
+  Node13 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="HalI2CDisable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_s_t_2hal__i2c_8c.html#ae5bbbdcfedf1cd398d2e850f19958710"];
+}

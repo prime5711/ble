@@ -1,0 +1,17 @@
+digraph "osalTimeUpdate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="osalTimeUpdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="halProcessKeyInterrupt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__keys_8h.html#af09dae68192c09e70f20ffe228c5f336"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HAL_ISR_FUNCTION",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__key_8c.html#a24ab650892fd60b78d67be803853d04b"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="osal_run_system",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8h.html#a82425dadb026a04ec77d236d280323c3"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="osal_start_system",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8h.html#aae899a0a7f8861e6ef60abcebfca1f3f"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_b_l_e___bridge___main_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+}

@@ -1,0 +1,32 @@
+digraph "HalMotionI2cWrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HalMotionI2cWrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HalAccelEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__accel_8h.html#a54863e89c0201a0a12a90da89a7e18d1"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HalAccelDisable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__accel_8h.html#a4c2c4fca33d779fa1a39f4b2c3775525"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HalMotionDisable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__motion_8h.html#a420a53a90313f5d6dca723f18992c36f"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HidAdvRemote_ProcessEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hid_adv_remote_8h.html#ab3e79eb7426732f35aaf528d8220ece4"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HalAccelMotionDetect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__accel_8h.html#a799c92b040ec557e281aee30bea1c02d"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HalMotionStandby",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__motion_8h.html#ae45bb3b20065623871a0f393f3089eb9"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HalGyroHandleGyroRegister\lAccessReadyEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__gyro_8h.html#ad0d2b901ab948468fb13c98a117c10aa"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Hal_ProcessEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$target_2_c_c2541_a_r_c_2hal__drivers_8c.html#a79b4f6366ce2cb4418656956d6d5d57d"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HalGyroEnableI2CPassThru",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__gyro_8h.html#a530c258e2c4899fa6830ecd168c5cb62"];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="HalGyroDisableI2CPassThru",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__gyro_8h.html#a74c355be5217329512e657689d015195"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="HalGyroStartGyroMeasurements",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2541_a_r_c_2hal__gyro_8h.html#a7cb7e9fbc122869123a9d553c52fb649"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,11 @@
+digraph "HalLedUpdate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HalLedUpdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Hal_ProcessEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$target_2_c_c2541_a_r_c_2hal__drivers_8h.html#a79b4f6366ce2cb4418656956d6d5d57d"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HalLedExitSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_c_c2540_e_b_2hal__led_8c.html#a4eddae7ca4a2d658ac47b90b9f86681a"];
+}

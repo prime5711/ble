@@ -1,0 +1,11 @@
+digraph "accWriteReg"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="accWriteReg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="accInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8h.html#a15c95e99316828a110bc75337365e4d6",tooltip="Initialize SPI interface and BMA250 accelerometer. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="accStop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cma3000d_8c.html#a55f592dc4883621354e871baab8d888e",tooltip="Sets the CMA3000-D01 accelerometer in Power Down mode. "];
+}

@@ -1,0 +1,23 @@
+digraph "RunningService_ProcessEvent"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RunningService_ProcessEvent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="osal_msg_receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a34936edcc99cd896c28aa0f0b3a91313"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osal_set_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a67e62da8a1085ffe8f6a06c88736666a"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="osal_clear_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a5c6610c6d28ec216738ad85007becda7"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="osal_msg_extract",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a568bb70f04b8fba4a5e8764d56bca014"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="osal_msg_deallocate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#ae0cf82bd9ec6d0a064e3aba72478ccf1"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="osal_mem_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l___memory_8c.html#a56201dc39c693c759d1ce0812b6b0eef"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="osal_memset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8c.html#a7a416b7daf0407f6a1b92b71fc12847e"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="GATT_Indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_a_t_t___s_e_r_v_e_r___s_u_b___p_r_o_c_e_d_u_r_e___a_p_i.html#gadaadba59a7d29ede06abc3b30bec89ad",tooltip="This sub-procedure is used when a server is configured to indicate a characteristic value to a client..."];
+}

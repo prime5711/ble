@@ -1,0 +1,21 @@
+digraph "usbdpGetInterfaceDesc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="usbdpGetInterfaceDesc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="usbsrSetInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__standard__requests.html#ga2a7f7c8d79ed7d5551b9dc60bd1f605d",tooltip="Processes the SET_INTERFACE request (selects an alternate setting for the specified interface) ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="usbfwSetupHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__framework.html#gae52e7cdc318b2ea8e2a13503843a3858",tooltip="USB Setup Handler. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="usbHidProcessEvents",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__hid_8h.html#a9a1804712272bfd3901ac9a60338e878"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Hal_ProcessPoll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$target_2_c_c2541_a_r_c_2hal__drivers_8h.html#a2162ec829720c485ca769daa276a5f2e"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="osal_run_system",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8h.html#a82425dadb026a04ec77d236d280323c3"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="osal_start_system",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_a_l_8h.html#aae899a0a7f8861e6ef60abcebfca1f3f"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_b_l_e___bridge___main_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+}

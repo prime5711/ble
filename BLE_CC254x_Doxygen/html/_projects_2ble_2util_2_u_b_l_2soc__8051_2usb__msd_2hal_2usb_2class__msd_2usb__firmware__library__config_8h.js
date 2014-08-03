@@ -1,0 +1,5 @@
+var _projects_2ble_2util_2_u_b_l_2soc__8051_2usb__msd_2hal_2usb_2class__msd_2usb__firmware__library__config_8h =
+[
+    [ "USB_SETUP_MAX_NUMBER_OF_INTERFACES", "_projects_2ble_2util_2_u_b_l_2soc__8051_2usb__msd_2hal_2usb_2class__msd_2usb__firmware__library__config_8h.html#a5ed9c19cad3a4e62f8f1d72cd17e72b5", null ],
+    [ "USBFIRMWARELIBRARYCONFIG_H", "_projects_2ble_2util_2_u_b_l_2soc__8051_2usb__msd_2hal_2usb_2class__msd_2usb__firmware__library__config_8h.html#a8ca885c780f2feac100bf5997fe97dac", null ]
+];

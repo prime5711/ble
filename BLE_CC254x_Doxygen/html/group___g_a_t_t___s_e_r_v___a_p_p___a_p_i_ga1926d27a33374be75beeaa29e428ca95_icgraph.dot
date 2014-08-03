@@ -1,0 +1,31 @@
+digraph "GATTServApp_ReadCharCfg"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GATTServApp_ReadCharCfg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BloodPressure_MeasIndicate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bpservice_8h.html#adaf6dfa20613650ebe05eb9751a8ee55"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BloodPressure_IMeasNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bpservice_8h.html#a7a628b79c06dc722bd192bdac55aa55a"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Cycling_MeasNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cyclingservice_8h.html#a7f4ee903e847f9ede16a9a887eb5df54"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Glucose_MeasSend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glucservice_8h.html#ade83ad60a6dfc80e8f0b1d6e6927105e"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Glucose_ContextSend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glucservice_8h.html#a7154fbdea878f45cff3b45a2580b4f31"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Glucose_CtlPntIndicate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$glucservice_8h.html#acb450d317c0fac741b100eb3161579d1"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HeartRate_MeasNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$heartrateservice_8h.html#aa4afdf4537b230388211813cafa7766b"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Running_MeasNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$runningservice_8h.html#a964b0ed666f0d678bac113ec998b4861"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ScanParam_RefreshNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$scanparamservice_8h.html#a269b699d45011ef6345dd1de25ea89f2"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Thermometer_TempIndicate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$thermometerservice_8h.html#aa7a49ad9ff16086f8ef4ef3bc8061cf2"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Thermometer_IntervalIndicate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$thermometerservice_8h.html#a502ecf9561615429e484b9b1fbd01d5f"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Thermometer_IMeasNotify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$thermometerservice_8h.html#ae956673fb3b24906fcbd23ce709788e1"];
+}

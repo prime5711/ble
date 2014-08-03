@@ -1,0 +1,13 @@
+digraph "C:/Work.git/ble/BLE-CC254x-1.4.0/Components/services" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7a2b63247ca617f0e1ef727740be8a23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Components" fontname="Helvetica", fontsize="10", URL="dir_7a2b63247ca617f0e1ef727740be8a23.html"]
+  subgraph clusterdir_45b753ab84acb85b275eff3aa1710e33 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_45b753ab84acb85b275eff3aa1710e33.html"];
+    dir_45b753ab84acb85b275eff3aa1710e33 [shape=plaintext label="services"];
+    dir_ae0eedd0e739039d1a2e19fc9c2fa0fd [shape=box label="saddr" color="black" fillcolor="white" style="filled" URL="dir_ae0eedd0e739039d1a2e19fc9c2fa0fd.html"];
+  }
+  }
+}

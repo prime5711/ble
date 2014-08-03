@@ -1,0 +1,23 @@
+digraph "C:/Work.git/ble/BLE-CC254x-1.4.0/Components/hal/target/CC2540USB/usb/class_hid/usb_firmware_library_config.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_firmware_library\l_config.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_firmware_library\l_headers.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_components_2hal_2target_2_c_c2540_u_s_b_2usb_2class__hid_2usb__firmware__library__headers_8h.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_firmware_library\l_config.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class__hid_2usb__firmware__library__config_8c.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_hid.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__hid_8c.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_hid_hooks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__hid__hooks_8c.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_hid_reports.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__hid__reports_8c.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2540USB/usb\l/class_hid/usb_hid.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usb__hid_8h.html"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Projects\l/ble/HIDAdvRemoteDongle\l/Source/hidapp.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hidapp_8c.html"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Projects\l/ble/HIDAdvRemoteDongle\l/Source/Hidapp_Main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_hidapp___main_8c.html"];
+}
