@@ -150,7 +150,7 @@
         </option>
         <option>
           <name>RTLibraryPath</name>
-          <state>$TOOLKIT_DIR$\LIB\CLIB\cl-pli-bsid-1e16x01.r51</state>
+          <state>$TOOLKIT_DIR$\LIB\CLIB\cl-pli-blxd-1e16x01.r51</state>
         </option>
         <option>
           <name>Input variant</name>
@@ -180,7 +180,7 @@
         </option>
         <option>
           <name>General Idata Stack Size</name>
-          <state>0xB0</state>
+          <state>0xC0</state>
         </option>
         <option>
           <name>General Pdata Stack Size</name>
@@ -1264,7 +1264,7 @@
         </option>
         <option>
           <name>General Idata Stack Size</name>
-          <state>0xC0</state>
+          <state>0xB0</state>
         </option>
         <option>
           <name>General Pdata Stack Size</name>

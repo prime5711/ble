@@ -271,6 +271,7 @@ uint16 Hal_ProcessEvent( uint8 task_id, uint16 events )
 void Hal_ProcessPoll ()
 {
 #if defined( POWER_SAVING )
+  //BLE_Bridge에서는 POWER_SAVING하지 않는다.
   /* Allow sleep before the next OSAL event loop */
   ALLOW_SLEEP_MODE();
 #endif
