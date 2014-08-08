@@ -1,0 +1,13 @@
+##        01234567890123456789012345678901
+#FullName=삼천갑자동방석이거북이와ch두루미
+#       =01234567890123456789012345678901
+#FullName=김면정_여자심수한무거_북이와두루미야
+#       =01234567890123456789012345678901
+FullName=abcdefghijklmnopqrstuvwxyzABCDEFG
+#FullName=محمد علي  محمد عليda
+gender=Female
+birth_year=1975
+birth_month=10
+birth_day=30
+height=170
+init=1

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm rfid_card_info_write 
+#rm rfid_process 
+
+gcc -o rfid_card_info_write  rfid_card_info_write.c
+#gcc -o rfid_process  rfid_process.c
+
+ls -alg rfid_card_info_write 
+#ls -alg rfid_process 

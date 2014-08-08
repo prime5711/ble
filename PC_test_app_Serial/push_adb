@@ -1,0 +1,3 @@
+adb push ../../Virtualbox_Share/a.out                    /data/a.out
+adb push ../../Virtualbox_Share/file_creation_notify     /data/file_creation_notify
+adb push ../../Virtualbox_Share/file_status_change_test  /data/file_status_change_test
