@@ -1,9 +1,0 @@
-digraph "hidSendHidInReport"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="hidSendHidInReport",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="usbfwWriteFifo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__module__usb__framework.html#gae93a47820bc82b605c021772b9803e63",tooltip="Writes to the selected IN endpoint FIFO, without using DMA. "];
-}

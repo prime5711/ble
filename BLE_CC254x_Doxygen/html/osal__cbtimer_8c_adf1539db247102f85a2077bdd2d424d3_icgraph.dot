@@ -1,9 +1,0 @@
-digraph "osal_CbTimerStart"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="osal_CbTimerStart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="GAPCentralRole_StartRssi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_e_n_t_r_a_l___p_r_o_f_i_l_e___a_p_i.html#ga70c62eff77092a47c8b261e49e2d4bec",tooltip="Start periodic RSSI reads on a link. "];
-}

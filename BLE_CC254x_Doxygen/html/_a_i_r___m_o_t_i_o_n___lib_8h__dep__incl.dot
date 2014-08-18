@@ -1,8 +1,0 @@
-digraph "C:/Work.git/ble/BLE-CC254x-1.4.0/Components/hal/target/CC2541ARC/AIR_MOTION_Lib.h"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2541ARC/AIR\l_MOTION_Lib.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="C:/Work.git/ble/BLE\l-CC254x-1.4.0/Components\l/hal/target/CC2541ARC/hal\l_motion.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hal__motion_8c.html"];
-}
