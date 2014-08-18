@@ -43,6 +43,9 @@
 #error "Chip not supported!"
 #endif
 
+#include <stdio.h>
+#include <string.h>
+
 
 /***********************************************************************************
 * CONSTANTS
@@ -56,8 +59,8 @@
 #define UART_TEST_DATA "Texas Instruments LPRF!"
 
 // Test definitions.
-//	#define UART_TST_MODE_RX
-#define UART_TST_MODE_TX
+#define UART_TST_MODE_RX
+//  #define UART_TST_MODE_TX
 
 // Baudrate = 57.6 kbps (U0BAUD.BAUD_M = 216, U0GCR.BAUD_E = 10), given 32 MHz system clock.
 #define UART_BAUD_M  216
@@ -72,6 +75,7 @@
 // Buffer+index for UART RX/TX.
 static uint8 __xdata uartRxBuffer[SIZE_OF_UART_RX_BUFFER];
 static uint8 __xdata uartTxBuffer[SIZE_OF_UART_TX_BUFFER] = UART_TEST_DATA;
+static uint16 __xdata uartRxIndex;
 
 
 // Variable for UART packet monitoring.
@@ -103,6 +107,7 @@ void uart0StartTxDmaChan( DMA_DESC *uartDmaTxDescr,
 *
 * @return      void
 */
+static int count = 0 ;
 void main (void)
 {
     /****************************************************************************
@@ -220,12 +225,17 @@ void main (void)
         {
             uartPktReceived = 0;
             uart0StartRxDmaChan(&uartDmaRxTxCh[0], 0, uartRxBuffer, SIZE_OF_UART_RX_BUFFER);
+            uart0StartTxDmaChan(&uartDmaRxTxCh[1], 1, uartRxBuffer, SIZE_OF_UART_RX_BUFFER);
         }
 #else
         // Start UART TX when S1 pressed.
         if (P0 & BIT1)
         {
             halMcuWaitMs(200);      // Button debouncing delay.
+			memset(uartTxBuffer,0, sizeof(uartTxBuffer));
+			sprintf(uartTxBuffer,"(%4d):%s\r\n",count++,UART_TEST_DATA);
+			if( count == 10000 ) 
+				count = 0 ;
             uart0StartTxDmaChan(&uartDmaRxTxCh[1], 1, uartTxBuffer, SIZE_OF_UART_TX_BUFFER);
         }
 #endif
@@ -411,8 +421,18 @@ __interrupt void DMA_ISR(void)
     // Start a new UART RX session on DMA channel 1:
     if (DMAIRQ & DMAIRQ_DMAIF0)
     {
-        // Indicate UART packet received (monitored by main-loop for data integrity/error check.
-        uartPktReceived = 1;
+	    // Read UART0 RX buffer.
+	    uartRxBuffer[uartRxIndex++] = U0DBUF;
+	
+	    // If all UART data received, stop this UART RX session.
+	    if (uartRxIndex >= SIZE_OF_UART_RX_BUFFER)
+	    {
+	        uartRxIndex = 0;
+	        uartPktReceived = 1;
+	    }
+
+//          // Indicate UART packet received (monitored by main-loop for data integrity/error check.
+//          uartPktReceived = 1;
 
         // Clear DMA Channel 0 Interrupt Request Flag (DMAIRQ.DMAIF0 = 0).
         DMAIRQ = ~DMAIRQ_DMAIF0;
@@ -453,7 +473,7 @@ __interrupt void DMA_ISR(void)
   its documentation for any purpose.
 
   YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
-  PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+  PROVIDED ?AS IS? WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
   INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
   NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
   TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,

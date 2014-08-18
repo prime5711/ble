@@ -110,6 +110,7 @@ void Hal_Init( uint8 task_id )
  **************************************************************************************************/
 void HalDriverInit (void)
 {
+//shcho here
   /* TIMER */
 #if (defined HAL_TIMER) && (HAL_TIMER == TRUE)
 #endif
@@ -152,6 +153,7 @@ void HalDriverInit (void)
   
   /* SPI */
 #if (defined HAL_SPI) && (HAL_SPI == TRUE)
+sdfasdfas
   HalSpiInit();
 #endif
 

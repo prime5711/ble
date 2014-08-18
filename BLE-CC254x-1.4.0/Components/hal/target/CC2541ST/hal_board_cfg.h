@@ -253,6 +253,7 @@
 
 #define HAL_BOARD_INIT()                                         \
 {                                                                \
+	dfasdf
    /* Set to 16Mhz to set 32kHz OSC, then back to 32MHz */       \
   START_HSOSC_XOSC();                                            \
   SET_OSC_TO_HSOSC();                                            \

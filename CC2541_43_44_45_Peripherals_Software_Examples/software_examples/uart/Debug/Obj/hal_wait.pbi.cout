@@ -1,18 +1,18 @@
-"C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components\hal_wait.c"
+"C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components\hal_wait.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
+C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
 -I
-C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
+C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc\clib
 -I
-C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
+C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
 -I
-C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
+C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
 -Dchip=2541
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
@@ -288,7 +288,7 @@ C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\soft
 -D__CM_FAR__=3
 -D__CM_NEAR__=1
 -D__CM_TINY__=0
--D__CODE_MODEL__=1
+-D__CODE_MODEL__=2
 -D__CONSTANT_LOCATION__=0
 -D__CORE_EXTENDED1__=2
 -D__CORE_EXTENDED2__=3
@@ -308,8 +308,8 @@ C:\Work.git\ble\Ti_BLE_Source\CC2541_43_44_45_Peripherals_Software_Examples\soft
 -D__PLAIN_INT_BITFIELD_IS_SIGNED__=1
 -D__HAS_LOCATED_DECLARATION__=1
 -D__IAR_COMPILERBASE__=593409
--D__DATE__="Aug 13 2014"
--D__TIME__="04:20:13"
+-D__DATE__="Aug 18 2014"
+-D__TIME__="22:43:50"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1

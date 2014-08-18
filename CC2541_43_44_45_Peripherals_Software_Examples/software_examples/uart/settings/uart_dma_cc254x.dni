@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-1054944077
+Checksum=162861188
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -15,7 +15,8 @@ ShowArgs=0
 [Disassembly]
 MixedMode=1
 [Breakpoints]
-Count=0
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\source\uart_dma.c}.430.10" 1 0 0 0 "" 0 ""
+Count=1
 [ChipconEmu]
 Stop timers on halt=0
 Leave target running=1

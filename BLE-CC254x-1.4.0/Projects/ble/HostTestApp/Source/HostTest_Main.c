@@ -75,6 +75,7 @@ void MSA_Main_KeyCallback(uint8 keys, uint8 state);
 int main(void)
 {
   /* Initialize hardware */
+  // --> CC2541EB Project에서 CC2540EB/hal_board_cfg.h를 참조한다.
   HAL_BOARD_INIT();
 
   /* Initialze the HAL driver */
