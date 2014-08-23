@@ -102,7 +102,7 @@ void HalUARTInit(void)
   HalUARTInitDMA();
 #endif
 #if HAL_UART_ISR
-	asdfasdf
+  // ISR mode here
   HalUARTInitISR();
 #endif
 #if HAL_UART_SPI

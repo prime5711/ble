@@ -130,19 +130,19 @@ int main(void)
 
 //shcho add start==================================================================================================
 
-//    //shcho add from /c/Work.git/ble/CC2541_43_44_45_Peripherals_Software_Examples/software_examples
-//      /****************************************************************************
-//      * Clock setup
-//      * See basic software example "clk_xosc_cc254x"
-//      */
-//    
-//      // Set system clock source to HS XOSC, with no pre-scaling.
+  //shcho add from /c/Work.git/ble/CC2541_43_44_45_Peripherals_Software_Examples/software_examples
+    /****************************************************************************
+    * Clock setup
+    * See basic software example "clk_xosc_cc254x"
+    */
+  
+    // Set system clock source to HS XOSC, with no pre-scaling.
 //      CLKCONCMD = (CLKCONCMD & ~(CLKCON_OSC | CLKCON_CLKSPD)) | CLKCON_CLKSPD_32M;
 //      while (CLKCONSTA & CLKCON_OSC);   // Wait until clock source has changed.
-//  
-//     // Note the 32 kHz RCOSC starts calibrating, if not disabled.
-//    
-//  //shcho add end==================================================================================================
+
+   // Note the 32 kHz RCOSC starts calibrating, if not disabled.
+  
+//shcho add end==================================================================================================
 
   /* Initialze the HAL driver */
   HalDriverInit();
@@ -194,10 +194,10 @@ int main(void)
 //       
 //  //  #if (chip==2541 || chip==2543 || chip==2545)
 //      // Initialize P0_1 for SRF05EB S1 button
-//      P0SEL &= ~(BIT7 | BIT1) ;           // Function as General Purpose I/O
-//      P0DIR &= ~BIT1;           // Input
-//      P0DIR |= BIT7; // output
-//      P0_7 = 1; // Regulator Bypass mode
+    P0SEL &= ~(BIT7 | BIT1) ;           // Function as General Purpose I/O
+    P0DIR &= ~BIT1;           // Input
+    P0DIR |= BIT7; // output
+    P0_7 = 0; // Regulator Bypass mode
 //  //  #elif (chip==2544)
 //  //      // Initialize P0_1 for SRF05EB S1 button
 //  //      P0SEL0 &= ~P0SEL0_SELP0_1;// Function as General Purpose I/O
@@ -211,36 +211,36 @@ int main(void)
 //      */
 //  
 //      // Initialise bitrate = 57.6 kbps.
-//      U0BAUD = UART_BAUD_M;
-//      U0GCR = (U0GCR&~U0GCR_BAUD_E) | UART_BAUD_E;
-//  
-//      // Initialise UART protocol (start/stop bit, data bits, parity, etc.):
-//      // USART mode = UART (U0CSR.MODE = 1).
-//      U0CSR |= U0CSR_MODE;
-//  
-//      // Start bit level = low => Idle level = high  (U0UCR.START = 0).
-//      U0UCR &= ~U0UCR_START;
-//  
-//      // Stop bit level = high (U0UCR.STOP = 1).
-//      U0UCR |= U0UCR_STOP;
-//  
-//      // Number of stop bits = 1 (U0UCR.SPB = 0).
-//      U0UCR &= ~U0UCR_SPB;
-//  
-//      // Parity = disabled (U0UCR.PARITY = 0).
-//      U0UCR &= ~U0UCR_PARITY;
-//  
-//      // 9-bit data enable = 8 bits transfer (U0UCR.BIT9 = 0).
-//      U0UCR &= ~U0UCR_BIT9;
-//  
-//      // Level of bit 9 = 0 (U0UCR.D9 = 0), used when U0UCR.BIT9 = 1.
-//      // Level of bit 9 = 1 (U0UCR.D9 = 1), used when U0UCR.BIT9 = 1.
-//      // Parity = Even (U0UCR.D9 = 0), used when U0UCR.PARITY = 1.
-//      // Parity = Odd (U0UCR.D9 = 1), used when U0UCR.PARITY = 1.
-//      U0UCR &= ~U0UCR_D9;
-//  
-//      // Flow control = disabled (U0UCR.FLOW = 0).
-//      U0UCR &= ~U0UCR_FLOW;
+    U0BAUD = UART_BAUD_M;
+    U0GCR = (U0GCR&~U0GCR_BAUD_E) | UART_BAUD_E;
+
+    // Initialise UART protocol (start/stop bit, data bits, parity, etc.):
+    // USART mode = UART (U0CSR.MODE = 1).
+    U0CSR |= U0CSR_MODE;
+
+    // Start bit level = low => Idle level = high  (U0UCR.START = 0).
+    U0UCR &= ~U0UCR_START;
+
+    // Stop bit level = high (U0UCR.STOP = 1).
+    U0UCR |= U0UCR_STOP;
+
+    // Number of stop bits = 1 (U0UCR.SPB = 0).
+    U0UCR &= ~U0UCR_SPB;
+
+    // Parity = disabled (U0UCR.PARITY = 0).
+    U0UCR &= ~U0UCR_PARITY;
+
+    // 9-bit data enable = 8 bits transfer (U0UCR.BIT9 = 0).
+    U0UCR &= ~U0UCR_BIT9;
+
+    // Level of bit 9 = 0 (U0UCR.D9 = 0), used when U0UCR.BIT9 = 1.
+    // Level of bit 9 = 1 (U0UCR.D9 = 1), used when U0UCR.BIT9 = 1.
+    // Parity = Even (U0UCR.D9 = 0), used when U0UCR.PARITY = 1.
+    // Parity = Odd (U0UCR.D9 = 1), used when U0UCR.PARITY = 1.
+    U0UCR &= ~U0UCR_D9;
+
+    // Flow control = disabled (U0UCR.FLOW = 0).
+    U0UCR &= ~U0UCR_FLOW;
 //  
 //      // Bit order = LSB first (U0GCR.ORDER = 0).
 //      U0GCR &= ~U0GCR_ORDER;

@@ -1,4 +1,4 @@
-cscope 15 /cygdrive/c/Work.git/ble/BLE-CC254x-1.4.0/Projects/ble/HostTestApp/Source               0001264175
+cscope 15 /cygdrive/c/Work.git/ble/BLE-CC254x-1.4.0/Projects/ble/HostTestApp/Source               0001293075
 	@../../../../Components/ble/controller/include/ll.h
 
 45 #i‚de‡
@@ -34801,14 +34801,6 @@ FALSE
 HAL_ADC
 
 
-369 
-	#HAL_ADC
- 
-TRUE
-
-
-	)
-
 373 #i‚de‡
 HAL_DMA
 
@@ -34861,14 +34853,6 @@ TRUE
 HAL_LCD
 
 
-393 
-	#HAL_LCD
- 
-TRUE
-
-
-	)
-
 397 #i‚de‡
 HAL_LED
 
@@ -34900,14 +34884,6 @@ TRUE
 405 #i‚de‡
 HAL_KEY
 
-
-406 
-	#HAL_KEY
- 
-TRUE
-
-
-	)
 
 410 #i‚de‡
 HAL_UART
@@ -43445,10 +43421,6 @@ HAL_UART_DMA
 HAL_UART_ISR
 
 
-105 
-asdÁsdf
-
-
 106 
 	`HÆUARTInôISR
 ();
@@ -43625,7 +43597,7 @@ uöt16
 HAL_UART_DMA
  == 1)
 
-173 i‡(
+174 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43637,11 +43609,11 @@ buf
 Àn
 );
 
-175 #i‡(
+176 #i‡(
 HAL_UART_DMA
  == 2)
 
-176 i‡(
+177 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43653,11 +43625,11 @@ buf
 Àn
 );
 
-178 #i‡(
+179 #i‡(
 HAL_UART_ISR
  == 1)
 
-179 i‡(
+180 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43669,11 +43641,11 @@ buf
 Àn
 );
 
-181 #i‡(
+182 #i‡(
 HAL_UART_ISR
  == 2)
 
-182 i‡(
+183 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43685,11 +43657,11 @@ buf
 Àn
 );
 
-184 #i‡(
+185 #i‡(
 HAL_UART_SPI
  == 1)
 
-185 i‡(
+186 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43701,11 +43673,11 @@ buf
 Àn
 );
 
-187 #i‡(
+188 #i‡(
 HAL_UART_SPI
  == 2)
 
-188 i‡(
+189 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43717,11 +43689,11 @@ buf
 Àn
 );
 
-191 #i‡
+192 #i‡
 HAL_UART_USB
 
 
-192  
+193  
 	`HÆUARTRx
 (
 buf
@@ -43729,7 +43701,7 @@ buf
 Àn
 );
 
-194 #i‡(
+195 #i‡(
 HAL_UART_DMA
  =0Ë&& (
 HAL_UART_ISR
@@ -43737,23 +43709,23 @@ HAL_UART_ISR
 HAL_UART_SPI
  == 0)
 
-196 (Ë
+197 (Ë
 p‹t
 ;
 
-197 (Ë
+198 (Ë
 buf
 ;
 
-198 (Ë
+199 (Ë
 Àn
 ;
 
-202 
+203 
 	}
 }
 
-215 
+216 
 uöt16
  
 	$HÆUARTWrôe
@@ -43769,11 +43741,11 @@ uöt16
 Àn
 )
 
-217 #i‡(
+218 #i‡(
 HAL_UART_DMA
  == 1)
 
-218 i‡(
+219 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43785,11 +43757,11 @@ buf
 Àn
 );
 
-220 #i‡(
+221 #i‡(
 HAL_UART_DMA
  == 2)
 
-221 i‡(
+222 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43801,11 +43773,11 @@ buf
 Àn
 );
 
-223 #i‡(
+224 #i‡(
 HAL_UART_ISR
  == 1)
 
-224 i‡(
+225 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43817,11 +43789,11 @@ buf
 Àn
 );
 
-226 #i‡(
+227 #i‡(
 HAL_UART_ISR
  == 2)
 
-227 i‡(
+228 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43833,11 +43805,11 @@ buf
 Àn
 );
 
-229 #i‡(
+230 #i‡(
 HAL_UART_SPI
  == 1)
 
-230 i‡(
+231 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -43849,11 +43821,11 @@ buf
 Àn
 );
 
-232 #i‡(
+233 #i‡(
 HAL_UART_SPI
  == 2)
 
-233 i‡(
+234 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -43865,11 +43837,11 @@ buf
 Àn
 );
 
-236 #i‡
+237 #i‡
 HAL_UART_USB
 
 
-237 
+238 
 	`HÆUARTTx
 (
 buf
@@ -43877,11 +43849,11 @@ buf
 Àn
 );
 
-238  
+239  
 Àn
 ;
 
-240 #i‡(
+241 #i‡(
 HAL_UART_DMA
  =0Ë&& (
 HAL_UART_ISR
@@ -43889,113 +43861,113 @@ HAL_UART_ISR
 HAL_UART_SPI
  == 0)
 
-242 (Ë
+243 (Ë
 p‹t
 ;
 
-243 (Ë
+244 (Ë
 buf
 ;
 
-244 (Ë
+245 (Ë
 Àn
 ;
 
-248 
+249 
 	}
 }
 
-259 
+260 
 	$HÆUARTSu•íd
 ( )
 
-261 #i‡
+262 #i‡
 HAL_UART_ISR
 
 
-262 
+263 
 	`HÆUARTSu•ídISR
 ();
 
-264 
+265 
 	}
 }
 
-275 
+276 
 	$HÆUARTResume
 ( )
 
-277 #i‡
+278 #i‡
 HAL_UART_ISR
 
 
-278 
+279 
 	`HÆUARTResumeISR
 ();
 
-280 
+281 
 	}
 }
 
-291 
+292 
 	$HÆUARTPﬁl
 ()
 
-293 #i‡(
+294 #i‡(
 HAL_UART_DMA
  && 
 HAL_UART_SPI
 )
 
-294 i‡(
+295 i‡(
 HAL_UART_PORT
 )
 
-296 
+297 
 	`HÆUARTPﬁlSPI
 ();
 
-300 
+301 
 	`HÆUARTPﬁlDMA
 ();
 
-303 #i‡
+304 #i‡
 HAL_UART_DMA
 
 
-304 
+305 
 	`HÆUARTPﬁlDMA
 ();
 
-306 #i‡
+307 #i‡
 HAL_UART_ISR
 
 
-307 
+308 
 	`HÆUARTPﬁlISR
 ();
 
-309 #i‡
+310 #i‡
 HAL_UART_SPI
 
 
-310 
+311 
 	`HÆUARTPﬁlSPI
 ();
 
-312 #i‡
+313 #i‡
 HAL_UART_USB
 
 
-313 
+314 
 	`HÆUARTPﬁlUSB
 ();
 
-316 
+317 
 	}
 }
 
-327 
+328 
 uöt16
  
 	$HÆ_UART_RxBufLí
@@ -44005,11 +43977,11 @@ uöt8
 p‹t
  )
 
-329 #i‡(
+330 #i‡(
 HAL_UART_DMA
  == 1)
 
-330 i‡(
+331 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -44017,11 +43989,11 @@ HAL_UART_PORT_0
 	`HÆUARTRxAvaûDMA
 ();
 
-332 #i‡(
+333 #i‡(
 HAL_UART_DMA
  == 2)
 
-333 i‡(
+334 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -44029,11 +44001,11 @@ HAL_UART_PORT_1
 	`HÆUARTRxAvaûDMA
 ();
 
-335 #i‡(
+336 #i‡(
 HAL_UART_ISR
  == 1)
 
-336 i‡(
+337 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -44041,11 +44013,11 @@ HAL_UART_PORT_0
 	`HÆUARTRxAvaûISR
 ();
 
-338 #i‡(
+339 #i‡(
 HAL_UART_ISR
  == 2)
 
-339 i‡(
+340 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -44053,11 +44025,11 @@ HAL_UART_PORT_1
 	`HÆUARTRxAvaûISR
 ();
 
-341 #i‡(
+342 #i‡(
 HAL_UART_SPI
  == 1)
 
-342 i‡(
+343 i‡(
 p‹t
  =
 HAL_UART_PORT_0
@@ -44065,11 +44037,11 @@ HAL_UART_PORT_0
 	`HÆUARTRxAvaûSPI
 ();
 
-344 #i‡(
+345 #i‡(
 HAL_UART_SPI
  == 2)
 
-345 i‡(
+346 i‡(
 p‹t
  =
 HAL_UART_PORT_1
@@ -44077,15 +44049,15 @@ HAL_UART_PORT_1
 	`HÆUARTRxAvaûSPI
 ();
 
-348 #i‡
+349 #i‡
 HAL_UART_USB
 
 
-349  
+350  
 	`HÆUARTRxAvaûUSB
 ();
 
-351 #i‡(
+352 #i‡(
 HAL_UART_DMA
  =0Ë&& (
 HAL_UART_ISR
@@ -44093,53 +44065,53 @@ HAL_UART_ISR
 HAL_UART_SPI
  == 0)
 
-353 (Ë
+354 (Ë
 p‹t
 ;
 
-357 
+358 
 	}
 }
 
-359 
+360 
 	$HÆUARTI§DMA
 ()
 
-361 #i‡(
+362 #i‡(
 HAL_UART_DMA
  && 
 HAL_UART_SPI
 )
 
-362 i‡(
+363 i‡(
 HAL_UART_PORT
 )
 
-364 
+365 
 	`HÆUART_DMAI§SPI
 ();
 
-368 
+369 
 	`HÆUART_DMAI§DMA
 ();
 
-370 #ñi‡
+371 #ñi‡
 HAL_UART_DMA
 
 
-371 
+372 
 	`HÆUART_DMAI§DMA
 ();
 
-372 #ñi‡
+373 #ñi‡
 HAL_UART_SPI
 
 
-373 
+374 
 	`HÆUART_DMAI§SPI
 ();
 
-375 
+376 
 	}
 }
 
@@ -54506,110 +54478,112 @@ OSC_32KHZ
 () \
 
 206 
+sdfsdfß
+
+
+	)
+
+207 
 SLEEPCMD
  &~
 OSC_PD
 ; \
 
-207 !(
+208 !(
 SLEEPSTA
  & 
 XOSC_STB
 )); \
 
-208 }
-
-	)
-
-210 
+211 
 	#STOP_HSOSC
 () \
 
-212 
+213 
 SLEEPCMD
  |
 OSC_PD
 ; \
 
-213 }
+214 }
 
 	)
 
-216 #i‡
+217 #i‡
 deföed
  
 HAL_USB_BOOT_CODE
 
 
-217 
+218 
 	#HAL_BOARD_INIT
 () \
 
-220 
-	`START_HSOSC_XOSC
-(); \
-
 221 
-	`SET_OSC_TO_HSOSC
+	`START_HSOSC_XOSC
 (); \
 
 222 
-	`SET_32KHZ_OSC
-(); \
-
-223 
-	`SET_OSC_TO_XOSC
-(); \
-
-224 
-	`STOP_HSOSC
-(); \
-
-227 
-	`HAL_USB_PULLUP_DISABLE
-(); \
-
-230 
-	`PREFETCH_ENABLE
-(); \
-
-231 }
-
-	)
-
-234 
-	#HAL_BOARD_INIT
-() \
-
-237 
-	`START_HSOSC_XOSC
-(); \
-
-238 
 	`SET_OSC_TO_HSOSC
 (); \
 
-239 
+223 
 	`SET_32KHZ_OSC
 (); \
 
-240 
+224 
 	`SET_OSC_TO_XOSC
 (); \
 
-241 
+225 
 	`STOP_HSOSC
 (); \
 
-244 
+228 
+	`HAL_USB_PULLUP_DISABLE
+(); \
+
+231 
 	`PREFETCH_ENABLE
 (); \
 
-245 }
+232 }
 
 	)
 
-250 
+235 
+	#HAL_BOARD_INIT
+() \
+
+238 
+	`START_HSOSC_XOSC
+(); \
+
+239 
+	`SET_OSC_TO_HSOSC
+(); \
+
+240 
+	`SET_32KHZ_OSC
+(); \
+
+241 
+	`SET_OSC_TO_XOSC
+(); \
+
+242 
+	`STOP_HSOSC
+(); \
+
+245 
+	`PREFETCH_ENABLE
+(); \
+
+246 }
+
+	)
+
+251 
 	#HAL_DEBOUNCE
 (
 ex¥
@@ -54619,7 +54593,7 @@ i
 
 	)
 
-254 
+255 
 	#HAL_PUSH_BUTTON1
 (Ë(
 	`PUSH1_POLARITY
@@ -54629,7 +54603,7 @@ PUSH1_SBIT
 
 	)
 
-255 
+256 
 	#HAL_PUSH_BUTTON2
 (Ë(
 	`PUSH2_POLARITY
@@ -54639,31 +54613,31 @@ PUSH2_SBIT
 
 	)
 
-256 
+257 
 	#HAL_PUSH_BUTTON3
 (Ë(0)
 
 	)
 
-257 
+258 
 	#HAL_PUSH_BUTTON4
 (Ë(0)
 
 	)
 
-258 
+259 
 	#HAL_PUSH_BUTTON5
 (Ë(0)
 
 	)
 
-259 
+260 
 	#HAL_PUSH_BUTTON6
 (Ë(0)
 
 	)
 
-263 
+264 
 	#HAL_TURN_OFF_LED1
 (Ë
 	`°
@@ -54675,7 +54649,7 @@ LED1_SBIT
 
 	)
 
-264 
+265 
 	#HAL_TURN_OFF_LED2
 (Ë
 	`°
@@ -54687,7 +54661,7 @@ LED2_SBIT
 
 	)
 
-265 
+266 
 	#HAL_TURN_OFF_LED3
 (Ë
 	`HAL_TURN_OFF_LED1
@@ -54695,7 +54669,7 @@ LED2_SBIT
 
 	)
 
-266 
+267 
 	#HAL_TURN_OFF_LED4
 (Ë
 	`HAL_TURN_OFF_LED2
@@ -54703,7 +54677,7 @@ LED2_SBIT
 
 	)
 
-268 
+269 
 	#HAL_TURN_ON_LED1
 (Ë
 	`°
@@ -54715,7 +54689,7 @@ LED1_SBIT
 
 	)
 
-269 
+270 
 	#HAL_TURN_ON_LED2
 (Ë
 	`°
@@ -54727,7 +54701,7 @@ LED2_SBIT
 
 	)
 
-270 
+271 
 	#HAL_TURN_ON_LED3
 (Ë
 	`HAL_TURN_ON_LED1
@@ -54735,7 +54709,7 @@ LED2_SBIT
 
 	)
 
-271 
+272 
 	#HAL_TURN_ON_LED4
 (Ë
 	`HAL_TURN_ON_LED2
@@ -54743,7 +54717,7 @@ LED2_SBIT
 
 	)
 
-273 
+274 
 	#HAL_TOGGLE_LED1
 (Ë
 	`°
@@ -54753,7 +54727,7 @@ LED1_SBIT
 
 	)
 
-274 
+275 
 	#HAL_TOGGLE_LED2
 (Ë
 	`°
@@ -54763,7 +54737,7 @@ LED2_SBIT
 
 	)
 
-275 
+276 
 	#HAL_TOGGLE_LED3
 (Ë
 	`HAL_TOGGLE_LED1
@@ -54771,7 +54745,7 @@ LED2_SBIT
 
 	)
 
-276 
+277 
 	#HAL_TOGGLE_LED4
 (Ë
 	`HAL_TOGGLE_LED2
@@ -54779,7 +54753,7 @@ LED2_SBIT
 
 	)
 
-278 
+279 
 	#HAL_STATE_LED1
 (Ë(
 	`LED1_POLARITY
@@ -54789,7 +54763,7 @@ LED1_SBIT
 
 	)
 
-279 
+280 
 	#HAL_STATE_LED2
 (Ë(
 	`LED2_POLARITY
@@ -54799,7 +54773,7 @@ LED2_SBIT
 
 	)
 
-280 
+281 
 	#HAL_STATE_LED3
 (Ë
 	`HAL_STATE_LED1
@@ -54807,7 +54781,7 @@ LED2_SBIT
 
 	)
 
-281 
+282 
 	#HAL_STATE_LED4
 (Ë
 	`HAL_STATE_LED2
@@ -54815,11 +54789,11 @@ LED2_SBIT
 
 	)
 
-286 #i‚de‡
+287 #i‚de‡
 HAL_TIMER
 
 
-287 
+288 
 	#HAL_TIMER
  
 FALSE
@@ -54827,11 +54801,11 @@ FALSE
 
 	)
 
-291 #i‚de‡
+292 #i‚de‡
 HAL_ADC
 
 
-292 
+293 
 	#HAL_ADC
  
 TRUE
@@ -54839,11 +54813,11 @@ TRUE
 
 	)
 
-296 #i‚de‡
+297 #i‚de‡
 HAL_DMA
 
 
-297 
+298 
 	#HAL_DMA
  
 TRUE
@@ -54851,11 +54825,11 @@ TRUE
 
 	)
 
-301 #i‚de‡
+302 #i‚de‡
 HAL_FLASH
 
 
-302 
+303 
 	#HAL_FLASH
  
 TRUE
@@ -54863,11 +54837,11 @@ TRUE
 
 	)
 
-306 #i‚de‡
+307 #i‚de‡
 HAL_AES
 
 
-307 
+308 
 	#HAL_AES
  
 TRUE
@@ -54875,11 +54849,11 @@ TRUE
 
 	)
 
-310 #i‚de‡
+311 #i‚de‡
 HAL_AES_DMA
 
 
-311 
+312 
 	#HAL_AES_DMA
  
 TRUE
@@ -54887,11 +54861,11 @@ TRUE
 
 	)
 
-315 #i‚de‡
+316 #i‚de‡
 HAL_LCD
 
 
-316 
+317 
 	#HAL_LCD
  
 FALSE
@@ -54899,11 +54873,11 @@ FALSE
 
 	)
 
-320 #i‚de‡
+321 #i‚de‡
 HAL_LED
 
 
-321 
+322 
 	#HAL_LED
  
 TRUE
@@ -54911,7 +54885,7 @@ TRUE
 
 	)
 
-323 #i‡(!
+324 #i‡(!
 deföed
  
 BLINK_LEDS
@@ -54921,17 +54895,17 @@ HAL_LED
 TRUE
 )
 
-324 
+325 
 	#BLINK_LEDS
 
 
 	)
 
-328 #i‚de‡
+329 #i‚de‡
 HAL_KEY
 
 
-329 
+330 
 	#HAL_KEY
  
 TRUE
@@ -54939,11 +54913,11 @@ TRUE
 
 	)
 
-333 #i‚de‡
+334 #i‚de‡
 HAL_UART
 
 
-334 
+335 
 	#HAL_UART
  
 TRUE
@@ -54951,69 +54925,69 @@ TRUE
 
 	)
 
-335 
-	#HAL_UART_DMA
- 0
-
-	)
-
 336 
-	#HAL_UART_ISR
+	#HAL_UART_DMA
  0
 
 	)
 
 337 
-	#HAL_UART_USB
- 1
-
-	)
-
-340 #i‚de‡
-HAL_UART_DMA
-
-
-341 
-	#HAL_UART_DMA
- 0
-
-	)
-
-343 #i‚de‡
-HAL_UART_ISR
-
-
-344 
 	#HAL_UART_ISR
  0
 
 	)
 
-347 #i‚de‡
-HAL_UART_USB
-
-
-348 #i‡
-HAL_UART
-
-
-349 
+338 
 	#HAL_UART_USB
  1
 
 	)
 
-351 
+341 #i‚de‡
+HAL_UART_DMA
+
+
+342 
+	#HAL_UART_DMA
+ 0
+
+	)
+
+344 #i‚de‡
+HAL_UART_ISR
+
+
+345 
+	#HAL_UART_ISR
+ 0
+
+	)
+
+348 #i‚de‡
+HAL_UART_USB
+
+
+349 #i‡
+HAL_UART
+
+
+350 
+	#HAL_UART_USB
+ 1
+
+	)
+
+352 
 	#HAL_UART_USB
  0
 
 	)
 
-356 #i‚de‡
+357 #i‚de‡
 HAL_HID
 
 
-357 
+358 
 	#HAL_HID
  
 FALSE
@@ -55021,7 +54995,7 @@ FALSE
 
 	)
 
-360 #ifde‡
+361 #ifde‡
 __˝lu•lus
 
 
@@ -180039,49 +180013,109 @@ __˝lu•lus
 
 	@HostTest_Main.c
 
-44 
+42 
+	#chù
+ 2541
+
+	)
+
+48 
 	~"hÆ_ty≥s.h
 "
 
-45 
+49 
 	~"hÆ_key.h
 "
 
-46 
+50 
 	~"hÆ_timî.h
 "
 
-47 
+51 
 	~"hÆ_drivîs.h
 "
 
-48 
+52 
 	~"hÆ_Àd.h
 "
 
-51 
+56 
 	~"OSAL.h
 "
 
-52 
+57 
 	~"OSAL_Tasks.h
 "
 
-53 #i‡
+58 #i‡
 deföed
  
 POWER_SAVING
 
 
-54 
+59 
 	~"OSAL_PwrMgr.h
 "
 
-56 
+61 
 	~"oßl_¢v.h
 "
 
-63 
+67 
+	~"hÆ_waô.h
+"
+
+68 
+	~"dma.h
+"
+
+70 
+	~"ioCC254x_bôdef.h
+"
+
+73 
+	~"ioCC2541.h
+"
+
+91 
+	#SIZE_OF_UART_RX_BUFFER
+ 50
+
+	)
+
+92 
+	#SIZE_OF_UART_TX_BUFFER
+ 
+SIZE_OF_UART_RX_BUFFER
+
+
+	)
+
+95 
+	#UART_TEST_DATA
+ "Texa†In°rumít†LPRF!"
+
+	)
+
+98 
+	#UART_TST_MODE_RX
+
+
+	)
+
+102 
+	#UART_BAUD_M
+ 216
+
+	)
+
+103 
+	#UART_BAUD_E
+ 11
+
+	)
+
+113 
 MSA_Maö_KeyCÆlback
 (
 uöt8
@@ -180091,31 +180125,117 @@ keys
 °©e
 );
 
-75 
+125 
 	$maö
 ()
 
-79 
+129 
 	`HAL_BOARD_INIT
 ();
 
-82 
+148 
 	`HÆDrivîInô
 ();
 
-85 
+197 
+P0SEL
+ &~(
+BIT7
+ | 
+BIT1
+) ;
+
+198 
+P0DIR
+ &~
+BIT1
+;
+
+199 
+P0DIR
+ |
+BIT7
+;
+
+200 
+P0_7
+ = 0;
+
+214 
+U0BAUD
+ = 
+UART_BAUD_M
+;
+
+215 
+U0GCR
+ = (U0GCR&~
+U0GCR_BAUD_E
+Ë| 
+UART_BAUD_E
+;
+
+219 
+U0CSR
+ |
+U0CSR_MODE
+;
+
+222 
+U0UCR
+ &~
+U0UCR_START
+;
+
+225 
+U0UCR
+ |
+U0UCR_STOP
+;
+
+228 
+U0UCR
+ &~
+U0UCR_SPB
+;
+
+231 
+U0UCR
+ &~
+U0UCR_PARITY
+;
+
+234 
+U0UCR
+ &~
+U0UCR_BIT9
+;
+
+240 
+U0UCR
+ &~
+U0UCR_D9
+;
+
+243 
+U0UCR
+ &~
+U0UCR_FLOW
+;
+
+252 
 	`oßl_¢v_öô
 ();
 
-88 
+255 
 	`oßl_öô_sy°em
 ();
 
-91 
+258 
 	`HAL_ENABLE_INTERRUPTS
 ();
 
-94 
+261 
 	`HÆKeyC⁄fig
 (
 Ál£
@@ -180123,7 +180243,7 @@ keys
 MSA_Maö_KeyCÆlback
 );
 
-97 
+264 
 	`HÆLedSë
  (
 HAL_LED_4
@@ -180131,27 +180251,27 @@ HAL_LED_4
 HAL_LED_MODE_ON
 );
 
-99 #i‡
+266 #i‡
 deföed
  
 POWER_SAVING
 
 
-100 
+267 
 	`oßl_pwrmgr_devi˚
 –
 PWRMGR_BATTERY
  );
 
-104 
+271 
 	`oßl_°¨t_sy°em
 ();
 
-107 
+274 
 	}
 }
 
-124 
+291 
 	$MSA_Maö_KeyCÆlback
 (
 uöt8
@@ -180161,7 +180281,7 @@ keys
 °©e
 )
 
-127 
+294 
 	}
 }
 
@@ -194801,6 +194921,4554 @@ __Àn
 	g_END_STD_C
 
 
+	@dma.h
+
+9 #i‚de‡
+_DMA_H_
+
+
+10 
+	#_DMA_H_
+
+
+	)
+
+12 
+	~<hÆ_ty≥s.h
+>
+
+14 
+	#DMA_CHANNEL_0
+ 0x01
+
+	)
+
+15 
+	#DMA_CHANNEL_1
+ 0x02
+
+	)
+
+18 
+	#DMA_VLEN_USE_LEN
+ 0x00
+
+19 
+	#DMA_VLEN_FIXED
+ 0x00
+
+20 
+	#DMA_VLEN_1_P_VALOFFIRST
+ 0x01
+
+21 
+	#DMA_VLEN_VALOFFIRST
+ 0x02
+
+22 
+	#DMA_VLEN_1_P_VALOFFIRST_P_1
+ 0x03
+
+23 
+	#DMA_VLEN_1_P_VALOFFIRST_P_2
+ 0x04
+
+24 
+
+	)
+
+25 
+	#DMA_WORDSIZE_BYTE
+ 0x00
+
+26 
+	#DMA_WORDSIZE_WORD
+ 0x01
+
+27 
+
+	)
+
+28 
+	#DMA_TMODE_SINGLE
+ 0x00
+
+29 
+	#DMA_TMODE_BLOCK
+ 0x01
+
+30 
+	#DMA_TMODE_SINGLE_REPEATED
+ 0x02
+
+31 
+	#DMA_TMODE_BLOCK_REPEATED
+ 0x03
+
+32 
+
+	)
+
+34 #i‡(
+chù
+ == 2544)
+
+35 
+	#DMA_TRIG_NONE
+ 0
+
+36 
+	#DMA_TRIG_PREV
+ 1
+
+37 
+	#DMA_TRIG_T1_CH0
+ 2
+
+38 
+	#DMA_TRIG_T1_CH1
+ 3
+
+39 
+	#DMA_TRIG_T1_CH2
+ 4
+
+40 
+	#DMA_TRIG_T2_EVENT1
+ 5
+
+41 
+	#DMA_TRIG_T2_EVENT2
+ 6
+
+42 
+	#DMA_TRIG_T3_CH0
+ 7
+
+43 
+	#DMA_TRIG_T3_CH1
+ 8
+
+44 
+	#DMA_TRIG_T4_CH0
+ 9
+
+45 
+	#DMA_TRIG_T4_CH1
+ 10
+
+46 
+	#DMA_TRIG_RADIO1
+ 11
+
+47 
+	#DMA_TRIG_URX0
+ 14
+
+48 
+	#DMA_TRIG_UTX0
+ 15
+
+49 
+	#DMA_TRIG_FLASH
+ 18
+
+50 
+	#DMA_TRIG_RADIO
+ 19
+
+51 
+	#DMA_TRIG_IOC_0_0
+ 20
+
+52 
+	#DMA_TRIG_IOC_0_1
+ 21
+
+53 
+	#DMA_TRIG_IOC_0_2
+ 22
+
+54 
+	#DMA_TRIG_IOC_0_3
+ 23
+
+55 
+	#DMA_TRIG_IOC_1_0
+ 24
+
+56 
+	#DMA_TRIG_IOC_1_1
+ 25
+
+57 
+	#DMA_TRIG_IOC_1_2
+ 26
+
+58 
+	#DMA_TRIG_IOC_1_3
+ 27
+
+59 
+	#DMA_TRIG_ST
+ 28
+
+60 
+	#DMA_TRIG_ENC_DW
+ 29
+
+61 
+	#DMA_TRIG_ENC_UP
+ 30
+
+62 
+	#DMA_TRIG_DBG_BW
+ 31
+
+63 
+
+	)
+
+64 #ñi‡(
+chù
+ == 2543 || chip == 2545)
+
+65 
+	#DMA_TRIG_NONE
+ 0
+
+66 
+	#DMA_TRIG_PREV
+ 1
+
+67 
+	#DMA_TRIG_T1_CH0
+ 2
+
+68 
+	#DMA_TRIG_T1_CH1
+ 3
+
+69 
+	#DMA_TRIG_T1_CH2
+ 4
+
+70 
+	#DMA_TRIG_T2_EVENT1
+ 5
+
+71 
+	#DMA_TRIG_T2_EVENT2
+ 6
+
+72 
+	#DMA_TRIG_T3_CH0
+ 7
+
+73 
+	#DMA_TRIG_T3_CH1
+ 8
+
+74 
+	#DMA_TRIG_T4_CH0
+ 9
+
+75 
+	#DMA_TRIG_T4_CH1
+ 10
+
+76 
+	#DMA_TRIG_RADIO1
+ 11
+
+77 
+	#DMA_TRIG_IOC_0
+ 12
+
+78 
+	#DMA_TRIG_IOC_1
+ 13
+
+79 
+	#DMA_TRIG_URX0
+ 14
+
+80 
+	#DMA_TRIG_UTX0
+ 15
+
+81 
+	#DMA_TRIG_ST
+ 16
+
+82 
+	#DMA_TRIG_FLASH
+ 18
+
+83 
+	#DMA_TRIG_RADIO
+ 19
+
+84 
+	#DMA_TRIG_ADC_CHALL
+ 20
+
+85 
+	#DMA_TRIG_ADC_CH0
+ 21
+
+86 
+	#DMA_TRIG_ADC_CH1
+ 22
+
+87 
+	#DMA_TRIG_ADC_CH2
+ 23
+
+88 
+	#DMA_TRIG_ADC_CH3
+ 24
+
+89 
+	#DMA_TRIG_ADC_CH4
+ 25
+
+90 
+	#DMA_TRIG_ADC_CH5
+ 26
+
+91 
+	#DMA_TRIG_ADC_CH6
+ 27
+
+92 
+	#DMA_TRIG_ADC_CH7
+ 28
+
+93 
+	#DMA_TRIG_ENC_DW
+ 29
+
+94 
+	#DMA_TRIG_ENC_UP
+ 30
+
+95 
+	#DMA_TRIG_DBG_BW
+ 31
+
+96 
+
+	)
+
+97 #ñi‡(
+chù
+ == 2541)
+
+98 
+	#DMA_TRIG_NONE
+ 0
+
+99 
+	#DMA_TRIG_PREV
+ 1
+
+100 
+	#DMA_TRIG_T1_CH0
+ 2
+
+101 
+	#DMA_TRIG_T1_CH1
+ 3
+
+102 
+	#DMA_TRIG_T1_CH2
+ 4
+
+103 
+	#DMA_TRIG_T2_EVENT1
+ 5
+
+104 
+	#DMA_TRIG_T2_EVENT2
+ 6
+
+105 
+	#DMA_TRIG_T3_CH0
+ 7
+
+106 
+	#DMA_TRIG_T3_CH1
+ 8
+
+107 
+	#DMA_TRIG_T4_CH0
+ 9
+
+108 
+	#DMA_TRIG_T4_CH1
+ 10
+
+109 
+	#DMA_TRIG_RADIO1
+ 11
+
+110 
+	#DMA_TRIG_IOC_0
+ 12
+
+111 
+	#DMA_TRIG_IOC_1
+ 13
+
+112 
+	#DMA_TRIG_URX0
+ 14
+
+113 
+	#DMA_TRIG_UTX0
+ 15
+
+114 
+	#DMA_TRIG_URX1
+ 16
+
+115 
+	#DMA_TRIG_UTX1
+ 17
+
+116 
+	#DMA_TRIG_FLASH
+ 18
+
+117 
+	#DMA_TRIG_RADIO
+ 19
+
+118 
+	#DMA_TRIG_ADC_CHALL
+ 20
+
+119 
+	#DMA_TRIG_ADC_CH0
+ 21
+
+120 
+	#DMA_TRIG_ADC_CH1
+ 22
+
+121 
+	#DMA_TRIG_ADC_CH2
+ 23
+
+122 
+	#DMA_TRIG_ADC_CH3
+ 24
+
+123 
+	#DMA_TRIG_ADC_CH4
+ 25
+
+124 
+	#DMA_TRIG_ADC_CH5
+ 26
+
+125 
+	#DMA_TRIG_ADC_CH6
+ 27
+
+126 
+	#DMA_TRIG_ADC_CH7
+ 28
+
+127 
+	#DMA_TRIG_ENC_DW
+ 29
+
+128 
+	#DMA_TRIG_ENC_UP
+ 30
+
+129 
+	#DMA_TRIG_DBG_BW
+ 31
+
+131 
+
+	)
+
+133 
+	#DMA_SRCINC_0
+ 0x00
+
+134 
+	#DMA_SRCINC_1
+ 0x01
+
+135 
+	#DMA_SRCINC_2
+ 0x02
+
+136 
+	#DMA_SRCINC_M1
+ 0x03
+
+137 
+
+	)
+
+138 
+	#DMA_DESTINC_0
+ 0x00
+
+139 
+	#DMA_DESTINC_1
+ 0x01
+
+140 
+	#DMA_DESTINC_2
+ 0x02
+
+141 
+	#DMA_DESTINC_M1
+ 0x03
+
+142 
+
+	)
+
+143 
+	#DMA_IRQMASK_DISABLE
+ 0x00
+
+144 
+	#DMA_IRQMASK_ENABLE
+ 0x01
+
+145 
+
+	)
+
+146 
+	#DMA_M8_USE_8_BITS
+ 0x00
+
+147 
+	#DMA_M8_USE_7_BITS
+ 0x01
+
+148 
+
+	)
+
+149 
+	#DMA_PRI_LOW
+ 0x00
+
+150 
+	#DMA_PRI_GUARANTEED
+ 0x01
+
+151 
+	#DMA_PRI_HIGH
+ 0x02
+
+152 
+	#DMA_PRI_ABSOLUTE
+ 0x03
+
+153 
+
+	)
+
+156 #¥agm®
+bôfõlds
+=
+ªvî£d
+
+
+158 
+uöt8
+ 
+	mSRCADDRH
+;
+
+159 
+uöt8
+ 
+	mSRCADDRL
+;
+
+160 
+uöt8
+ 
+	mDESTADDRH
+;
+
+161 
+uöt8
+ 
+	mDESTADDRL
+;
+
+162 
+uöt8
+ 
+	mVLEN
+ : 3;
+
+163 
+uöt8
+ 
+	mLENH
+ : 5;
+
+164 
+uöt8
+ 
+	mLENL
+ : 8;
+
+165 
+uöt8
+ 
+	mWORDSIZE
+ : 1;
+
+166 
+uöt8
+ 
+	mTMODE
+ : 2;
+
+167 
+uöt8
+ 
+	mTRIG
+ : 5;
+
+168 
+uöt8
+ 
+	mSRCINC
+ : 2;
+
+169 
+uöt8
+ 
+	mDESTINC
+ : 2;
+
+170 
+uöt8
+ 
+	mIRQMASK
+ : 1;
+
+171 
+uöt8
+ 
+	mM8
+ : 1;
+
+172 
+uöt8
+ 
+	mPRIORITY
+ : 2;
+
+173 } 
+	tDMA_DESC
+;
+
+174 #¥agm®
+bôfõlds
+=
+
+181 
+	#DMA_SET_ADDR_DESC0
+(
+addr
+Ë
+	`°
+–
+DMA0CFGH
+ = 
+	`HI_UINT16
+◊ddr); 
+DMA0CFGL
+ = 
+	`LO_UINT16
+◊ddr); )
+
+	)
+
+182 
+	#DMA_SET_ADDR_DESC1234
+(
+addr
+Ë
+	`°
+–
+DMA1CFGH
+ = 
+	`HI_UINT16
+◊ddr); 
+DMA1CFGL
+ = 
+	`LO_UINT16
+◊ddr); )
+
+	)
+
+184 
+	#DMA_CHANNEL_ARM
+(
+ch™√l_bômask
+Ë
+	`°
+–
+DMAARM
+ = (ch™√l_bômaskË& 0x1F; )
+
+	)
+
+185 
+	#DMA_CHANNEL_TRIG
+(
+ch™√l_bômask
+Ë
+	`°
+–
+DMAREQ
+ = (ch™√l_bômask); )
+
+	)
+
+186 
+	#DMA_CHANNEL_ABORT
+(
+ch™√l_bômask
+Ë(
+DMAARM
+ = (0x80 | (ch™√l_bômask)))
+
+	)
+
+187 
+	#DMA_CHANNEL_ACTIVE
+(
+ch™√l_bômask
+Ë(
+DMAARM
+ & (ch™√l_bômask))
+
+	)
+
+189 
+	#DMA_INT_CLEAR
+(Ë(
+DMAIF
+ = 0)
+
+	)
+
+190 
+	#DMA_INT_ENABLE
+(Ë(
+DMAIE
+ = 1)
+
+	)
+
+191 
+	#DMA_INT_DISABLE
+(Ë(
+DMAIE
+ = 0)
+
+	)
+
+	@hal_types.h
+
+8 #i‚de‡
+HAL_TYPES_H
+
+
+9 
+	#HAL_TYPES_H
+
+
+	)
+
+11 #ifde‡
+__˝lu•lus
+
+
+21 sig√d 
+	töt8
+;
+
+22 
+	tuöt8
+;
+
+24 sig√d 
+	töt16
+;
+
+25 
+	tuöt16
+;
+
+27 sig√d 
+	töt32
+;
+
+28 
+	tuöt32
+;
+
+30 (*
+ISR_FUNC_PTR
+)();
+
+31 (*
+VFPTR
+)();
+
+41 #ifde‡
+__IAR_SYSTEMS_ICC__
+
+
+43 
+	#_PRAGMA
+(
+x
+Ë
+	`_Pøgma
+(#x)
+
+	)
+
+45 #i‡
+deföed
+ 
+__ICC430__
+
+
+47 #i‚de‡
+CODE
+
+
+48 
+	#CODE
+
+
+	)
+
+50 #i‚de‡
+XDATA
+
+
+51 
+	#XDATA
+
+
+	)
+
+53 
+	#FAR
+
+
+	)
+
+54 
+	#NOP
+(Ë
+	`asm
+("NOP")
+
+	)
+
+56 
+	#HAL_ISR_FUNC_DECLARATION
+(
+f
+,
+v
+) \
+
+57 
+	`_PRAGMA
+(
+ve˘‹
+=
+v
+##
+_VECTOR
+Ë
+__öãºu±
+ 
+	`f
+()
+
+	)
+
+58 
+	#HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+) \
+
+59 
+	`_PRAGMA
+(
+ve˘‹
+=
+v
+##
+_VECTOR
+Ë
+__öãºu±
+ 
+	`f
+()
+
+	)
+
+60 
+	#HAL_ISR_FUNCTION
+(
+f
+,
+v
+) \
+
+61 
+	`HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+); 
+	`HAL_ISR_FUNC_DECLARATION
+(f,v)
+
+	)
+
+67 #ñi‡
+deföed
+ 
+__ICC8051__
+
+
+69 #i‚de‡
+BSP_H
+
+
+70 
+	#CODE
+ 
+__code
+
+
+	)
+
+71 
+	#XDATA
+ 
+__xd©a
+
+
+	)
+
+74 
+	#FAR
+
+
+	)
+
+75 
+	#NOP
+(Ë
+	`asm
+("NOP")
+
+	)
+
+77 
+	#HAL_MCU_LITTLE_ENDIAN
+(Ë
+__LITTLE_ENDIAN__
+
+
+	)
+
+78 
+	#HAL_ISR_FUNC_DECLARATION
+(
+f
+,
+v
+) \
+
+79 
+	`_PRAGMA
+(
+ve˘‹
+=
+v
+Ë
+__√¨_func
+ 
+__öãºu±
+ 
+	`f
+()
+
+	)
+
+80 
+	#HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+) \
+
+81 
+	`_PRAGMA
+(
+ve˘‹
+=
+v
+Ë
+__√¨_func
+ 
+__öãºu±
+ 
+	`f
+()
+
+	)
+
+82 
+	#HAL_ISR_FUNCTION
+(
+f
+,
+v
+) \
+
+83 
+	`HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+); 
+	`HAL_ISR_FUNC_DECLARATION
+(f,v)
+
+	)
+
+88 #ñi‡
+deföed
+ 
+__ICCARM__
+
+
+90 #i‚de‡
+CODE
+
+
+91 
+	#CODE
+
+
+	)
+
+93 #i‚de‡
+XDATA
+
+
+94 
+	#XDATA
+
+
+	)
+
+96 
+	#FAR
+
+
+	)
+
+97 
+	#NOP
+(Ë
+	`asm
+("NOP")
+
+	)
+
+99 
+	#HAL_ISR_FUNC_DECLARATION
+(
+f
+,
+v
+)
+
+	)
+
+100 
+	#HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+)
+
+	)
+
+101 
+	#HAL_ISR_FUNCTION
+(
+f
+,
+v
+)
+
+	)
+
+111 #ñi‡
+deföed
+ 
+__KEIL__
+
+
+112 
+	~<öåös.h
+>
+
+113 
+	#BIG_ENDIAN
+
+
+	)
+
+115 
+	#CODE
+ 
+code
+
+
+	)
+
+116 
+	#XDATA
+ 
+xd©a
+
+
+	)
+
+117 
+	#FAR
+
+
+	)
+
+118 
+	#NOP
+(Ë
+	`_n›_
+()
+
+	)
+
+120 
+	#HAL_ISR_FUNC_DECLARATION
+(
+f
+,
+v
+) \
+
+121 
+	`f
+(Ë
+öãºu±
+ 
+v
+
+
+	)
+
+122 
+	#HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+) \
+
+123 
+	`f
+()
+
+	)
+
+124 
+	#HAL_ISR_FUNCTION
+(
+f
+,
+v
+) \
+
+125 
+	`HAL_ISR_FUNC_PROTOTYPE
+(
+f
+,
+v
+); 
+	`HAL_ISR_FUNC_DECLARATION
+(f,v)
+
+	)
+
+127 
+	ti°©e_t
+;
+
+130 
+	#__code
+ 
+code
+
+
+	)
+
+131 
+	#__xd©a
+ 
+xd©a
+
+
+	)
+
+137 #ñi‡
+deföed
+ 
+WIN32
+
+
+139 
+	#DESKTOP
+
+
+	)
+
+141 
+	#CODE
+
+
+	)
+
+142 
+	#XDATA
+
+
+	)
+
+143 
+	~"wödows.h
+"
+
+144 #i‚de‡
+FAR
+
+
+145 
+	#FAR
+ 
+Ár
+
+
+	)
+
+147 #ifde‡
+_MSC_VER
+
+
+148 #¥agm®
+w¨nög
+ (
+dißbÀ
+ :4761)
+
+149 #¥agm®
+w¨nög
+ (
+dißbÀ
+ :4100)
+
+156 #ñi‡
+deföed
+ 
+__löux
+
+
+158 
+	#DESKTOP
+
+
+	)
+
+159 
+	#LINUX
+
+
+	)
+
+161 
+	#CODE
+
+
+	)
+
+162 
+	#XDATA
+
+
+	)
+
+163 #i‚de‡
+FAR
+
+
+164 
+	#FAR
+ 
+Ár
+
+
+	)
+
+172 #ñi‡
+__TI_COMPILER_VERSION__
+
+
+173 
+	#CODE
+
+
+	)
+
+174 
+	#XDATA
+
+
+	)
+
+175 
+	#FAR
+
+
+	)
+
+177 
+	ti°©e_t
+;
+
+189 #ifde‡
+__˝lu•lus
+
+
+	@hal_wait.h
+
+8 #i‚de‡
+HAL_WAIT_H
+
+
+9 
+	#HAL_WAIT_H
+
+
+	)
+
+15 
+	~<hÆ_ty≥s.h
+>
+
+27 
+hÆMcuWaôUs
+(
+uöt16
+ 
+u£c
+);
+
+28 
+hÆMcuWaôMs
+(
+uöt16
+ 
+m£c
+);
+
+	@ioCC254x_bitdef.h
+
+10 #i‚de‡
+_IOCC254X_BITDEF_H
+
+
+11 
+	#_IOCC254X_BITDEF_H
+
+
+	)
+
+14 
+	#BIT7
+ 0x80
+
+	)
+
+15 
+	#BIT6
+ 0x40
+
+	)
+
+16 
+	#BIT5
+ 0x20
+
+	)
+
+17 
+	#BIT4
+ 0x10
+
+	)
+
+18 
+	#BIT3
+ 0x08
+
+	)
+
+19 
+	#BIT2
+ 0x04
+
+	)
+
+20 
+	#BIT1
+ 0x02
+
+	)
+
+21 
+	#BIT0
+ 0x01
+
+	)
+
+31 
+	#MEMCTR_XMAP
+ 0x08
+
+32 
+
+	)
+
+42 
+	#DPS_DPS
+ 0x01
+
+43 
+
+	)
+
+61 
+	#IEN1_P0IE
+ 0x20
+
+62 
+	#IEN1_T4IE
+ 0x10
+
+63 
+	#IEN1_T3IE
+ 0x08
+
+64 
+	#IEN1_T2IE
+ 0x04
+
+65 
+	#IEN1_T1IE
+ 0x02
+
+66 
+	#IEN1_DMAIE
+ 0x01
+
+67 
+
+	)
+
+69 
+	#IEN2_WDTIE
+ 0x20
+
+	)
+
+70 
+	#IEN2_P1IE
+ 0x10
+
+	)
+
+71 #i‡(
+chù
+ == 2541)
+
+72 
+	#IEN2_UTX1IE
+ 0x08
+
+73 #ñi‡(
+chù
+ == 2543 || chip == 2545)
+
+74 
+	#IEN2_I2CIE
+ 0x08
+
+76 
+	#IEN2_UTX0IE
+ 0x04
+
+	)
+
+77 
+	#IEN2_P2IE
+ 0x02
+
+	)
+
+78 
+	#IEN2_USBIE
+ 0x02
+
+	)
+
+79 
+	#IEN2_RFIE
+ 0x01
+
+	)
+
+86 
+	#S1CON_RFIF_1
+ 0x02
+
+	)
+
+87 
+	#S1CON_RFIF_0
+ 0x01
+
+	)
+
+94 
+	#IP1_IPG5
+ 0x20
+
+	)
+
+95 
+	#IP1_IPG4
+ 0x10
+
+	)
+
+96 
+	#IP1_IPG3
+ 0x08
+
+	)
+
+97 
+	#IP1_IPG2
+ 0x04
+
+	)
+
+98 
+	#IP1_IPG1
+ 0x02
+
+	)
+
+99 
+	#IP1_IPG0
+ 0x01
+
+	)
+
+102 
+	#IP0_IPG5
+ 0x20
+
+	)
+
+103 
+	#IP0_IPG4
+ 0x10
+
+	)
+
+104 
+	#IP0_IPG3
+ 0x08
+
+	)
+
+105 
+	#IP0_IPG2
+ 0x04
+
+	)
+
+106 
+	#IP0_IPG1
+ 0x02
+
+	)
+
+107 
+	#IP0_IPG0
+ 0x01
+
+	)
+
+115 
+	#SRCRC_FORCE_RESET
+ 0x20
+
+116 
+	#SRCRC_CRC_RESULT
+ (0x03 << 2)
+
+117 
+	#SRCRC_CRC_RESULT_PASS
+ (0x00 << 2)
+
+118 
+	#SRCRC_CRC_RESULT_LOW
+ (0x01 << 2)
+
+119 
+	#SRCRC_CRC_RESULT_HIGH
+ (0x02 << 2)
+
+120 
+	#SRCRC_CRC_RESULT_BOTH
+ (0x03 << 2)
+
+121 
+	#SRCRC_CRC_RESET_EN
+ 0x01
+
+122 
+
+	)
+
+124 
+	#PCON_IDLE
+ 0x01
+
+	)
+
+127 
+	#OSC32K_CALDIS
+ 0x80
+
+	)
+
+128 
+	#SLEEPCMD_MODE
+ (0x03)
+
+129 
+	#SLEEPCMD_MODE_IDLE
+ (0x00)
+
+	)
+
+130 
+	#SLEEPCMD_MODE_PM1
+ (0x01)
+
+	)
+
+131 #i‡(
+chù
+ == 2541 || chip == 2543 || chip == 2545)
+
+132 
+	#SLEEPCMD_MODE_PM2
+ (0x02)
+
+	)
+
+133 
+	#SLEEPCMD_MODE_PM3
+ (0x03)
+
+	)
+
+137 
+	#SLEEPSTA_CLK32K_CALDIS
+ 0x80
+
+138 
+	#SLEEPSTA_RST
+ (0x03 << 3)
+
+139 
+	#SLEEPSTA_RST_POR_BOD
+ (0x00 << 3)
+
+140 
+	#SLEEPSTA_RST_EXT
+ (0x01 << 3)
+
+141 
+	#SLEEPSTA_RST_WDT
+ (0x02 << 3)
+
+142 
+	#SLEEPSTA_RST_CLK_LOSS
+ (0x03 << 3)
+
+143 
+	#SLEEPSTA_CLK32K
+ 0x01
+
+144 
+
+	)
+
+146 
+	#STLOAD_LDRDY
+ 0x01
+
+	)
+
+150 
+	#CLKCON_OSC32K
+ 0x80
+
+151 
+	#CLKCON_OSC
+ 0x40
+
+152 
+	#CLKCON_TICKSPD
+ (0x07 << 3)
+
+153 
+	#CLKCON_TICKSPD_32M
+ (0x00 << 3)
+
+	)
+
+154 
+	#CLKCON_TICKSPD_16M
+ (0x01 << 3)
+
+	)
+
+155 
+	#CLKCON_TICKSPD_8M
+ (0x02 << 3)
+
+	)
+
+156 
+	#CLKCON_TICKSPD_4M
+ (0x03 << 3)
+
+	)
+
+157 
+	#CLKCON_TICKSPD_2M
+ (0x04 << 3)
+
+	)
+
+158 
+	#CLKCON_TICKSPD_1M
+ (0x05 << 3)
+
+	)
+
+159 
+	#CLKCON_TICKSPD_500K
+ (0x06 << 3)
+
+	)
+
+160 
+	#CLKCON_TICKSPD_250K
+ (0x07 << 3)
+
+	)
+
+161 
+	#CLKCON_CLKSPD
+ (0x07)
+
+162 
+	#CLKCON_CLKSPD_32M
+ (0x00)
+
+	)
+
+163 
+	#CLKCON_CLKSPD_16M
+ (0x01)
+
+	)
+
+164 
+	#CLKCON_CLKSPD_8M
+ (0x02)
+
+	)
+
+165 
+	#CLKCON_CLKSPD_4M
+ (0x03)
+
+	)
+
+166 
+	#CLKCON_CLKSPD_2M
+ (0x04)
+
+	)
+
+167 
+	#CLKCON_CLKSPD_1M
+ (0x05)
+
+	)
+
+168 
+	#CLKCON_CLKSPD_500K
+ (0x06)
+
+	)
+
+169 
+	#CLKCON_CLKSPD_250K
+ (0x07)
+
+	)
+
+172 
+	#CLD_EN
+ 0x01
+
+173 
+
+	)
+
+180 
+	#FCTL_BUSY
+ 0x80
+
+	)
+
+181 
+	#FCTL_FULL
+ 0x40
+
+	)
+
+182 
+	#FCTL_ABORT
+ 0x20
+
+	)
+
+183 
+	#FCTL_CM
+ (0x03 << 2)
+
+184 
+	#FCTL_CM_DIS
+ (0x00 << 2)
+
+185 
+	#FCTL_CM_EN
+ (0x01 << 2)
+
+186 
+	#FCTL_CM_PREFETCH
+ (0x02 << 2)
+
+187 
+	#FCTL_CM_REALTIME
+ (0x03 << 2)
+
+188 
+	#FCTL_WRITE
+ 0x02
+
+	)
+
+189 
+	#FCTL_ERASE
+ 0x01
+
+	)
+
+203 #i‡(
+chù
+ == 2541)
+
+212 
+	#PERCFG_T1CFG
+ 0x40
+
+213 
+	#PERCFG_T3CFG
+ 0x20
+
+214 
+	#PERCFG_T4CFG
+ 0x10
+
+215 
+	#PERCFG_U1CFG
+ 0x02
+
+216 
+	#PERCFG_U0CFG
+ 0x01
+
+217 
+	#PERCFG_U0CFG_ALT1
+ 0x00
+
+218 
+	#PERCFG_U0CFG_ALT2
+ 0x01
+
+219 
+
+	)
+
+221 
+	#APCFG_APCFG7
+ 0x80
+
+222 
+	#APCFG_APCFG6
+ 0x40
+
+	)
+
+223 
+	#APCFG_APCFG5
+ 0x20
+
+	)
+
+224 
+	#APCFG_APCFG4
+ 0x10
+
+	)
+
+225 
+	#APCFG_APCFG3
+ 0x08
+
+	)
+
+226 
+	#APCFG_APCFG2
+ 0x04
+
+	)
+
+227 
+	#APCFG_APCFG1
+ 0x02
+
+	)
+
+228 
+	#APCFG_APCFG0
+ 0x01
+
+	)
+
+231 
+	#P0SEL_SELP0_7
+ 0x80
+
+232 
+	#P0SEL_SELP0_6
+ 0x40
+
+	)
+
+233 
+	#P0SEL_SELP0_5
+ 0x20
+
+	)
+
+234 
+	#P0SEL_SELP0_4
+ 0x10
+
+	)
+
+235 
+	#P0SEL_SELP0_3
+ 0x08
+
+	)
+
+236 
+	#P0SEL_SELP0_2
+ 0x04
+
+	)
+
+237 
+	#P0SEL_SELP0_1
+ 0x02
+
+	)
+
+238 
+	#P0SEL_SELP0_0
+ 0x01
+
+	)
+
+241 
+	#P1SEL_SELP1_7
+ 0x80
+
+242 
+	#P1SEL_SELP1_6
+ 0x40
+
+	)
+
+243 
+	#P1SEL_SELP1_5
+ 0x20
+
+	)
+
+244 
+	#P1SEL_SELP1_4
+ 0x10
+
+	)
+
+245 
+	#P1SEL_SELP1_3
+ 0x08
+
+	)
+
+246 
+	#P1SEL_SELP1_2
+ 0x04
+
+	)
+
+247 
+	#P1SEL_SELP1_1
+ 0x02
+
+	)
+
+248 
+	#P1SEL_SELP1_0
+ 0x01
+
+	)
+
+251 
+	#P2SEL_PRI3P1
+ 0x40
+
+252 
+	#P2SEL_PRI2P1
+ 0x20
+
+253 
+	#P2SEL_PRI1P1
+ 0x10
+
+254 
+	#P2SEL_PRI0P1
+ 0x08
+
+255 
+	#P2SEL_SELP2_4
+ 0x04
+
+256 
+	#P2SEL_SELP2_3
+ 0x02
+
+257 
+	#P2SEL_SELP2_0
+ 0x01
+
+258 
+
+	)
+
+260 
+	#P1INP_MDP1
+ 0xFC
+
+261 
+	#P1INP_MDP1_P1_7
+ 0x80
+
+262 
+	#P1INP_MDP1_P1_6
+ 0x40
+
+263 
+	#P1INP_MDP1_P1_5
+ 0x20
+
+264 
+	#P1INP_MDP1_P1_4
+ 0x10
+
+265 
+	#P1INP_MDP1_P1_3
+ 0x08
+
+266 
+	#P1INP_MDP1_P1_2
+ 0x04
+
+267 
+
+	)
+
+269 
+	#P2INP_PDUP2
+ 0x80
+
+270 
+	#P2INP_PDUP1
+ 0x40
+
+271 
+	#P2INP_PDUP0
+ 0x20
+
+272 
+	#P2INP_MDP2
+ 0x1F
+
+273 
+	#P2INP_MDP2_P2_4
+ 0x10
+
+274 
+	#P2INP_MDP2_P2_3
+ 0x10
+
+275 
+	#P2INP_MDP2_P2_2
+ 0x10
+
+276 
+	#P2INP_MDP2_P2_1
+ 0x10
+
+277 
+	#P2INP_MDP2_P2_0
+ 0x10
+
+278 
+
+	)
+
+289 
+	#P2DIR_PRIP0
+ 0xC0
+
+290 
+	#P2DIR_PRIP0_USART0
+ (0x00 << 6)
+
+291 
+	#P2DIR_PRIP0_USART1
+ (0x01 << 6)
+
+292 
+	#P2DIR_PRIP0_T1_0_1
+ (0x02 << 6)
+
+293 
+	#P2DIR_PRIP0_T1_2_3
+ (0x03 << 6)
+
+294 
+	#P2DIR_DIRP2
+ 0x1F
+
+295 
+
+	)
+
+299 
+	#P2INP_PDUP2
+ 0x80
+
+300 
+	#P2INP_PDUP1
+ 0x40
+
+301 
+	#P2INP_PDUP0
+ 0x20
+
+302 
+	#P2INP_MDP2
+ 0x1F
+
+303 
+
+	)
+
+311 
+	#PICTL_PADSC
+ 0x80
+
+312 
+	#PICTL_P2ICON
+ 0x08
+
+313 
+	#PICTL_P1ICONH
+ 0x04
+
+314 
+	#PICTL_P1ICONL
+ 0x02
+
+315 
+	#PICTL_P0ICON
+ 0x01
+
+316 
+
+	)
+
+324 
+	#PMUX_CKOEN
+ 0x80
+
+325 
+	#PMUX_CKOPIN
+ (0x07 << 4)
+
+326 
+	#PMUX_DREGSTA
+ 0x04
+
+327 
+	#PMUX_DREGSTAPIN
+ (0x07)
+
+328 
+
+	)
+
+343 #ñi‡(
+chù
+ == 2543)
+
+352 
+	#PERCFG_PRI0P2
+ (0x03 << 6)
+
+353 
+	#PERCFG_PRI0P2_USART0
+ (0x00 << 6)
+
+354 
+	#PERCFG_PRI0P2_T1
+ (0x01 << 6)
+
+355 
+	#PERCFG_PRI0P2_T4
+ (0x02 << 6)
+
+356 
+	#PERCFG_T1CFG
+ 0x20
+
+	)
+
+357 
+	#PERCFG_T3CFG
+ 0x10
+
+	)
+
+358 
+	#PERCFG_T4CFG
+ 0x08
+
+	)
+
+359 
+	#PERCFG_I2CCFG
+ 0x04
+
+	)
+
+360 
+	#PERCFG_U0CFG
+ (0x03)
+
+361 
+	#PERCFG_U0CFG_ALT1
+ (0x00)
+
+362 
+	#PERCFG_U0CFG_ALT2
+ (0x01)
+
+363 
+	#PERCFG_U0CFG_ALT3
+ (0x02)
+
+364 
+
+	)
+
+366 
+	#APCFG_APCFG7
+ 0x80
+
+367 
+	#APCFG_APCFG6
+ 0x40
+
+	)
+
+368 
+	#APCFG_APCFG5
+ 0x20
+
+	)
+
+369 
+	#APCFG_APCFG4
+ 0x10
+
+	)
+
+370 
+	#APCFG_APCFG3
+ 0x08
+
+	)
+
+371 
+	#APCFG_APCFG2
+ 0x04
+
+	)
+
+372 
+	#APCFG_APCFG1
+ 0x02
+
+	)
+
+373 
+	#APCFG_APCFG0
+ 0x01
+
+	)
+
+376 
+	#P0SEL_SELP0_7
+ 0x80
+
+377 
+	#P0SEL_SELP0_6
+ 0x40
+
+	)
+
+378 
+	#P0SEL_SELP0_5
+ 0x20
+
+	)
+
+379 
+	#P0SEL_SELP0_4
+ 0x10
+
+	)
+
+380 
+	#P0SEL_SELP0_3
+ 0x08
+
+	)
+
+381 
+	#P0SEL_SELP0_2
+ 0x04
+
+	)
+
+382 
+	#P0SEL_SELP0_1
+ 0x02
+
+	)
+
+383 
+	#P0SEL_SELP0_0
+ 0x01
+
+	)
+
+386 
+	#P1SEL_SELP1_4
+ 0x10
+
+387 
+	#P1SEL_SELP1_3
+ 0x08
+
+	)
+
+388 
+	#P1SEL_SELP1_2
+ 0x04
+
+	)
+
+389 
+	#P1SEL_SELP1_1
+ 0x02
+
+	)
+
+390 
+	#P1SEL_SELP1_0
+ 0x01
+
+	)
+
+393 
+	#P2SEL_SELP2_2
+ 0x04
+
+394 
+	#P2SEL_SELP2_1
+ 0x02
+
+	)
+
+395 
+	#P2SEL_SELP2_0
+ 0x01
+
+	)
+
+398 
+	#PPRI_PRI_P1_2
+ 0x80
+
+399 
+	#PPRI_PRI_P1_1
+ (0x03 << 5)
+
+400 
+	#PPRI_PRI_P1_1_T1
+ (0x00 << 5)
+
+401 
+	#PPRI_PRI_P1_1_T3
+ (0x01 << 5)
+
+402 
+	#PPRI_PRI_P1_1_T4
+ (0x02 << 5)
+
+403 
+	#PPRI_PRI_P1_0
+ (0x03 << 3)
+
+404 
+	#PPRI_PRI_P1_0_T1
+ (0x00 << 3)
+
+405 
+	#PPRI_PRI_P1_0_T3
+ (0x01 << 3)
+
+406 
+	#PPRI_PRI_P1_0_T4
+ (0x02 << 3)
+
+407 
+	#PPRI_PRI0P1
+ 0x04
+
+408 
+	#PPRI_PRI1P0
+ 0x02
+
+409 
+	#PPRI_PRI0P0
+ 0x01
+
+410 
+
+	)
+
+424 
+	#PPULL_PDUP2L
+ 0x10
+
+425 
+	#PPULL_PDUP1H
+ 0x08
+
+426 
+	#PPULL_PDUP1L
+ 0x04
+
+427 
+	#PPULL_PDUP0H
+ 0x02
+
+428 
+	#PPULL_PDUP0L
+ 0x01
+
+429 
+
+	)
+
+437 
+	#PICTL_PADSC
+ 0x40
+
+438 
+	#PICTL_P2ICONL
+ 0x10
+
+439 
+	#PICTL_P1ICONH
+ 0x08
+
+440 
+	#PICTL_P1ICONL
+ 0x04
+
+441 
+	#PICTL_P0ICONH
+ 0x02
+
+442 
+	#PICTL_P0ICONL
+ 0x01
+
+443 
+
+	)
+
+451 
+	#PMUX_CKOEN
+ 0x80
+
+452 
+	#PMUX_CKOPIN
+ (0x07 << 4)
+
+453 
+	#PMUX_DREGSTA
+ 0x04
+
+454 
+	#PMUX_DREGSTAPIN
+ (0x07)
+
+455 
+
+	)
+
+470 #ñi‡(
+chù
+ == 2544)
+
+477 
+	#P0SEL0_SELP0_1
+ 0xF0
+
+	)
+
+478 
+	#P0SEL0_SELP0_0
+ 0x0F
+
+	)
+
+481 
+	#P0SEL1_SELP0_3
+ 0xF0
+
+	)
+
+482 
+	#P0SEL1_SELP0_2
+ 0x0F
+
+	)
+
+485 
+	#P1SEL0_SELP1_1
+ 0xF0
+
+	)
+
+486 
+	#P1SEL0_SELP1_0
+ 0x0F
+
+	)
+
+489 
+	#P1SEL1_SELP1_3
+ 0xF0
+
+	)
+
+490 
+	#P1SEL1_SELP1_2
+ 0x0F
+
+	)
+
+493 
+	#PDIR_DIRP1_3
+ 0x80
+
+	)
+
+494 
+	#PDIR_DIRP1_2
+ 0x40
+
+	)
+
+495 
+	#PDIR_DIRP1_1
+ 0x20
+
+	)
+
+496 
+	#PDIR_DIRP1_0
+ 0x10
+
+	)
+
+497 
+	#PDIR_DIRP0_3
+ 0x08
+
+	)
+
+498 
+	#PDIR_DIRP0_2
+ 0x04
+
+	)
+
+499 
+	#PDIR_DIRP0_1
+ 0x02
+
+	)
+
+500 
+	#PDIR_DIRP0_0
+ 0x01
+
+	)
+
+503 
+	#PINP_MDP1_3
+ 0x80
+
+	)
+
+504 
+	#PINP_MDP1_2
+ 0x40
+
+	)
+
+505 
+	#PINP_MDP0_3
+ 0x08
+
+	)
+
+506 
+	#PINP_MDP0_2
+ 0x04
+
+	)
+
+507 
+	#PINP_MDP0_1
+ 0x02
+
+	)
+
+508 
+	#PINP_MDP0_0
+ 0x01
+
+	)
+
+511 
+	#PPULL_PDUP1_3
+ 0x80
+
+	)
+
+512 
+	#PPULL_PDUP1_2
+ 0x40
+
+	)
+
+513 
+	#PPULL_PADSC
+ 0x20
+
+	)
+
+514 
+	#PPULL_PDUP0_3
+ 0x08
+
+	)
+
+515 
+	#PPULL_PDUP0_2
+ 0x04
+
+	)
+
+516 
+	#PPULL_PDUP0_1
+ 0x02
+
+	)
+
+517 
+	#PPULL_PDUP0_0
+ 0x01
+
+	)
+
+526 
+	#PICTL_P1ICON_3
+ 0x80
+
+	)
+
+527 
+	#PICTL_P1ICON_2
+ 0x40
+
+	)
+
+528 
+	#PICTL_P1ICON_1
+ 0x20
+
+	)
+
+529 
+	#PICTL_P1ICON_0
+ 0x10
+
+	)
+
+530 
+	#PICTL_P0ICON_3
+ 0x08
+
+	)
+
+531 
+	#PICTL_P0ICON_2
+ 0x04
+
+	)
+
+532 
+	#PICTL_P0ICON_1
+ 0x02
+
+	)
+
+533 
+	#PICTL_P0ICON_0
+ 0x01
+
+	)
+
+555 #ñi‡(
+chù
+ == 2545)
+
+566 
+	#PERCFG_T1CFG
+ 0x20
+
+	)
+
+567 
+	#PERCFG_T3CFG
+ 0x10
+
+	)
+
+568 
+	#PERCFG_T4CFG
+ 0x08
+
+	)
+
+569 
+	#PERCFG_I2CCFG
+ 0x04
+
+	)
+
+570 
+	#PERCFG_U0CFG
+ (0x03)
+
+571 
+	#PERCFG_U0CFG_ALT1
+ (0x00)
+
+572 
+	#PERCFG_U0CFG_ALT2
+ (0x01)
+
+573 
+	#PERCFG_U0CFG_ALT3
+ (0x02)
+
+574 
+
+	)
+
+576 
+	#APCFG_APCFG7
+ 0x80
+
+577 
+	#APCFG_APCFG6
+ 0x40
+
+	)
+
+578 
+	#APCFG_APCFG5
+ 0x20
+
+	)
+
+579 
+	#APCFG_APCFG4
+ 0x10
+
+	)
+
+580 
+	#APCFG_APCFG3
+ 0x08
+
+	)
+
+581 
+	#APCFG_APCFG2
+ 0x04
+
+	)
+
+582 
+	#APCFG_APCFG1
+ 0x02
+
+	)
+
+583 
+	#APCFG_APCFG0
+ 0x01
+
+	)
+
+586 
+	#P0SEL_SELP0_7
+ 0x80
+
+587 
+	#P0SEL_SELP0_6
+ 0x40
+
+	)
+
+588 
+	#P0SEL_SELP0_5
+ 0x20
+
+	)
+
+589 
+	#P0SEL_SELP0_4
+ 0x10
+
+	)
+
+590 
+	#P0SEL_SELP0_3
+ 0x08
+
+	)
+
+591 
+	#P0SEL_SELP0_2
+ 0x04
+
+	)
+
+592 
+	#P0SEL_SELP0_1
+ 0x02
+
+	)
+
+593 
+	#P0SEL_SELP0_0
+ 0x01
+
+	)
+
+596 
+	#P1SEL_SELP1_6
+ 0x40
+
+597 
+	#P1SEL_SELP1_5
+ 0x20
+
+	)
+
+598 
+	#P1SEL_SELP1_4
+ 0x10
+
+	)
+
+599 
+	#P1SEL_SELP1_3
+ 0x08
+
+	)
+
+600 
+	#P1SEL_SELP1_2
+ 0x04
+
+	)
+
+601 
+	#P1SEL_SELP1_1
+ 0x02
+
+	)
+
+602 
+	#P1SEL_SELP1_0
+ 0x01
+
+	)
+
+605 
+	#P2SEL_SELP2_7
+ 0x80
+
+606 
+	#P2SEL_SELP2_6
+ 0x40
+
+	)
+
+607 
+	#P2SEL_SELP2_5
+ 0x20
+
+	)
+
+608 
+	#P2SEL_SELP2_4
+ 0x10
+
+	)
+
+609 
+	#P2SEL_SELP2_3
+ 0x08
+
+	)
+
+610 
+	#P2SEL_SELP2_2
+ 0x04
+
+	)
+
+611 
+	#P2SEL_SELP2_1
+ 0x02
+
+	)
+
+612 
+	#P2SEL_SELP2_0
+ 0x01
+
+	)
+
+615 
+	#PPRI_OBSLOC
+ 0x40
+
+616 
+	#PPRI_PRI0P2
+ 0x20
+
+617 
+	#PPRI_PRI1P1
+ 0x18
+
+618 
+	#PPRI_PRI1P1_USART
+ (0x00 << 3)
+
+619 
+	#PPRI_PRI1P1_T3
+ (0x01 << 3)
+
+620 
+	#PPRI_PRI1P1_I2C
+ (0x10 << 3)
+
+621 
+	#PPRI_PRI0P1
+ 0x04
+
+622 
+	#PPRI_PRI0P0
+ 0x01
+
+623 
+
+	)
+
+641 
+	#PPULL_PDUP3H
+ 0x80
+
+	)
+
+642 
+	#PPULL_PDUP3L
+ 0x40
+
+	)
+
+643 
+	#PPULL_PDUP2H
+ 0x20
+
+	)
+
+644 
+	#PPULL_PDUP2L
+ 0x10
+
+	)
+
+645 
+	#PPULL_PDUP1H
+ 0x08
+
+	)
+
+646 
+	#PPULL_PDUP1L
+ 0x04
+
+	)
+
+647 
+	#PPULL_PDUP0H
+ 0x02
+
+648 
+	#PPULL_PDUP0L
+ 0x01
+
+649 
+
+	)
+
+657 
+	#PICTL_PADSC
+ 0x40
+
+658 
+	#PICTL_P2ICONH
+ 0x20
+
+	)
+
+659 
+	#PICTL_P2ICONL
+ 0x10
+
+660 
+	#PICTL_P1ICONH
+ 0x08
+
+	)
+
+661 
+	#PICTL_P1ICONL
+ 0x04
+
+	)
+
+662 
+	#PICTL_P0ICONH
+ 0x02
+
+663 
+	#PICTL_P0ICONL
+ 0x01
+
+664 
+
+	)
+
+672 
+	#PMUX_CKOEN
+ 0x80
+
+673 
+	#PMUX_CKOPIN
+ (0x07 << 4)
+
+674 
+	#PMUX_DREGSTA
+ 0x04
+
+675 
+	#PMUX_DREGSTAPIN
+ (0x07)
+
+676 
+
+	)
+
+697 
+	#DMAARM_ABORT
+ 0x80
+
+	)
+
+698 
+	#DMAARM_DMAARM1
+ 0x02
+
+	)
+
+699 
+	#DMAARM_DMAARM0
+ 0x01
+
+	)
+
+702 
+	#DMAREQ_DMAREQ1
+ 0x02
+
+	)
+
+703 
+	#DMAREQ_DMAREQ0
+ 0x01
+
+	)
+
+714 
+	#DMAIRQ_DMAIF1
+ 0x02
+
+	)
+
+715 
+	#DMAIRQ_DMAIF0
+ 0x01
+
+	)
+
+729 
+	#T1CTL_DIV
+ (0x0C)
+
+730 
+	#T1CTL_DIV_1
+ (0x00 << 2)
+
+731 
+	#T1CTL_DIV_8
+ (0x01 << 2)
+
+732 
+	#T1CTL_DIV_32
+ (0x02 << 2)
+
+733 
+	#T1CTL_DIV_128
+ (0x03 << 2)
+
+734 
+	#T1CTL_MODE
+ (0x03)
+
+735 
+	#T1CTL_MODE_SUSPEND
+ (0x00)
+
+736 
+	#T1CTL_MODE_FREERUN
+ (0x01)
+
+737 
+	#T1CTL_MODE_MODULO
+ (0x02)
+
+738 
+	#T1CTL_MODE_UPDOWN
+ (0x03)
+
+739 
+
+	)
+
+741 
+	#T1STAT_OVFIF
+ 0x20
+
+742 
+	#T1STAT_CH4IF
+ 0x10
+
+743 
+	#T1STAT_CH3IF
+ 0x08
+
+744 
+	#T1STAT_CH2IF
+ 0x04
+
+745 
+	#T1STAT_CH1IF
+ 0x02
+
+746 
+	#T1STAT_CH0IF
+ 0x01
+
+747 
+
+	)
+
+749 
+	#T1CCTLn_RFIRQ
+ 0x80
+
+750 
+	#T1CCTLn_IM
+ 0x40
+
+751 
+	#T1CCTLn_CMP
+ (0x07 << 3)
+
+752 
+	#T1CCTLn_CMP_SET_ON_CMP
+ (0x00 << 3)
+
+753 
+	#T1CCTLn_CMP_CLR_ON_CMP
+ (0x01 << 3)
+
+754 
+	#T1CCTLn_CMP_TOG_ON_CMP
+ (0x02 << 3)
+
+755 
+	#T1CCTLn_CMP_SET_CMP_UP_CLR_0
+ (0x03 << 3)
+
+756 
+	#T1CCTLn_CMP_CLR_CMP_UP_SET_0
+ (0x04 << 3)
+
+757 
+	#T1CCTLn_CMP_CLR_T1CC0_SET_T1CC1
+ (0x05 << 3)
+
+758 
+	#T1CCTLn_CMP_SET_T1CC0_CLR_T1CC1
+ (0x06 << 3)
+
+759 
+	#T1CCTLn_CMP_INIT_PIN
+ (0x07 << 3)
+
+760 
+	#T1CCTLn_MODE
+ 0x04
+
+761 
+	#T1CCTLn_CAP
+ (0x03)
+
+762 
+	#T1CCTLn_CAP_NO_CAP
+ (0x00)
+
+763 
+	#T1CCTLn_CAP_RISE_EDGE
+ (0x01)
+
+764 
+	#T1CCTLn_CAP_FALL_EDGE
+ (0x02)
+
+765 
+	#T1CCTLn_CAP_BOTH_EDGE
+ (0x03)
+
+766 
+
+	)
+
+800 
+	#IRCTL_IRGEN
+ 0x01
+
+801 
+
+	)
+
+818 
+	#T2IRQF_LONG_COMPARE2F
+ 0x80
+
+	)
+
+819 
+	#T2IRQF_LONG_COMPARE1F
+ 0x40
+
+	)
+
+820 
+	#T2IRQF_OVF_COMPARE2F
+ 0x20
+
+	)
+
+821 
+	#T2IRQF_OVF_COMPARE1F
+ 0x10
+
+	)
+
+822 
+	#T2IRQF_OVF_PERF
+ 0x08
+
+	)
+
+823 
+	#T2IRQF_COMPARE2F
+ 0x04
+
+	)
+
+824 
+	#T2IRQF_COMPARE1F
+ 0x02
+
+	)
+
+825 
+	#T2IRQF_PERF
+ 0x01
+
+	)
+
+828 
+	#T2IRQM_LONG_COMARE2M
+ 0x80
+
+	)
+
+829 
+	#T2IRQM_LONG_COMARE1M
+ 0x40
+
+	)
+
+830 
+	#T2IRQM_OVF_COMPARE2M
+ 0x20
+
+	)
+
+831 
+	#T2IRQM_OVF_COMPARE1M
+ 0x10
+
+	)
+
+832 
+	#T2IRQM_OVF_PERM
+ 0x08
+
+	)
+
+833 
+	#T2IRQM_COMPARE2M
+ 0x04
+
+	)
+
+834 
+	#T2IRQM_COMPARE1M
+ 0x02
+
+	)
+
+835 
+	#T2IRQM_PERM
+ 0x01
+
+	)
+
+838 
+	#T2CTRL_LATCH_MODE
+ 0x08
+
+	)
+
+839 
+	#T2CTRL_STATE
+ 0x04
+
+840 #i‡(
+chù
+ =2545)
+
+	)
+
+841 
+	#T2CTRL_SYNC
+ 0x02
+
+843 
+	#T2CTRL_RUN
+ 0x01
+
+844 
+
+	)
+
+853 
+	#T3CTL_DIV
+ (0xE0)
+
+	)
+
+854 
+	#T3CTL_DIV_1
+ (0x00 << 5)
+
+	)
+
+855 
+	#T3CTL_DIV_2
+ (0x01 << 5)
+
+	)
+
+856 
+	#T3CTL_DIV_4
+ (0x02 << 5)
+
+	)
+
+857 
+	#T3CTL_DIV_8
+ (0x03 << 5)
+
+	)
+
+858 
+	#T3CTL_DIV_16
+ (0x04 << 5)
+
+	)
+
+859 
+	#T3CTL_DIV_32
+ (0x05 << 5)
+
+	)
+
+860 
+	#T3CTL_DIV_64
+ (0x06 << 5)
+
+	)
+
+861 
+	#T3CTL_DIV_128
+ (0x07 << 5)
+
+	)
+
+862 
+	#T3CTL_START
+ 0x10
+
+	)
+
+863 
+	#T3CTL_OVFIM
+ 0x08
+
+	)
+
+864 
+	#T3CTL_CLR
+ 0x04
+
+	)
+
+865 
+	#T3CTL_MODE
+ (0x03)
+
+	)
+
+866 
+	#T3CTL_MODE_FREERUN
+ (0x00)
+
+	)
+
+867 
+	#T3CTL_MODE_DOWN
+ (0x01)
+
+	)
+
+868 
+	#T3CTL_MODE_MODULO
+ (0x02)
+
+	)
+
+869 
+	#T3CTL_MODE_UPDOWN
+ (0x03)
+
+	)
+
+872 
+	#T3CCTLn_IM
+ 0x40
+
+	)
+
+873 
+	#T3CCTLn_CMP
+ (0x07 << 3)
+
+874 
+	#T3CCTLn_CMP_SET_ON_CMP
+ (0x00 << 3)
+
+875 
+	#T3CCTLn_CMP_CLR_ON_CMP
+ (0x01 << 3)
+
+876 
+	#T3CCTLn_CMP_TOG_ON_CMP
+ (0x02 << 3)
+
+877 
+	#T3CCTLn_CMP_SET_CMP_UP_CLR_0
+ (0x03 << 3)
+
+878 
+	#T3CCTLn_CMP_CLR_CMP_UP_SET_0
+ (0x04 << 3)
+
+879 
+	#T3CCTLn_CMP_SET_CMP_CLR_0xFF
+ (0x05 << 3)
+
+880 
+	#T3CCTLn_CMP_CLR_CMP_SET_0x00
+ (0x06 << 3)
+
+881 
+	#T3CCTLn_CMP_INIT_PIN
+ (0x07 << 3)
+
+882 
+	#T3CCTLn_MODE
+ 0x04
+
+	)
+
+883 
+	#T3CCTLn_CAP
+ (0x03)
+
+884 
+	#T3CCTLn_CAP_NO_CAP
+ (0x00)
+
+885 
+	#T3CCTLn_CAP_RISE_EDGE
+ (0x01)
+
+886 
+	#T3CCTLn_CAP_FALL_EDGE
+ (0x02)
+
+887 
+	#T3CCTLn_CAP_BOTH_EDGE
+ (0x03)
+
+888 
+
+	)
+
+902 
+	#T4CTL_DIV
+ (0xE0)
+
+	)
+
+903 
+	#T4CTL_DIV_1
+ (0x00 << 5)
+
+	)
+
+904 
+	#T4CTL_DIV_2
+ (0x01 << 5)
+
+	)
+
+905 
+	#T4CTL_DIV_4
+ (0x02 << 5)
+
+	)
+
+906 
+	#T4CTL_DIV_8
+ (0x03 << 5)
+
+	)
+
+907 
+	#T4CTL_DIV_16
+ (0x04 << 5)
+
+	)
+
+908 
+	#T4CTL_DIV_32
+ (0x05 << 5)
+
+	)
+
+909 
+	#T4CTL_DIV_64
+ (0x06 << 5)
+
+	)
+
+910 
+	#T4CTL_DIV_128
+ (0x07 << 5)
+
+	)
+
+911 
+	#T4CTL_START
+ 0x10
+
+	)
+
+912 
+	#T4CTL_OVFIM
+ 0x08
+
+	)
+
+913 
+	#T4CTL_CLR
+ 0x04
+
+	)
+
+914 
+	#T4CTL_MODE
+ (0x03)
+
+	)
+
+915 
+	#T4CTL_MODE_FREERUN
+ (0x00)
+
+	)
+
+916 
+	#T4CTL_MODE_DOWN
+ (0x01)
+
+	)
+
+917 
+	#T4CTL_MODE_MODULO
+ (0x02)
+
+	)
+
+918 
+	#T4CTL_MODE_UPDOWN
+ (0x03)
+
+	)
+
+921 
+	#T4CCTLn_IM
+ 0x40
+
+	)
+
+922 
+	#T4CCTLn_CMP
+ (0x07 << 3)
+
+923 
+	#T4CCTLn_CMP_SET_ON_CMP
+ (0x00 << 3)
+
+924 
+	#T4CCTLn_CMP_CLR_ON_CMP
+ (0x01 << 3)
+
+925 
+	#T4CCTLn_CMP_TOG_ON_CMP
+ (0x02 << 3)
+
+926 
+	#T4CCTLn_CMP_SET_CMP_UP_CLR_0
+ (0x03 << 3)
+
+927 
+	#T4CCTLn_CMP_CLR_CMP_UP_SET_0
+ (0x04 << 3)
+
+928 
+	#T4CCTLn_CMP_SET_CMP_CLR_0xFF
+ (0x05 << 3)
+
+929 
+	#T4CCTLn_CMP_CLR_CMP_SET_0x00
+ (0x06 << 3)
+
+930 
+	#T4CCTLn_CMP_INIT_PIN
+ (0x07 << 3)
+
+931 
+	#T4CCTLn_MODE
+ 0x04
+
+	)
+
+932 
+	#T4CCTLn_CAP
+ (0x03)
+
+933 
+	#T4CCTLn_CAP_NO_CAP
+ (0x00)
+
+934 
+	#T4CCTLn_CAP_RISE_EDGE
+ (0x01)
+
+935 
+	#T4CCTLn_CAP_FALL_EDGE
+ (0x02)
+
+936 
+	#T4CCTLn_CAP_BOTH_EDGE
+ (0x03)
+
+937 
+
+	)
+
+952 #i‡(
+chù
+ == 2541 || chip == 2543 || chip == 2545)
+
+959 
+	#ADCCON1_EOC
+ 0x80
+
+	)
+
+960 
+	#ADCCON1_ST
+ 0x40
+
+	)
+
+961 
+	#ADCCON1_STSEL
+ (0x03 << 4)
+
+962 
+	#ADCCON1_STSEL_P2_0
+ (0x00 << 4)
+
+963 
+	#ADCCON1_STSEL_FULL_SPEED
+ (0x01 << 4)
+
+964 
+	#ADCCON1_STSEL_T1C0_CMP_EVT
+ (0x02 << 4)
+
+965 
+	#ADCCON1_STSEL_ST
+ (0x03 << 4)
+
+966 
+
+	)
+
+968 
+	#ADCCON2_SREF
+ (0x03 << 6)
+
+969 
+	#ADCCON2_SREF_1_15V
+ (0x00 << 6)
+
+970 
+	#ADCCON2_SREF_P0_7
+ (0x01 << 6)
+
+971 
+	#ADCCON2_SREF_AVDD
+ (0x02 << 6)
+
+972 
+	#ADCCON2_SREF_P0_6_P0_7
+ (0x03 << 6)
+
+973 
+	#ADCCON2_SDIV
+ (0x03 << 4)
+
+974 
+	#ADCCON2_SDIV_64
+ (0x00 << 4)
+
+975 
+	#ADCCON2_SDIV_128
+ (0x01 << 4)
+
+976 
+	#ADCCON2_SDIV_256
+ (0x02 << 4)
+
+977 
+	#ADCCON2_SDIV_512
+ (0x03 << 4)
+
+978 
+	#ADCCON2_SCH
+ (0x0F)
+
+979 
+	#ADCCON2_SCH_AIN0
+ (0x00)
+
+980 
+	#ADCCON2_SCH_AIN1
+ (0x01)
+
+	)
+
+981 
+	#ADCCON2_SCH_AIN2
+ (0x02)
+
+	)
+
+982 
+	#ADCCON2_SCH_AIN3
+ (0x03)
+
+	)
+
+983 
+	#ADCCON2_SCH_AIN4
+ (0x04)
+
+	)
+
+984 
+	#ADCCON2_SCH_AIN5
+ (0x05)
+
+	)
+
+985 
+	#ADCCON2_SCH_AIN6
+ (0x06)
+
+	)
+
+986 
+	#ADCCON2_SCH_AIN7
+ (0x07)
+
+	)
+
+987 
+	#ADCCON2_SCH_AIN0_1
+ (0x08)
+
+988 
+	#ADCCON2_SCH_AIN2_3
+ (0x09)
+
+	)
+
+989 
+	#ADCCON2_SCH_AIN4_5
+ (0x0A)
+
+	)
+
+990 
+	#ADCCON2_SCH_AIN6_7
+ (0x0B)
+
+	)
+
+991 
+	#ADCCON2_SCH_GND
+ (0x0C)
+
+992 
+	#ADCCON2_SCH_TEMPR
+ (0x0E)
+
+993 
+	#ADCCON2_SCH_VDD_3
+ (0x0F)
+
+994 
+
+	)
+
+996 
+	#ADCCON3_EREF
+ 0xC0
+
+	)
+
+997 
+	#ADCCON3_EREF_1_25V
+ (0x00 << 6)
+
+	)
+
+998 
+	#ADCCON3_EREF_P0_7
+ (0x01 << 6)
+
+	)
+
+999 
+	#ADCCON3_EREF_AVDD
+ (0x02 << 6)
+
+	)
+
+1000 
+	#ADCCON3_EREF_P0_6_P0_7
+ (0x03 << 6)
+
+	)
+
+1001 
+	#ADCCON3_EDIV
+ 0x30
+
+	)
+
+1002 
+	#ADCCON3_EDIV_64
+ (0x00 << 4)
+
+	)
+
+1003 
+	#ADCCON3_EDIV_128
+ (0x01 << 4)
+
+	)
+
+1004 
+	#ADCCON3_EDIV_256
+ (0x02 << 4)
+
+	)
+
+1005 
+	#ADCCON3_EDIV_512
+ (0x03 << 4)
+
+	)
+
+1006 
+	#ADCCON3_ECH
+ 0x0F
+
+	)
+
+1007 
+	#ADCCON3_ECH_AIN0
+ (0x00)
+
+	)
+
+1008 
+	#ADCCON3_ECH_AIN1
+ (0x01)
+
+	)
+
+1009 
+	#ADCCON3_ECH_AIN2
+ (0x02)
+
+	)
+
+1010 
+	#ADCCON3_ECH_AIN3
+ (0x03)
+
+	)
+
+1011 
+	#ADCCON3_ECH_AIN4
+ (0x04)
+
+	)
+
+1012 
+	#ADCCON3_ECH_AIN5
+ (0x05)
+
+	)
+
+1013 
+	#ADCCON3_ECH_AIN6
+ (0x06)
+
+	)
+
+1014 
+	#ADCCON3_ECH_AIN7
+ (0x07)
+
+	)
+
+1015 
+	#ADCCON3_ECH_AIN0_1
+ (0x08)
+
+	)
+
+1016 
+	#ADCCON3_ECH_AIN2_3
+ (0x09)
+
+	)
+
+1017 
+	#ADCCON3_ECH_AIN4_5
+ (0x0A)
+
+	)
+
+1018 
+	#ADCCON3_ECH_AIN6_7
+ (0x0B)
+
+	)
+
+1019 
+	#ADCCON3_ECH_GND
+ (0x0C)
+
+	)
+
+1020 
+	#ADCCON3_ECH_TEMPR
+ (0x0E)
+
+	)
+
+1021 
+	#ADCCON3_ECH_VDD_3
+ (0x0F)
+
+	)
+
+1024 
+	#TR0_ADCTM
+ 0x01
+
+1025 
+
+	)
+
+1030 
+	#CMPCTL_EN
+ 0x02
+
+1031 
+	#CMPCTL_OUTPUT
+ 0x01
+
+1032 
+
+	)
+
+1037 
+	#ADCCON1_RCTRL
+ (0x03 << 2)
+
+1038 
+	#ADCCON1_RCTRL_COMPLETE
+ (0x00 << 2)
+
+1039 
+	#ADCCON1_RCTRL_LFSR13
+ (0x01 << 2)
+
+1040 
+	#ADCCON1_RCTRL_STOP
+ (0x03 << 2)
+
+1041 
+
+	)
+
+1052 
+	#WDCTL_CLR
+ 0xF0
+
+	)
+
+1053 
+	#WDCTL_CLR0
+ 0x10
+
+	)
+
+1054 
+	#WDCTL_CLR1
+ 0x20
+
+	)
+
+1055 
+	#WDCTL_CLR2
+ 0x40
+
+	)
+
+1056 
+	#WDCTL_CLR3
+ 0x80
+
+	)
+
+1057 
+	#WDCTL_MODE
+ (0x03 << 2)
+
+1058 
+	#WDCTL_MODE_IDLE
+ (0x00 << 2)
+
+1059 
+	#WDCTL_MODE_WD
+ (0x02 << 2)
+
+1060 
+	#WDCTL_MODE_TIMER
+ (0x03 << 2)
+
+1061 
+	#WDCTL_INT
+ (0x03)
+
+1062 
+	#WDCTL_INT_1_SEC
+ (0x00)
+
+	)
+
+1063 
+	#WDCTL_INT_250_MSEC
+ (0x01)
+
+	)
+
+1064 
+	#WDCTL_INT_15_MSEC
+ (0x02)
+
+	)
+
+1065 
+	#WDCTL_INT_2_MSEC
+ (0x03)
+
+	)
+
+1073 
+	#U0CSR_MODE
+ 0x80
+
+	)
+
+1074 
+	#U0CSR_RE
+ 0x40
+
+	)
+
+1075 
+	#U0CSR_SLAVE
+ 0x20
+
+	)
+
+1076 
+	#U0CSR_FE
+ 0x10
+
+	)
+
+1077 
+	#U0CSR_ERR
+ 0x08
+
+	)
+
+1078 
+	#U0CSR_RX_BYTE
+ 0x04
+
+	)
+
+1079 
+	#U0CSR_TX_BYTE
+ 0x02
+
+	)
+
+1080 
+	#U0CSR_ACTIVE
+ 0x01
+
+	)
+
+1083 
+	#U0UCR_FLUSH
+ 0x80
+
+	)
+
+1084 
+	#U0UCR_FLOW
+ 0x40
+
+	)
+
+1085 
+	#U0UCR_D9
+ 0x20
+
+	)
+
+1086 
+	#U0UCR_BIT9
+ 0x10
+
+	)
+
+1087 
+	#U0UCR_PARITY
+ 0x08
+
+	)
+
+1088 
+	#U0UCR_SPB
+ 0x04
+
+	)
+
+1089 
+	#U0UCR_STOP
+ 0x02
+
+	)
+
+1090 
+	#U0UCR_START
+ 0x01
+
+	)
+
+1093 
+	#U0GCR_CPOL
+ 0x80
+
+	)
+
+1094 
+	#U0GCR_CPHA
+ 0x40
+
+	)
+
+1095 
+	#U0GCR_ORDER
+ 0x20
+
+	)
+
+1096 
+	#U0GCR_BAUD_E
+ 0x1F
+
+	)
+
+1097 
+	#U0GCR_BAUD_E0
+ 0x01
+
+	)
+
+1098 
+	#U0GCR_BAUD_E1
+ 0x02
+
+	)
+
+1099 
+	#U0GCR_BAUD_E2
+ 0x04
+
+	)
+
+1100 
+	#U0GCR_BAUD_E3
+ 0x08
+
+	)
+
+1101 
+	#U0GCR_BAUD_E4
+ 0x10
+
+	)
+
+1112 #i‡(
+chù
+ == 2541 || chip == 2543 || chip == 2545)
+
+1115 
+	#I2CCFG_CR2
+ 0x80
+
+1116 
+	#I2CCFG_ENS1
+ 0x40
+
+1117 
+	#I2CCFG_STA
+ 0x20
+
+1118 
+	#I2CCFG_STO
+ 0x10
+
+1119 
+	#I2CCFG_SI
+ 0x08
+
+1120 
+	#I2CCFG_AA
+ 0x04
+
+1121 
+	#I2CCFG_CR1
+ 0x02
+
+1122 
+	#I2CCFG_CR0
+ 0x01
+
+1123 
+	#I2CCFG_CR
+ (0x83)
+
+1124 
+	#I2CCFG_CR_DIV_256
+ (0x00)
+
+1125 
+	#I2CCFG_CR_DIV_244
+ (0x01)
+
+1126 
+	#I2CCFG_CR_DIV_192
+ (0x02)
+
+1127 
+	#I2CCFG_CR_DIV_160
+ (0x03)
+
+1128 
+	#I2CCFG_CR_DIV_960
+ (0x80)
+
+1129 
+	#I2CCFG_CR_DIV_120
+ (0x81)
+
+1130 
+	#I2CCFG_CR_DIV_60
+ (0x82)
+
+1131 
+
+	)
+
+1137 
+	#I2CADDR_GC
+ 0x01
+
+1138 
+
+	)
+
 	@/usr/include/_ansi.h
 
 12 #i‚def 
@@ -208246,8 +212914,8 @@ __˝lu•lus
 .
 1
 /usr/include
-304
-14993
+308
+15040
 ../../../../Components/ble/controller/include/ll.h
 ../../../../Components/ble/controller/include/ll_math.h
 ../../../../Components/ble/controller/include/ll_sleep.h
@@ -208527,6 +213195,10 @@ hci_ext_app.h
 /usr/include/limits.h
 /usr/include/stdint.h
 /usr/include/string.h
+dma.h
+hal_types.h
+hal_wait.h
+ioCC254x_bitdef.h
 /usr/include/_ansi.h
 /usr/include/bits/wordsize.h
 /usr/include/features.h

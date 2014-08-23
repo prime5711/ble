@@ -12,7 +12,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -250,6 +250,18 @@
           <version>0</version>
           <state>3</state>
         </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -274,8 +286,9 @@
           <state>HAL_AES_DMA=TRUE</state>
           <state>HAL_DMA=TRUE</state>
           <state>HAL_UART=TRUE</state>
-          <state>HAL_UART_DMA=1</state>
-          <state>HAL_UART_ISR=0</state>
+          <state>HAL_UART_DMA=0</state>
+          <state>HAL_UART_ISR=1</state>
+          <state>NPI_UART_FC=FALSE</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -1080,7 +1093,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -1317,6 +1330,18 @@
           <name>GRuntimeLibSelectSlave2</name>
           <version>0</version>
           <state>3</state>
+        </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -2151,7 +2176,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -2388,6 +2413,18 @@
           <name>GRuntimeLibSelectSlave2</name>
           <version>0</version>
           <state>3</state>
+        </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -3222,7 +3259,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -3459,6 +3496,18 @@
           <name>GRuntimeLibSelectSlave2</name>
           <version>0</version>
           <state>3</state>
+        </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -4293,7 +4342,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -4530,6 +4579,18 @@
           <name>GRuntimeLibSelectSlave2</name>
           <version>0</version>
           <state>3</state>
+        </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -5367,7 +5428,7 @@
       <name>General</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <version>5</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -5604,6 +5665,18 @@
           <name>GRuntimeLibSelectSlave2</name>
           <version>0</version>
           <state>3</state>
+        </option>
+        <option>
+          <name>Extended stack address</name>
+          <state>0x9B</state>
+        </option>
+        <option>
+          <name>Extended stack mask</name>
+          <state>0x03</state>
+        </option>
+        <option>
+          <name>Extended stack is offset</name>
+          <state>0</state>
         </option>
       </data>
     </settings>

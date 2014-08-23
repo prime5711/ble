@@ -52,15 +52,15 @@
 #define SIZE_OF_UART_TX_BUFFER   SIZE_OF_UART_RX_BUFFER
 
 // UART test characters
-#define UART_TEST_DATA "Texas Instruments LPRF!"
+#define UART_TEST_DATA "Texas Instruments LPRF!\r\n"
 
 // Test definitions
 #define UART_TST_MODE_RX
-//#define UART_TST_MODE_TX
+#define UART_TST_MODE_TX
 
-// Baudrate = 57.6 kbps (U0BAUD.BAUD_M = 216, U0GCR.BAUD_E = 10), given 32 MHz system clock
+// Baudrate = 115.2 kbps (U0BAUD.BAUD_M = 216, U0GCR.BAUD_E = 10), given 32 MHz system clock
 #define UART_BAUD_M  216
-#define UART_BAUD_E  10
+#define UART_BAUD_E  11
 
 
 /***********************************************************************************
@@ -158,7 +158,7 @@ void main (void)
     *
     */
 
-    // Initialise bitrate = 57.6 kbps.
+    // Initialise bitrate = 115.2 kbps.
     U0BAUD = UART_BAUD_M;
     U0GCR = (U0GCR&~U0GCR_BAUD_E) | UART_BAUD_E;
 
@@ -207,9 +207,11 @@ void main (void)
         {
             uart0StartRxForIsr();
         }
-#else 
+#endif
+        
+#ifdef UART_TST_MODE_TX
         // Start UART TX when S1 pressed (S1 is high when pushed).
-        if (P0 & BIT1)
+        if (!(P0 & BIT1))
         {
             halMcuWaitMs(200);      // Button debouncing delay
             uart0StartTxForIsr();
