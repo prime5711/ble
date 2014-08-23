@@ -59,8 +59,8 @@
 #define UART_TEST_DATA "Texas Instruments LPRF!"
 
 // Test definitions.
-#define UART_TST_MODE_RX
-//  #define UART_TST_MODE_TX
+// #define UART_TST_MODE_RX
+  #define UART_TST_MODE_TX
 
 // Baudrate = 57.6 kbps (U0BAUD.BAUD_M = 216, U0GCR.BAUD_E = 10), given 32 MHz system clock.
 #define UART_BAUD_M  216

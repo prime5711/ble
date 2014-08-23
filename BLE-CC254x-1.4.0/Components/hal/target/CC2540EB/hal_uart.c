@@ -170,6 +170,7 @@ uint8 HalUARTOpen(uint8 port, halUARTCfg_t *config)
 uint16 HalUARTRead(uint8 port, uint8 *buf, uint16 len)
 {
 #if (HAL_UART_DMA == 1)
+//shcho here
   if (port == HAL_UART_PORT_0)  return HalUARTReadDMA(buf, len);
 #endif
 #if (HAL_UART_DMA == 2)

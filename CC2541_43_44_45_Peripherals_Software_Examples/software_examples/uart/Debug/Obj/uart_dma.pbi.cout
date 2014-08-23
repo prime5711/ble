@@ -1,18 +1,18 @@
-"C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\uart_dma.c"
+"Z:\HOST_C\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\uart_dma.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
+Z:\HOST_C\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
 -I
-C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
+Z:\HOST_C\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc
+C:\IAR Systems\Embedded Workbench 6.5\8051\inc
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc\clib
+C:\IAR Systems\Embedded Workbench 6.5\8051\inc\clib
 -I
-C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
+Z:\HOST_C\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source
 -I
-C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
+Z:\HOST_C\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\uart\source\components
 -Dchip=2541
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
@@ -308,8 +308,8 @@ C:\Work.git\ble\CC2541_43_44_45_Peripherals_Software_Examples\software_examples\
 -D__PLAIN_INT_BITFIELD_IS_SIGNED__=1
 -D__HAS_LOCATED_DECLARATION__=1
 -D__IAR_COMPILERBASE__=593409
--D__DATE__="Aug 18 2014"
--D__TIME__="23:20:21"
+-D__DATE__="Aug 23 2014"
+-D__TIME__="00:41:39"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1

@@ -9,26 +9,33 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1569791034
+Checksum=109164996
 [CallStack]
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
 Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [Breakpoints]
-Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.85.3" 1 0 0 0 "" 0 ""
-Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.88.3" 1 0 0 0 "" 0 ""
-Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.82.3" 1 0 0 0 "" 0 ""
-Count=3
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.106.1" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.252.1" 1 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.252.1" 1 0 0 0 "" 0 ""
+Bp3=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.252.3" 1 0 0 0 "" 0 ""
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.148.3" 1 0 0 0 "" 0 ""
+Count=5
 [ChipconEmu]
 Stop timers on halt=1
 Leave target running=1
 [Aliases]
-Count=0
-SuppressDialog=0
+A0=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Components\hal\common\hal_drivers.c" ""
+A1=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Components\hal\target\CC2540EB\hal_adc.c" ""
+A2=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Components\hal\target\CC2540EB\hal_startup.c" ""
+A3=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Projects\ble\Profiles\Roles\gap.c" "Z:\HOST_C\Work.git\ble\BLE-CC254x-1.4.0\Projects\ble\Profiles\Roles\gap.c"
+A4=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Projects\ble\common\npi\npi_np\npi.c" ""
+Count=5
+SuppressDialog=1

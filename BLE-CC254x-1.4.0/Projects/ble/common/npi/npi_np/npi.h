@@ -25,7 +25,7 @@
   its documentation for any purpose.
 
   YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
-  PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+  PROVIDED ?AS IS? WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
   INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
   NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
   TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
@@ -67,21 +67,21 @@ extern "C"
 /* UART port */
 #if !defined NPI_UART_PORT
 
-#if ((defined HAL_UART_SPI) && (HAL_UART_SPI != 0)) // FOR SPI
-#if (HAL_UART_SPI == 2)  
-#define NPI_UART_PORT                  HAL_UART_PORT_1
-#else
-#define NPI_UART_PORT                  HAL_UART_PORT_0
-#endif
-#else // FOR UART
-#if ((defined HAL_UART_DMA) && (HAL_UART_DMA  == 1))
-#define NPI_UART_PORT                  HAL_UART_PORT_0
-#elif ((defined HAL_UART_DMA) && (HAL_UART_DMA  == 2))
-#define NPI_UART_PORT                  HAL_UART_PORT_1
-#else
-#define NPI_UART_PORT                  HAL_UART_PORT_0
-#endif
-#endif // Endif for HAL_UART_SPI/DMA 
+	#if ((defined HAL_UART_SPI) && (HAL_UART_SPI != 0)) // FOR SPI
+		#if (HAL_UART_SPI == 2)  
+			#define NPI_UART_PORT                  HAL_UART_PORT_1
+		#else
+			#define NPI_UART_PORT                  HAL_UART_PORT_0
+		#endif
+	#else // FOR UART
+		#if ((defined HAL_UART_DMA) && (HAL_UART_DMA  == 1))
+			#define NPI_UART_PORT                  HAL_UART_PORT_0
+		#elif ((defined HAL_UART_DMA) && (HAL_UART_DMA  == 2))
+			#define NPI_UART_PORT                  HAL_UART_PORT_1
+		#else
+			#define NPI_UART_PORT                  HAL_UART_PORT_0
+		#endif
+	#endif // Endif for HAL_UART_SPI/DMA 
 #endif //Endif for NPI_UART_PORT
 
 #if !defined( NPI_UART_FC )

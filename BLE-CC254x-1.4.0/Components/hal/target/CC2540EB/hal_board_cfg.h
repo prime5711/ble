@@ -366,7 +366,7 @@ st( \
 
 /* Set to TRUE enable ADC usage, FALSE disable it */
 #ifndef HAL_ADC
-#define HAL_ADC TRUE
+//#define HAL_ADC TRUE
 #endif
 
 /* Set to TRUE enable DMA usage, FALSE disable it */
@@ -390,7 +390,7 @@ st( \
 
 /* Set to TRUE enable LCD usage, FALSE disable it */
 #ifndef HAL_LCD
-#define HAL_LCD TRUE
+//#define HAL_LCD TRUE
 #endif
 
 /* Set to TRUE enable LED usage, FALSE disable it */
@@ -403,7 +403,7 @@ st( \
 
 /* Set to TRUE enable KEY usage, FALSE disable it */
 #ifndef HAL_KEY
-#define HAL_KEY TRUE
+//  #define HAL_KEY TRUE
 #endif
 
 /* Set to TRUE enable UART usage, FALSE disable it */

@@ -8,9 +8,12 @@
     <outputs>
       <file>$PROJ_DIR$\source\uart_dma.c</file>
       <file>$PROJ_DIR$\source\components\hal_wait.h</file>
+      <file>$PROJ_DIR$\source\components\hal_wait.c</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
       <file>$PROJ_DIR$\Debug\Obj\hal_wait.pbi</file>
       <file>$PROJ_DIR$\source\components\hal_types.h</file>
-      <file>$PROJ_DIR$\source\components\hal_wait.c</file>
       <file>$PROJ_DIR$\source\components\dma.h</file>
       <file>$PROJ_DIR$\source\components\ioCC254x_bitdef.h</file>
       <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.d51</file>
@@ -18,35 +21,31 @@
       <file>$PROJ_DIR$\Debug\Obj\uart_dma.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\uart_dma.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\uart_dma_cc254x.pbd</file>
+      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2541F256_banked.xcl</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2541.h</file>
       <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
-      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
-      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
-      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2541F256_banked.xcl</file>
-      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\ioCC2543F32.ddf</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\source\uart_dma.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 10</file>
+          <name>ICC8051</name>
+          <file> 12</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 9</file>
+          <name>BICOMP</name>
+          <file> 13</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 3 1 5 6 12 16 15 14 13</file>
+          <name>ICC8051</name>
+          <file> 7 1 8 9 17 5 4 3 18</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 3 1 5 6 12 16 15 14 13</file>
+          <name>BICOMP</name>
+          <file> 7 1 8 9 17 5 4 3 18</file>
         </tool>
       </inputs>
     </file>
@@ -54,22 +53,22 @@
       <name>$PROJ_DIR$\source\components\hal_wait.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 2</file>
+          <name>ICC8051</name>
+          <file> 11</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 8</file>
+          <name>BICOMP</name>
+          <file> 6</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 3</file>
+          <name>ICC8051</name>
+          <file> 7</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 3</file>
+          <name>BICOMP</name>
+          <file> 7</file>
         </tool>
       </inputs>
     </file>
@@ -78,7 +77,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 18 8 9 17</file>
+          <file> 15 11 12 16</file>
         </tool>
       </inputs>
     </file>
@@ -87,7 +86,7 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 7</file>
+          <file> 10</file>
         </tool>
       </outputs>
     </file>

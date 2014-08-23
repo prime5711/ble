@@ -8,10 +8,9 @@
     <outputs>
       <file>$PROJ_DIR$\source\uart_isr.c</file>
       <file>$PROJ_DIR$\source\components\hal_wait.c</file>
-      <file>$TOOLKIT_DIR$\inc\ioCC2541.h</file>
-      <file>$PROJ_DIR$\source\components\hal_types.h</file>
       <file>$PROJ_DIR$\source\components\ioCC254x_bitdef.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\uart_isr_cc254x.pbd</file>
+      <file>$PROJ_DIR$\source\components\hal_types.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2541.h</file>
       <file>$PROJ_DIR$\source\components\hal_wait.h</file>
       <file>$PROJ_DIR$\Debug\Exe\uart_isr_cc254x.d51</file>
       <file>$PROJ_DIR$\Debug\Obj\hal_wait.pbi</file>
@@ -25,22 +24,22 @@
       <name>$PROJ_DIR$\source\uart_isr.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 9</file>
+          <name>ICC8051</name>
+          <file> 10</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 11</file>
+          <name>BICOMP</name>
+          <file> 8</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 3 6 4 2</file>
+          <name>ICC8051</name>
+          <file> 3 5 2 4</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 3 6 4 2</file>
+          <name>BICOMP</name>
+          <file> 3 5 2 4</file>
         </tool>
       </inputs>
     </file>
@@ -48,22 +47,31 @@
       <name>$PROJ_DIR$\source\components\hal_wait.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 8</file>
+          <name>ICC8051</name>
+          <file> 9</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 10</file>
+          <name>BICOMP</name>
+          <file> 7</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
+          <name>ICC8051</name>
           <file> 3</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
+          <name>BICOMP</name>
           <file> 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\uart_isr_cc254x.d51</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 11 9 10 12</file>
         </tool>
       </inputs>
     </file>
@@ -72,18 +80,9 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 7</file>
+          <file> 6</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\uart_isr_cc254x.d51</name>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 12 10 11 13</file>
-        </tool>
-      </inputs>
     </file>
   </configuration>
 </project>
