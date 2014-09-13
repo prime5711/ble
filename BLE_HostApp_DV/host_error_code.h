@@ -1,0 +1,34 @@
+#define ERROR_SUCCESS					0x00
+#define ERROR_FAILURE					0x01
+#define ERROR_INVALIDPARAMETER			0x02
+#define ERROR_INVALID_TASK				0x03
+#define ERROR_MSG_BUFFER_NOT_AVAIL		0x04
+#define ERROR_INVALID_MSG_POINTER		0x05
+#define ERROR_INVALID_EVENT_ID			0x06
+#define ERROR_INVALID_INTERRUPT_ID		0x07
+#define ERROR_NO_TIMER_AVAIL			0x08
+#define ERROR_NV_ITEM_UNINIT			0x09
+#define ERROR_NV_OPER_FAILED			0x0A
+#define ERROR_INVALID_MEM_SIZE			0x0B
+#define ERROR_MV_BAD_ITEM_LEN			0x0C
+#define ERROR_bleNotReady				0x10
+#define ERROR_bleAlreadyRequestedMode	0x11
+#define ERROR_bleIncorrectMode			0x12
+#define ERROR_bleMemAllocError			0x13
+#define ERROR_bleNotConnected			0x14
+#define ERROR_bleNoResponses			0x15
+#define ERROR_blePending				0x16
+#define ERROR_bleTimeout				0x17
+#define ERROR_bleInvalidRange			0x18
+#define ERROR_bleLinkEncrypted			0x19
+
+#define ERROR_bleProcedureComplete		0x1A
+
+#define ERROR_bleGAPUserCanceled		0x30
+#define ERROR_bleGAPConnNotAcceptable	0x31
+#define ERROR_bleGAPBondRejected		0x32
+#define ERROR_bleInvalidPDU				0x40
+#define ERROR_bleInsufficientAuthen		0x41
+#define ERROR_bleInsufficientEncrypt	0x42
+#define ERROR_bleInsufficientKeySize	0x43
+#define ERROR_INVALID_TASK_ID			0xFF

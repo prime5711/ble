@@ -16,6 +16,13 @@ ShowArgs=0
 MixedMode=1
 [array_types]
 Fmt0=uint8 [128]	4	0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Breakpoints]
 Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\Components\hal\target\CC2540EB\_hal_uart_isr.c}.361.7" 1 0 0 0 "" 0 ""
 Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\Source\HostTest_Main.c}.214.5" 1 0 0 0 "" 0 ""
@@ -24,13 +31,6 @@ Count=3
 [ChipconEmu]
 Stop timers on halt=0
 Leave target running=1
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [Aliases]
 A0=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Components\hal\common\hal_drivers.c" ""
 A1=_ "C:\Work.git\ble\BLE-CC254x-1.4.0\Components\hal\target\CC2540EB\hal_adc.c" ""

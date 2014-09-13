@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm ble_hostapp_dv.exe
+#rm rfid_process 
+
+gcc -o ble_hostapp_dv   ble_hostapp_dv.c
+#gcc -o rfid_process  rfid_process.c
+
+ls -alg ble_hostapp_dv.exe 
+#ls -alg rfid_process 
