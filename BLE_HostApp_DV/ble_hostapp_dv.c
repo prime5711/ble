@@ -29,6 +29,16 @@
 
 #include "HCI_command_event.h"
 
+#define MEM_MATCH	0
+#define STR_MATCH	0
+
+#define STATE_LINK_ESTABLISHED	1
+#define STATE_LINK_TERMINATED	0
+
+
+#define HANDLE_HUMIDITY_DATA	0x3B
+#define HANDLE_NONE				0x00
+
 //  #include <sys/inotify.h>
 
 
@@ -723,8 +733,6 @@ void Print_Card_Info(struct _card_block_info *p)
  INNO_SHCHO_PRINT("\033[0m \n");
 }
 
-#define MEM_MATCH	0
-#define STR_MATCH	0
 
 #define FAIL_COUNT_MAX	20
 int fail_count = 0;
@@ -1428,14 +1436,34 @@ int	Read_Confirm_length(int fd, unsigned char *buf,int length)
 void hexDump(unsigned char *buf, int count)
 {
 	int i = 0 ;
+	unsigned char str8_1[9];
+	unsigned char str8_2[9];
+	unsigned char str16[17];
+
+	memset( str8_1, 0, sizeof(str8_1));
+	memset( str8_2, 0, sizeof(str8_2));
+	memset( str16 , 0, sizeof(str16));
+
 	INNO_SHCHO_PRINT("      0  1  2  3  4  5  6  7    8  9  a  b  c  d  e  f\n");
 	INNO_SHCHO_PRINT("    ------------------------ -------------------------\n");
 	for(i=0 ; i < count ; i++ )
 	{
-		if( (i % 16) == 0 ) INNO_SHCHO_PRINT("%02x:", i);
+		str16[i%16] = buf[i] ;
+		if( (i % 16) == 0 ) INNO_SHCHO_PRINT("%02x: ", i);
 		INNO_SHCHO_PRINT(" %02x", buf[i]);
 		if( (i % 8) == 7 )	INNO_SHCHO_PRINT("  ");
-		if( (i % 16) == 15 )	INNO_SHCHO_PRINT(" \n");
+
+		#if 1
+		if( (i % 16) == 15 ) INNO_SHCHO_PRINT("\n");
+		#else
+		if( (i % 16) == 15 )
+		{
+			memcpy(str8_1, &str16[0] ,8);
+			memcpy(str8_2, &str16[8], 8);
+			INNO_SHCHO_PRINT(" : %s %s \n", str8_1, str8_2);
+			memset(str16,0,sizeof(str16));
+		}
+		#endif
 	}
 	INNO_SHCHO_PRINT("\n");
 	INNO_SHCHO_PRINT("    ------------------------ -------------------------\n");
@@ -1572,8 +1600,11 @@ int setupUart(int fd)
 //  
 //  #define Event_ATT_ReadByTypeRsp	 		     0x0509
 
-#define EventType_Connectable_Undirect_Advertisement	0x00
-#define EventType_Scan_Response							0x04
+#define EventType_Connectable_Undirect_Advertisement		0x00
+#define EventType_Connectable_Direct_Advertisement			0x01
+#define EventType_Discoverable_Undirect_Advertisement		0x02
+#define EventType_Non_Connectable_Undirect_Advertisement	0x03
+#define EventType_Scan_Response								0x04
 
 
 unsigned short ConnHandleList[100];
@@ -1684,12 +1715,31 @@ struct _CMD_GAP_DeviceDiscoveryRequestParam
 	unsigned char WhiteList;
 }__attribute__((packed));
 
+struct _CMD_GATT_CMD_WriteCharValueParam
+{
+	unsigned short ConnHandle;
+	unsigned short Handle;
+	unsigned char  data[256];
+}__attribute__((packed));
+
+struct _EVENT_ATT_HandleValueNotificationParam
+{
+	unsigned short Event;
+	unsigned char  Status;
+	unsigned short ConnHandle;
+	unsigned char  AddrType;
+	unsigned char  PduLen;
+	unsigned short Handle;
+	unsigned char  Data[256];
+}__attribute__((packed));
+
+
 struct _EVENT_GAP_DeviceInfomationParam
 {
 	unsigned short Event;
 	unsigned char  Status;
-	unsigned short EventType;
-	unsigned short AddrType;
+	unsigned char  EventType;
+	unsigned char  AddrType;
 	unsigned char  Addr[6];
 	unsigned char  Rssi;
 	unsigned char  DataLength;
@@ -1703,6 +1753,13 @@ struct _DiscoveryDoneParam
 	unsigned char  Addr[6];
 }__attribute__((packed));
 
+struct _CMD_GAP_TerminatLink
+{
+	unsigned short ConnHandle;
+	unsigned char  Reason;
+}__attribute__((packed));
+
+
 struct _EVENT_GAP_DeviceDiscoveryDoneParam
 {
 	unsigned short Event;
@@ -1710,7 +1767,28 @@ struct _EVENT_GAP_DeviceDiscoveryDoneParam
 	unsigned char  NumDevs;
 	struct _DiscoveryDoneParam DiscDoneParams[100] ; // max scan 100
 }__attribute__((packed));
-//====================================================================
+
+struct _EVENT_GAP_LinkEstablishedParam
+{
+	unsigned short Event;
+	unsigned char  Status;
+	unsigned char  DevAddrType;
+	unsigned char  DevAddr[6];
+	unsigned short  ConnHandle;
+	unsigned short ConnInterval;
+	unsigned short ConnLatency;
+	unsigned short ConnTimeout;
+	unsigned char  ClockAccuracy;
+}__attribute__((packed));
+
+struct _EVENT_GAP_LinkTerminatedParam
+{
+	unsigned short  Event;
+	unsigned char   Status;
+	unsigned short  ConnHandle;
+	unsigned char   Reason;
+}__attribute__((packed));
+///====================================================================
 
 //====================================================================
 struct _EVENT_GAP_CommandStatusParam
@@ -1746,21 +1824,44 @@ struct _EventPacket
 //  	int ConHandle
 //  }__attribute__((packed));
 
+struct _WhiteList
+{
+	unsigned short ConnHandle;;
+	unsigned short ConnInterval;;
+	unsigned short ConnLatency;;
+	unsigned short ConnTimeout;;
+	unsigned short ClockAccuracy;;
+	//
+	unsigned short handle;
+	unsigned short humidity;
+	unsigned short temperature;
+	//
+	unsigned char  state ; // Established or Terminated
+	unsigned char Addr[6];
+}__attribute__((packed));
+
+
+struct _WhiteList WhiteList[10];
+int Num_WhiteList = 0 ;
+int cur_WhiteList = 0 ;
+
+unsigned short connHandle[2];
+
 
 int GAP_DeviceInit(int fd);
 int DeviceScan(int fd);
 int GAP_GetConnectionSetting(int fd);
 int Uart_SendPacket(int fd,void *ptr, int len);
-int Uart_RecvPacket(int fd, unsigned char *ptr, int timeout);
+int Uart_RecvPacket(int fd, unsigned short curState, int handle, unsigned char *ptr, int timeout);
 
 int Uart_SendPacket(int fd,void *ptr, int len)
 {
 	write(fd,ptr,len);
-	printf("length=%d\n",len);
+	printf("Tx(%3d)======================================\n", len);
 	hexDump(ptr,len);
 }
 
-int Uart_RecvPacket(int fd, unsigned char *ptr, int timeout)
+int Uart_RecvPacket(int fd, unsigned short curState, int handle, unsigned char *ptr, int timeout)
 {
 	int select_ret;
 	fd_set          rfds;
@@ -1769,6 +1870,16 @@ int Uart_RecvPacket(int fd, unsigned char *ptr, int timeout)
 	int loop_stop_local = NO;
 	int ret;
 	int i;
+
+//  	unsigned short curState =  0 ;
+//  
+//  	curState = 
+
+	struct _EVENT_GAP_DeviceInfomationParam 		DeviceInfomation;
+	struct _EVENT_GAP_LinkEstablishedParam  		LinkInfo_Established;
+	struct _EVENT_GAP_LinkTerminatedParam   		LinkInfo_Terminated;
+	struct _EVENT_ATT_HandleValueNotificationParam  NotiInfo;
+//  	int count_deviceInfo = 0 ;
 
 	while(loop_stop_local == NO)
 	{
@@ -1797,13 +1908,13 @@ int Uart_RecvPacket(int fd, unsigned char *ptr, int timeout)
 			if( FD_ISSET(uart_fd,&rfds) )
 			{
 
-				INNO_SHCHO_PRINT("\n\n\t \033[22;31m line:%d:@%s in %s \033[0m \n",__LINE__,__FUNCTION__,__FILE__  ); 
+//  				INNO_SHCHO_PRINT("\n\n\t \033[22;31m line:%d:@%s in %s \033[0m \n",__LINE__,__FUNCTION__,__FILE__  ); 
 				ret=read(uart_fd, ptr,3);
 
-				printf("packet first3= ");
-				for(i = 0 ; i < 3 ; i++ )
-					printf("%02x ", ptr[i] );
-				printf("\n");
+//  				printf("packet first3= ");
+//  				for(i = 0 ; i < 3 ; i++ )
+//  					printf("%02x ", ptr[i] );
+//  				printf("\n");
 
 
 				ret=Read_Confirm_length(uart_fd, &ptr[3], ((unsigned char *)ptr)[2]);
@@ -1813,8 +1924,211 @@ int Uart_RecvPacket(int fd, unsigned char *ptr, int timeout)
 					continue;
 				}
 				
+//  				hexDump(ptr, ((unsigned char *)ptr)[2]+3);
+				printf("Rx ++++++++++++++++++++++++++++++++++++++\n");
 				hexDump(ptr, ((unsigned char *)ptr)[2]+3);
 
+				// GAP_EVENT_DeviceDiscoveryRequest
+				switch (curState)
+				{
+					case GAP_CMD_DeviceDiscoveryRequest :
+					{
+						unsigned short event ;
+						memcpy(&event, &ptr[3], 2);
+						switch( event) 
+						{
+							case GAP_EVENT_DeviveInfomation:
+							{
+//  								INNO_SHCHO_PRINT("\n\n\t \033[22;31m line:%d:@%s in %s \033[0m \n",__LINE__,__FUNCTION__,__FILE__  ); 
+
+								memcpy(&DeviceInfomation, &ptr[3], ptr[2]);
+
+//  								hexDump((unsigned char *)&DeviceInfomation,100);
+									// Print DeviceInfomation Event Packet
+//  								printf("    Event = 0x%04x \n", DeviceInfomation.Event);
+//  								printf("   Status = 0x%02x \n", DeviceInfomation.Status);
+//  								printf("EventType = 0x%02x \n", DeviceInfomation.EventType);
+//  								printf(" AddrType = 0x%02x \n", DeviceInfomation.AddrType);
+//  								printf("***********************************************************\n");
+
+								if( DeviceInfomation.EventType == EventType_Scan_Response )
+								{
+									hexDump(DeviceInfomation.Data,DeviceInfomation.DataLength);
+									if(strncmp(&(DeviceInfomation.Data)[2], "SensorTag", 9) == MEM_MATCH)
+									{
+//  										int i = 0 ;
+										printf( "\n\n\t \033[22;30;32m  SensorTag Detected(%d) : Addr=", Num_WhiteList);
+
+										for( i = 0 ;  i < 6 ; i++ )
+											printf("%02X ", DeviceInfomation.Addr[i] );
+										printf( "\033[0m \n\n", Num_WhiteList);
+
+										memcpy(WhiteList[Num_WhiteList].Addr, DeviceInfomation.Addr,6);
+
+										printf("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
+										hexDump((unsigned char *)WhiteList[Num_WhiteList].Addr, 6);
+										Num_WhiteList++;
+									}
+								}
+								break;
+							}
+							case GAP_EVENT_DeviceDiscoveryDone :
+							{
+								printf("Device Discovery Done \n");
+								printf("Device Discovery Done \n");
+								printf("Device Discovery Done \n");
+								printf("Device Discovery Done \n");
+								printf("Device Discovery Done \n");
+								loop_stop_local =  YES;
+								break;;
+							}
+						}
+						break;
+					}
+
+					case GAP_CMD_EstablishLinkRequest : 
+					{
+						unsigned short event ;
+						memcpy(&event, &ptr[3], 2);
+						switch( event) 
+						{
+							case GAP_EVENT_LinkEstablished:
+							{
+								memcpy(&LinkInfo_Established, &ptr[3], ptr[2]);
+
+								if( LinkInfo_Established.Status == 0x00 )
+								{
+									WhiteList[cur_WhiteList].ConnHandle    = LinkInfo_Established.ConnHandle;
+									WhiteList[cur_WhiteList].ConnInterval  = LinkInfo_Established.ConnInterval;
+									WhiteList[cur_WhiteList].ConnLatency   = LinkInfo_Established.ConnLatency;
+									WhiteList[cur_WhiteList].ConnTimeout   = LinkInfo_Established.ConnTimeout;
+									WhiteList[cur_WhiteList].ClockAccuracy = LinkInfo_Established.ClockAccuracy;
+									WhiteList[cur_WhiteList].state         = STATE_LINK_ESTABLISHED;
+								}
+								else
+								{
+									printf(" EstablishLinkRequest Fail (%d) \n", cur_WhiteList );
+								}
+								break;
+							}
+						}	
+						break;
+					}
+
+					case GAP_CMD_TerminateLinkRequest : 
+					{
+						unsigned short event ;
+						memcpy(&event, &ptr[3], 2);
+						switch( event) 
+						{
+							case GAP_EVENT_LinkTerminated:
+							{
+								memcpy(&LinkInfo_Terminated, &ptr[3], ptr[2]);
+
+								if( LinkInfo_Terminated.Status == 0x00 )
+								{
+									WhiteList[cur_WhiteList].ConnHandle    = -1;
+									WhiteList[cur_WhiteList].ConnInterval  = -1;
+									WhiteList[cur_WhiteList].ConnLatency   = -1;
+									WhiteList[cur_WhiteList].ConnTimeout   = -1;
+									WhiteList[cur_WhiteList].ClockAccuracy = -1;
+									WhiteList[cur_WhiteList].state         = STATE_LINK_TERMINATED;
+								}
+								else
+								{
+									printf(" TerminateLinkRequest Fail (%d) \n", cur_WhiteList );
+								}
+								break;
+							}
+						}	
+						break;
+					}
+					case GATT_CMD_WriteCharValue : // shcho after setHumidityParam
+					{
+						unsigned short event ;
+						static float humidity;
+						unsigned short h;
+						static int temperature;
+						unsigned short t;
+						static int count_Noti = 0 ;
+
+//SHT21 Calc
+//  //==============================================================================
+//  float SHT2x_CalcRH(u16t u16sRH)
+//  //==============================================================================
+//  {
+//    ft humidityRH;              // variable for result
+//  
+//    u16sRH &= ~0x0003;          // clear bits [1..0] (status bits)
+//    //-- calculate relative humidity [%RH] --
+//  
+//    humidityRH = -6.0 + 125.0/65536 * (ft)u16sRH; // RH= -6 + 125 * SRH/2^16
+//    return humidityRH;
+//  }
+//  
+//  //==============================================================================
+//  float SHT2x_CalcTemperatureC(u16t u16sT)
+//  //==============================================================================
+//  {
+//    ft temperatureC;            // variable for result
+//  
+//    u16sT &= ~0x0003;           // clear bits [1..0] (status bits)
+//  
+//    //-- calculate temperature [캜] --
+//    temperatureC= -46.85 + 175.72/65536 *(ft)u16sT; //T= -46.85 + 175.72 * ST/2^16
+//    return temperatureC;
+//  }
+
+
+						memcpy(&event, &ptr[3], 2);
+						switch( event) 
+						{
+							case ATT_EVENT_HandleValueNotification :
+							{
+
+								if( handle == HANDLE_HUMIDITY_DATA )
+								{
+									memcpy(&NotiInfo, &ptr[3], ptr[2]);
+	
+									if( NotiInfo.Status == 0x00 )
+									{
+										WhiteList[cur_WhiteList].handle 		= HANDLE_HUMIDITY_DATA;
+
+										memcpy(&h,&NotiInfo.Data[8],2);;
+										memcpy(&t,&NotiInfo.Data[10],2);;
+
+										humidity += h;
+										temperature += t;
+
+										count_Noti ++;
+									}
+									else
+									{
+										count_Noti = 0 ; 
+										humidity = 0 ;
+										temperature = 0 ;
+										printf(" Notification Fail (%d) \n", cur_WhiteList );
+									}
+
+
+									if(count_Noti == 10 )
+									{
+										WhiteList[cur_WhiteList].humidity	 = (humidity    / count_Noti );
+										WhiteList[cur_WhiteList].temperature = (temperature / count_Noti );
+										
+										count_Noti  = 0 ;
+										humidity = 0 ;
+										temperature = 0 ;
+										loop_stop_local = YES;
+
+									}
+								}
+								break;
+							}
+						}
+						break;
+					}
+				}
 //  				Processing_UartPacket(uart_buf);
 			}
 		} 
@@ -1847,7 +2161,7 @@ int GAP_DeviceInit(int fd)
 	memcpy(CMD_Packet.Params,&DeviceInitParam, CMD_Packet.ParamTotalLength);
 
 	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
-	Uart_RecvPacket(fd, (unsigned char *)&EVENT_Packet,2);
+	Uart_RecvPacket(fd, GAP_CMD_DeviceInitialization, HANDLE_NONE, (unsigned char *)&EVENT_Packet,2);
 
 	return 1;
 }
@@ -1878,16 +2192,35 @@ int	GAP_GetConnectionSetting(int fd)
 	CMD_Packet.Params[0] = ParamID_TGAP_CONN_EST_SUPERV_TIMEOUT;
 	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
 
-	Uart_RecvPacket(fd, (unsigned char *)&EVENT_Packet,2);
+	Uart_RecvPacket(fd, GAP_CMD_GetParameter,HANDLE_NONE, (unsigned char *)&EVENT_Packet,2);
 
 	
 }
+
+int DeviceDiscoveryCancel(int fd)
+{
+	struct _CommandPacket            CMD_Packet;
+	struct _EventPacket              EVENT_Packet;
+	struct _CMD_GAP_DeviceInitParam  DeviceInitParam;
+
+	CMD_Packet.Type   = PacketType_COMMAND;
+	CMD_Packet.OpCode = GAP_CMD_DeviceDiscoveryCancel;
+	CMD_Packet.ParamTotalLength = 0x00;
+
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+	Uart_RecvPacket(fd, GAP_CMD_DeviceDiscoveryRequest, HANDLE_NONE, (unsigned char *)&EVENT_Packet, 11);
+
+	return 1;
+}
+
 
 int DeviceScan(int fd)
 {
 	struct _CommandPacket            CMD_Packet;
 	struct _EventPacket              EVENT_Packet;
 	struct _CMD_GAP_DeviceInitParam  DeviceInitParam;
+	int i = 0 ;
+	int j = 0;
 
 	CMD_Packet.Type   = PacketType_COMMAND;
 	CMD_Packet.OpCode = GAP_CMD_DeviceDiscoveryRequest;
@@ -1897,9 +2230,104 @@ int DeviceScan(int fd)
 	CMD_Packet.Params[2] = 0x00; //WhiteList
 
 	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
-	Uart_RecvPacket(fd, (unsigned char *)&EVENT_Packet, 11);
+	Uart_RecvPacket(fd, GAP_CMD_DeviceDiscoveryRequest, HANDLE_NONE, (unsigned char *)&EVENT_Packet, 11);
+
+	printf("WhiteList\n");
+	for(i = 0; i < Num_WhiteList ; i++ )
+	{
+		printf("Addr(%2d)=",i);
+		for( j = 0 ; j < 6 ; j++ )
+		{
+			printf("%02X ", (WhiteList[i].Addr)[j]);
+		}
+		printf("\n");
+	}
 
 	return 1;
+}
+
+int	EstablishLink(int fd, int count)
+{
+	struct _CommandPacket            CMD_Packet;
+	struct _EventPacket              EVENT_Packet;
+	struct _CMD_GAP_DeviceInitParam  DeviceInitParam;
+	int i = 0 ;
+	int j = 0;
+
+	CMD_Packet.Type   = PacketType_COMMAND;
+	CMD_Packet.OpCode = GAP_CMD_EstablishLinkRequest;
+	CMD_Packet.ParamTotalLength = 0x09;
+	CMD_Packet.Params[0] = 0x00; //HighDutyCycle : Disable
+	CMD_Packet.Params[1] = 0x00; //WhiteList : Disable
+	CMD_Packet.Params[2] = 0x00; //AddrTypePeer(Public)
+	memcpy(&CMD_Packet.Params[3], WhiteList[count].Addr, 6);
+
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+	Uart_RecvPacket(fd, GAP_CMD_EstablishLinkRequest, HANDLE_NONE, (unsigned char *)&EVENT_Packet, 2);
+
+}
+
+int	TerminateLink(int fd, int count)
+{
+	struct _CommandPacket            CMD_Packet;
+	struct _EventPacket              EVENT_Packet;
+	struct _CMD_GAP_DeviceInitParam  DeviceInitParam;
+	struct _CMD_GAP_TerminatLink     t;
+
+	t.ConnHandle = WhiteList[count].ConnHandle;
+	t.Reason = 0x13 ; // Remote_User_Terminated_Connection
+
+	CMD_Packet.Type   = PacketType_COMMAND;
+	CMD_Packet.OpCode = GAP_CMD_TerminateLinkRequest;
+	CMD_Packet.ParamTotalLength = 0x03;
+	memcpy(&CMD_Packet.Params[0], &t, 3);
+
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+	Uart_RecvPacket(fd, GAP_CMD_TerminateLinkRequest, HANDLE_NONE, (unsigned char *)&EVENT_Packet, 2);
+
+}
+
+int setHumiditySensorParam(int fd, int count)
+{
+	struct _CommandPacket            CMD_Packet;
+	struct _EventPacket              EVENT_Packet;
+	struct _CMD_GATT_CMD_WriteCharValueParam     t;
+
+	CMD_Packet.Type   = PacketType_COMMAND;
+	CMD_Packet.OpCode = GATT_CMD_WriteCharValue;
+	t.ConnHandle = WhiteList[count].ConnHandle;
+
+	CMD_Packet.ParamTotalLength = 0x05;
+	t.Handle = 0x0042;
+	t.data[0] = 0x40; // 64 : 640msec 주기
+	memcpy(&CMD_Packet.Params[0], &t, CMD_Packet.ParamTotalLength);
+	printf("Set Notification Period\n");
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+
+	sleep(1);
+
+	CMD_Packet.ParamTotalLength = 0x05;
+	t.Handle = 0x003F;
+	t.data[0] = 0x01; 
+	memcpy(&CMD_Packet.Params[0], &t, CMD_Packet.ParamTotalLength);
+	printf("Set Measure Enable\n");
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+
+	sleep(1);
+
+	CMD_Packet.ParamTotalLength = 0x06;
+	t.Handle = 0x003C;
+	t.data[0] = 0x01; 
+	t.data[1] = 0x00; 
+	memcpy(&CMD_Packet.Params[0], &t, CMD_Packet.ParamTotalLength);
+	printf("Set Notification Enable\n");
+	Uart_SendPacket(fd, &CMD_Packet,   CMD_Packet.ParamTotalLength+4 );
+
+	sleep(1);
+
+	Uart_RecvPacket(fd, GATT_CMD_WriteCharValue, HANDLE_HUMIDITY_DATA, (unsigned char *)&EVENT_Packet, 2);
+
+
 }
 
 
@@ -1962,15 +2390,61 @@ int main(int argc, char *argv[])
 	// Get Connection Setting
 	GAP_GetConnectionSetting(uart_fd);
 
-	// DeviceScan
+	// DeviceScan : make WhiteList
 	DeviceScan(uart_fd);
 
+
+	// Get Data using Establish -> Get data --> Terminate  for All WhiteList
+	{
+		int loop_count ; 
+
+		while(1)
+		{
+			// get connection handle
+			printf( "\n\n\t \033[22;30;32m  SensorTag(%d) : Addr=", cur_WhiteList);
+
+			for( i = 0 ;  i < 6 ; i++ )
+				printf("%02X ", WhiteList[cur_WhiteList].Addr[i] );
+			printf( "\033[0m \n\n");
+
+			printf("Establish-------------------------\n");
+			EstablishLink(uart_fd, cur_WhiteList);
+
+			sleep(2);
+
+			setHumiditySensorParam(uart_fd, cur_WhiteList);
+			//get Humidity/Temp Data handling at Uart_RecvPacket
+//  			getHumiditySensorData(uart_fd, cur_WhiteList);
+
+			printf("Terminate-------------------------\n");
+			TerminateLink(uart_fd, cur_WhiteList);
+
+			cur_WhiteList++;
+
+			if( cur_WhiteList == Num_WhiteList )
+				cur_WhiteList = 0 ;
+		}
+
+	}
+	
 //  	// Scan : Result :Device List
 //  	GAP_DeviceDiscoveryRequest();
 //  
 //  	// Establish Link
 //  	GAP_EstablishLink();
 //  
+
+
+
+
+
+
+
+
+
+
+
+
 	loop_stop = NO;
 	while(loop_stop == NO)
 	{
@@ -2118,6 +2592,7 @@ int main(int argc, char *argv[])
 
 	return 1 ;
 }
+
 
 
 

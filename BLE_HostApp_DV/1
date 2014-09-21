@@ -1,0 +1,50 @@
+struct _att_vendor_specific_command
+{
+	unsigned short Opcode;
+	unsigned short connectionHandle;
+	unsigned char  CommandPDU[128];
+}__attribute__((packed));
+
+struct _att_vendor_specific_event
+{
+	unsigned short Opcode;
+	unsigned char  status;
+	unsigned short connectionHandle;
+	unsigned char  pduLen;
+	unsigned char  EventPDU[128];
+}__attribute__((packed));
+
+
+#define ATT_STATUS_CMD_SUCCESS 					0x00
+#define ATT_STATUS_CMD_INVALID_PARAM 			0x02
+#define ATT_STATUS_CMD_MSG_BUFFER_NOT_AVAIL 	0x04
+#define ATT_STATUS_CMD_bleMemAllocError	 		0x13	
+#define ATT_STATUS_CMD_bleNotConnected	 		0x14	
+#define ATT_STATUS_CMD_blePending	 			0x16	
+#define ATT_STATUS_CMD_bleLinkEncrypted	 		0x19	
+#define ATT_STATUS_CMD_bleInvalidPDU	 		0x40	
+#define ATT_STATUS_CMD_bleInsufficientAuthen	0x41	
+#define ATT_STATUS_CMD_bleInsufficientEncrypt	0x42	
+#define ATT_STATUS_CMD_bleInsufficientKeySize	0x43	
+
+#define ATT_STATUS_EVENT_SUCCESS				0x00
+#define ATT_STATUS_EVENT_bleNotConnected		0x14
+#define ATT_STATUS_EVENT_bleTimeout				0x17
+#define ATT_STATUS_EVENT_bleProcedureCompletei	0x1A
+
+
+#define ATT_CMD_ErrorRsp			0xFD01
+#define ATT_CMD_ExchangeMTUReq		0xFD02
+#define ATT_CMD_ExchangeMTURsp		0xFD03
+#define ATT_CMD_FindInfoReq			0xFD04
+#define ATT_CMD_FindInfoRsp			0xFD05
+#define ATT_CMD_FindByTypeValueReq	0xFD06
+#define ATT_CMD_FindByTypeValueRsp	0xFD07
+#define ATT_CMD_ReadByTypeValueReq	0xFD08
+
+
+
+
+
+
+
